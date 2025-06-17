@@ -1,7 +1,6 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\OnePageController;
 
-Route::get('/', function () {
-    return view('onepage');
-});
+Route::get('/', [OnePageController::class, 'index']);
