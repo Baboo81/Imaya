@@ -47,4 +47,20 @@ return [
                         Ces deux lieux de pratique s’enrichissent et s’inspirent et vous accueillent
                         pour des consultations et des soins individuels, des ateliers et des retraites.',
         ],
+    'soins' => [
+        'mainTitle' => 'Les Soins',
+        //Card 1
+        'imgCard1' => '/assets/img/soins/card1.jpg',
+        'titleCard1' => 'Soin énergétique',
+        'txtCard1' => 'Ce soin issu du Reiki régénère le système nerveux
+                       et renforce la vitalité. Il harmonise le corps et l’esprit et se reçoit habillé.',
+        'subTitle1' => 'Lieu',
+        'subTxt1' => 'Bruxelles & Sicile',
+        'subTitle2' => 'Durée',
+        'subTxt2' => '1h30',
+        'subTitle3' => 'Prix',
+        'subTxt3' => '110 &euro;',
+
+        //Card 2
+        ],
     ];
