@@ -1,0 +1,73 @@
+/*Nav*/
+nav
+{
+    height: 70px;
+    font-size: 1.4em;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 20px; /* un peu de padding */
+    z-index: 1000;
+}
+
+.sticky
+{
+    transition: 2.6s ease; /* transition pour l'animation du bord */
+    background-color: #000;
+    opacity: 70%;
+}
+
+#logo2
+{
+    height: 4em;
+    width: 4em;
+}
+
+.logo-navbar 
+{
+  height: 60px; /* ou auto si tu veux garder le ratio */
+  padding: 0.5rem 1rem;
+  margin: 0;
+}
+
+.perso-navbar
+{
+    /*background-color: rgba(0, 0, 0, 0.50);*/
+    font-family: 'Dastin', sans-serif;
+    /*box-shadow: 1px 1px 3px rgba(255, 255, 255, 0.54);*/
+    z-index: 99;
+}
+
+.perso-navbar .nav-link
+{
+    border-bottom: 1px solid transparent;
+    transition: padding-bottom .4s ease-in-out, border-color .3s ease;
+}
+
+.perso-navbar .nav-link:hover
+{
+    padding-bottom: 20px;
+    border-bottom-color: var(--blanc);
+}
+
+@media (max-width: 991.98px) 
+{
+  .navbar-nav 
+  {
+    background-color: #222; /* pour que le menu déroulé soit lisible */
+    padding: 1rem;
+  }
+
+  .navbar-nav .nav-item 
+  {
+    padding-right: 0 !important;
+    padding-bottom: 0.5rem;
+  }
+
+  .nav-item.d-flex 
+  {
+    flex-direction: column;
+  }
+}
+/*Nav END*/

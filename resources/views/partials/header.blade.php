@@ -1,10 +1,10 @@
-    <head>
+
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description"
-            content="<strong>Imayah France-Alexandra Vigouroux</strong> est un centre de soins énergétiques situé en Sicile et à Bruxelles. France-Alexandra Vigouroux propose des retraites, des ateliers créatifs ainsi que des soins énergétiques, des massages vibratoires, un accompagnement thérapeutique, des méditations, un soin de l'âme, des bains sonore. Il est possible aussi d'acheter ses créations réalisées dans un état de transe.">
+            content=" {{ $metaDesc }} ">
         <meta name="keywords"
-            content="Centre de soins énergétiques, retraites, ateliers créatifs, massages vibratoires, accompagnement thérapeutique, méditations, soin de l'âme, bain sonore.">
+            content=" {{ $metaKeyWords }} ">
         <!-- Google Tag Manager Google analytics-->
         <script>(function (w, d, s, l, i) {
                 w[l] = w[l] || []; w[l].push({
@@ -42,5 +42,5 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" defer></script>
         <script src="{{ asset('assets/js/jQuery.js') }}" defer></script>
         <script src="{{ asset('assets/js/main.js') }}" defer></script>
-        <title>{{ $pageTitle ?? 'Imayah'}}</title>
-    </head>
+        <title>{{ $pageTitle }}</title>
+    

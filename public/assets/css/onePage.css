@@ -1,0 +1,487 @@
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Caveat:wght@400..700&display=swap" rel="stylesheet">');
+
+@font-face 
+{
+  font-family: 'Dastin';
+  src : url('../fonts/Dastin.otf') format('opentype'),
+        url('../fonts/Dastin.ttf') format('trutype'),
+        url('../fonts/Dastin.woff') format('woff'),
+        url('../fonts/Dastin.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root
+{
+    --noir: #000;
+    --beige : #f0eee9;
+    --blanc : #ffffff;
+    --jaune : #fffede;
+    --orange : #feae62;
+    --taupe : #8e8d8a;
+    --brun : #e8d5cc;
+    --brunF : #bda18a;
+}
+
+body
+{
+    overflow-x: hidden;
+    min-height: 2000px;
+}
+
+h2, h3
+{
+    font-family: 'Dastin', sans-serif;
+    text-align: center;
+}
+
+h4, h5
+{
+    font-family: 'Dastin', sans-serif;
+}
+
+h3
+{
+    font-size: 2rem !important;
+}
+
+h4
+{
+    font-size: 1.8rem !important;
+}
+
+p
+{
+    font-family: 'Bodoni Moda', serif !important;
+    font-size: 1.5rem !important;
+}
+
+.whiteFont
+{
+    color: var(--beige) !important;
+}
+
+.BodoniFont
+{
+    font-family: 'Bodon Moda', serif;
+}
+
+.DastinFont
+{
+    font-family: 'Dastin', sans-serif !important;
+}
+
+/*Btn*/
+.btn-order
+{
+    color: var(--orange);
+    border-color: var(--orange);
+    transition: 0.5s;
+    min-width: 10rem;
+    min-height: 3rem;
+    font-weight: bold;
+}
+
+.btn-order:hover,
+.btn-order:active
+{
+    color: #fff;
+    background-color: var(--orange);
+}
+
+/* Indicateur de progression */
+
+#scroll-indicator 
+{
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  background: conic-gradient(gray 0%, transparent 0%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  transition: background 0.3s ease;
+}
+
+/* Cercle intérieur pour l'effet de "remplissage circulaire" */
+.inner-circle 
+{
+  position: relative;
+  width: 50px;
+  height: 50px;
+  background: var(--beige);
+  border-radius: 50%;
+}
+
+.scroll-arrow
+{
+  position: absolute;
+  top: 20%;
+  left: 34%;
+  transform: translate(-50%, -50%);
+  font-size: 20px;
+  color: gray;
+  animation: blink 1.2s infinite;
+  user-select: none;
+  pointer-events: none;
+}
+
+@keyframes blink
+{
+  0%, 100%
+  {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  50%
+  {
+    opacity: 0.3;
+    transform: translateY(3px);
+  }
+}
+/* END */
+
+/* Section : banner */
+.casaImayahTitle
+{
+  height: 65em;
+  width: 65em;
+}
+
+.name
+{
+  font-size: 2rem;
+  letter-spacing: .36rem;
+}
+
+.mainTitles
+{
+  font-size: 3em;
+  font-weight: 600;
+  font-family: 'Dastin', sans-serif;
+  color: var(--blanc);
+}
+/* END  Section : banner */
+
+/*Parallaxe*/
+.banner 
+{
+    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, 0)), url(../img/banner/banner.jpeg) center center fixed no-repeat;
+    background-size: cover;
+    height: 1200px;
+}
+
+section .bannerTitle
+{
+    font-size: 6rem;
+    font-family: 'Dastin', sans-serif;
+    color: var(--beige);
+    letter-spacing: .6rem;
+}
+
+.soins
+{
+    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, 0)), url(../img/banner/fond1.jpeg) center center fixed no-repeat;
+    background-size: 142%;
+    min-height: 2800px;
+}
+
+.card-bloc
+{
+    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(../img/banner/fond2.jpeg) center center fixed no-repeat;
+    background-size: 107%;
+    min-height: 1800px;
+}
+
+.card-contact
+{
+    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(../img/banner/fond3.jpeg) center center fixed no-repeat;
+    background-size: cover;
+    min-height: 1800px;
+}
+/*Parallaxe END*/
+
+
+/*Section Qui sui-je ?*/
+.F-A
+{
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    
+}
+
+.sectionQuiSuisJe
+{
+    background-color: var(--jaune);
+    min-height: 1200px;
+}
+
+.Bxl-Sicile 
+{
+  width: 100vw;
+  height: 700px; /* ou 300px selon ton besoin */
+  overflow: hidden;
+}
+
+.img-half 
+{
+  flex: 1;
+  height: 100%;
+  width: 100%;
+  object-fit: cover; /* ou contain */
+  object-position: 50% 44%; /* affiche le haut de l'image */
+  display: block;
+}
+/*Section Qui sui-je ? END*/
+
+/* Section : soins */
+.soins .container 
+{
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.card-wrapper 
+{
+  margin-bottom: 3rem;
+}
+
+.card 
+{
+  border: none;
+  border-radius: 1rem;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  height: 100%;
+}
+
+.card-img-top 
+{
+  height: 250px;
+  object-fit: cover;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  width: 100%;
+}
+
+.card-body 
+{
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-title 
+{
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+  color: #222;
+}
+
+.card-body h4 
+{
+  font-size: 1.1rem;
+  margin-top: 1rem;
+  color: #444;
+}
+
+.card-text 
+{
+  font-size: 1rem;
+  color: #555;
+}
+/*  END Section : soins */
+
+/*Section création*/
+.sectionCreation
+{
+  background-color: var(--orange);
+}
+
+.sectionCreation .card 
+{
+  background-color: var(--orange);
+}
+
+.card .list-group-item
+{
+  background-color: var(--orange) !important;
+}
+
+/*Mise en évidence des flèches*/
+.carousel-control-prev,
+.carousel-control-next 
+{
+  width: 50px;
+  background: rgba(0, 0, 0, 0.3); /* fond sombre transparent */
+  border-radius: 0 5px 5px 0; /* coins arrondis pour la gauche */
+}
+
+.carousel-control-next 
+{
+  border-radius: 5px 0 0 5px; /* coins arrondis pour la droite */
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon 
+{
+  filter: invert(1); /* rend la flèche blanche */
+}
+/* END Mise en évidence des flèches*/
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon 
+{
+  background-image: none;
+  width: 4rem;
+  height: 3rem;
+  background-color: transparent;
+  mask-image: url('data:image/svg+xml;utf8,<svg fill="black" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/></svg>');
+  -webkit-mask-image: url('data:image/svg+xml;utf8,<svg fill="black" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/></svg>');
+  background-color: var(--orange) !important; 
+  
+}
+
+.carousel-control-prev-icon:hover,
+.carousel-control-next-icon:hover 
+{
+  background-color: #f6bfb5; 
+}
+
+/* Flèche gauche */
+.carousel-control-prev-icon 
+{
+  mask-image: url('data:image/svg+xml;utf8,<svg fill="black" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/></svg>');
+}
+
+/* Flèche droite : la même mais retournée */
+.carousel-control-next-icon 
+{
+  mask-image: url('data:image/svg+xml;utf8,<svg fill="black" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/></svg>');
+}
+
+.carousel-indicators [data-bs-target] {
+  background-color: #ccc; /* couleur des points inactifs */
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin: 0 5px;
+  border: none;
+  opacity: 0.7;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.carousel-indicators .active {
+  background-color: var(--orange) !important; /* couleur du point actif */
+  transform: scale(1.2); /* optionnel : effet visuel au focus */
+  opacity: 1;
+}
+
+section .sectionCreationTitle
+{
+    font-size: 3em;
+    font-weight: 600;
+    font-family: 'Dastin', sans-serif;
+}
+
+.carousel-inner img
+{
+    height: 600px;
+}
+
+.carousel-item img
+{
+  width: 100%;
+  object-fit: contain;
+}
+
+section .picture
+{
+    height: 600px;
+}
+
+.write ul > li
+{
+    font-size: 1.5rem;
+}
+/*END*/
+
+/*Section activités*/
+#bijouxSlider 
+{
+  max-width: 600px; /* taille du slider */
+  height: 400px;
+  overflow: hidden;
+}
+
+#bijouxSlider .carousel-inner,
+#bijouxSlider .carousel-item,
+#bijouxSlider img
+{
+    height: 100%;
+}
+
+#bijouxSlider img 
+{
+  width: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.retraiteImg
+{
+    width: 100% !important;
+    height: 450px;
+}
+
+.blocBtn
+{
+    margin-right: -15% !important;
+}
+
+.carousel.carousel-fade .carousel-item 
+{
+  transition: opacity 2s ease-in-out; 
+}
+
+/*END*/
+
+/* SectionRetraites */
+.blocRetraites
+{
+    margin-bottom: 20% !important;
+}
+/* END */
+
+/* Section :  sectionContact*/
+.sectionContact
+{
+  background-color: var(--jaune);
+}
+
+label
+{
+  font-family: 'Dastin', sans-serif;
+  font-size: 1.2rem;
+}
+
+input::placeholder,
+textarea::placeholder 
+{
+  font-family: 'Bodoni Moda', serif; /* Change la police */
+  font-size: 1rem;                        /* Taille */
+  font-style: italic;                    /* Style optionnel */
+  color: #999;                           /* Couleur */
+  opacity: 1;                            /* Nécessaire sur certains navigateurs */
+}
+/*  END Section :  sectionContact*/
+
+/*Media queries*/
+
