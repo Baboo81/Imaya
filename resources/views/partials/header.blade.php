@@ -32,7 +32,12 @@
 
         <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
         <link rel="stylesheet" href="{{ asset('assets/css/bootstrap.min.css') }}">
+        <!-- css global -->
         <link rel="stylesheet" href="{{ asset('assets/css/onePage.css') }}">
+        <!-- css nav -->
+        <link rel="stylesheet" href="{{ asset('assets/css/nav.css') }}">
+        <!-- css footer -->
+        <link rel="stylesheet" href="{{ asset('assets/css/footer.css') }}">
         <!--Script Leaflet-->
         <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
             integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
