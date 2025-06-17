@@ -131,25 +131,31 @@
                         <!-- Card 2 : droite -->
                         <div class="col-12 col-md-8 mb-5 card-wrapper card-right">
                             <div class="card h-100">
-                                <img src="./assets/img/cards/card2.jpg" class="card-img-top" alt="Massage vibratoire">
+                                <img src="{{ $data['soins']['imgCard2'] ?? '' }}" class="card-img-top" alt="Massage vibratoire">
                                 <div class="card-body d-flex flex-column text-center text-muted">
-                                    <h2 class="card-title text-muted fs-2 my-4">Massage vibratoire</h2>
+                                    <h2 class="card-title text-muted fs-2 my-4">{{ $data['soins']['titleCard2'] ?? '' }}</h2>
                                     <article class="my-2">
-                                        <p class="card-text flex-grow-1">Par un toucher à la fois ferme et doux, ce massage
-                                            à l’huile libère les tensions logées dans les profondeurs du corps et de
-                                            l’esprit. Il est enrichi et accompagné des vibrations du chant intuitif...</p>
+                                        <p class="card-text flex-grow-1">
+                                            {{ $data['soins']['txtCard2'] ?? '' }}
+                                        </p>
                                         <section class="my-5">
                                             <div class="my-5">
-                                                <h3 class="fw-bolder mb-3">Lieu</h3>
-                                                <p>Á Bruxelles et en Sicile</p>
+                                                <h3 class="fw-bolder mb-3">{{ $data['soins']['subTitle1Card2'] ?? '' }}</h3>
+                                                <p>
+                                                    {{ $data['soins']['subTxt1Card2'] ?? '' }}
+                                                </p>
                                             </div>
                                             <div class="my-5">
-                                                <h3 class="fw-bolder mb-3">Durée</h3>
-                                                <p>1h30</p>
+                                                <h3 class="fw-bolder mb-3">{{ $data['soins']['subTitle2Card2'] ?? '' }}</h3>
+                                                <p>
+                                                    {{ $data['soins']['subTxt2Card2'] ?? '' }}
+                                                </p>
                                             </div>
                                             <div class="my-5">
-                                                <h3 class="fw-bolder mb-3">Prix</h3>
-                                                <p>110 &euro;</p>
+                                                <h3 class="fw-bolder mb-3">{{ $data['soins']['subTitle3Card2'] ?? '' }}</h3>
+                                                <p>
+                                                    {{ $data['soins']['subTxt3Card2'] ?? '' }}
+                                                </p>
                                             </div>
                                         </section>
                                     </article>

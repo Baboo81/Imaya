@@ -62,5 +62,19 @@ return [
         'subTxt3' => '110 &euro;',
 
         //Card 2
+        'imgCard2' => '/assets/img/soins/card2.jpg',
+        'titleCard2' => 'Massage vibratoire',
+        'txtCard2' => 'Par un toucher à la fois ferme et doux, ce massage
+                       à l’huile libère les tensions logées dans les profondeurs du corps et de
+                       l’esprit. Il est enrichi et accompagné des vibrations du chant intuitif...',
+        'subTitle1Card2' => 'Lieu',
+        'subTxt1Card2' => 'Á Bruxelles et en Sicile',
+        'subTitle2Card2' => 'Durée',
+        'subTxt2Card2' => '1h30',
+        'subTitle3Card2' => 'Prix',
+        'subTxt3Card2' => '110 &euro;',
+
+        //Card 3
+
         ],
     ];
