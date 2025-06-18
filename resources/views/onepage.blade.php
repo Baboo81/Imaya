@@ -213,6 +213,7 @@
     <a id="Activités" href=""></a>
 
     {{-- Section : Activités --}}
+    {{-- Parti à optimiser --}}
     <section class="card-bloc py-5 text-light">
                 <div id="cards" class="container">
                     <div class="row my-5">
@@ -434,8 +435,82 @@
                         </article>
                     </div>
                 </div>
-            </section>
+        </section>
     {{-- Section : Activités END--}}
+
+    {{-- Anchor : Section Contact --}}
+    <a id="Contact" href=""></a>
+
+    {{-- Section : Contact --}}
+    <section class="sectionContact py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="text-center text-muted mainTitles py-5">Comment me contacter ?</h1>
+                        <form class="rounded-5 p-5 d-flex align-items-center justify-content-center" action="{{ 'contact.store' }}"
+                              method="POST">
+                              @csrf
+                            <div class="col-md-12 col-12 my-5 p-5">
+                                <div class="mb-3">
+                                    <label for="name" class="form-label mb-3">Nom</label>
+                                    <div class="input-group">
+                                        <span class="input-group-text"><i class="bi bi-person"></i></span>
+                                        <input type="text" class="form-control" id="name" name="name"
+                                                    placeholder="Veuillez indiquer votre nom de famille" required>
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="firstName" class="form-label mb-3">Prénom</label>
+                                    <div class="input-group">
+                                        <span class="input-group-text"><i class="bi bi-person"></i></span>
+                                        <input type="text" class="form-control" id="firstName" name="firstName"
+                                                    placeholder="Veuillez indiquer votre prénom" required>
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="tel" class="form-label mb-3">Téléphone</label>
+                                    <div class="input-group">
+                                        <span class="input-group-text"><i class="bi bi-telephone"></i></span>
+                                        <input type="tel" class="form-control" id="tel" name="tel"
+                                                    placeholder="Veuillez indiquer votre numéro de téléphone" required>
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="email" class="form-label mb-3">Email</label>
+                                    <div class="input-group">
+                                        <span class="input-group-text"><i class="bi bi-envelope"></i></span>
+                                        <input type="email" class="form-control" id="email" name="email"
+                                                    placeholder="Veuillez indiquer votre adresse mail" required>
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="message" class="form-label mb-3">Message</label>
+                                    <div class="input-group">
+                                        <span class="input-group-text"><i class="bi bi-chat-text"></i></span>
+                                        <textarea class="form-control " id="message" name="message"
+                                                    placeholder="Laissez-moi votre message" required></textarea>
+                                    </div>
+                                </div>
+                                <div class="text-center my-5">
+                                    <button type="submit"
+                                                class="btn btn-order rounded-5 DastinFont">Envoyer</button>
+                                </div>
+                            </div>
+                            {{-- Msg de confirmation si l'envoi est ok --}}
+                            @if (session('success'))
+                                <div class="alert alert-success">
+                                    {{ session('success') }}
+                                </div>
+                            @endif
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="card-contact">
+
+        </section>
+    {{-- Section : Contact END--}}
 
 
 
