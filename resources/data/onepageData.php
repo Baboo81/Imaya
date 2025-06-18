@@ -120,7 +120,15 @@ return [
                 [
                     'type' => 'carousel',
                     'title' => 'Dessins vibratoires',
-                    'description' => "Le dessin réalisé en état de transe se propose ici telle une mise en ondes [...] harmonise ainsi le niveau vibratoire.",
+                    'description' => "Le dessin réalisé en état de transe se propose ici telle
+                                      une mise en ondes et en résonance des matériaux intérieurs afin d’offrir à l’inconscient une voie de
+                                      transmission et d’expression de son contenu mais aussi d’harmonisation. Tel
+                                      un rêve chargé de symboles et de sens, un mantra, une prière, l’image du
+                                      dessin, son nom, ses couleurs et ses formes sont à la fois réceptrices et
+                                      émettrices. Réceptrices telle une mise en miroir des images intérieures
+                                      lorsqu’elles trouvent ainsi une voie pour se révéler à la conscience. Émettrices
+                                      lorsque la « médecine » particulière du dessin est captée par les ondes
+                                      cérébrales et en harmonise ainsi le niveau vibratoire..",
                     'cta' => 'Les dessins vibratoires sont disponibles sur commande',
                     'images' => [
                         '/assets/img/créations/dessinsVib/Alchimia11.jpeg',
@@ -140,7 +148,15 @@ return [
                 [
                     'type' => 'carousel',
                     'title' => 'Illustrations & peintures',
-                    'description' => "Les illustrations s’invitent au gré des rencontres [...] au service de l’harmonie.",
+                    'description' => "Les illustrations s’invitent au gré des rencontres et des
+                                      coups-de-coeur.
+                                      Réalisées à l’aide de techniques mixtes et créées en état de transe, elles se
+                                      proposent telles les porte-paroles d’un projet, d’un ouvrage, d’une idée, d’un
+                                      élan avec lesquels elles dialoguent jusqu’à en épouser l’essence.",
+                    'description2' => "Les peintures, également réalisées à l’aide de techniques mixtes et en état de
+                                       transe se proposent telle une oeuvre qui accompagne un moment de vie, un
+                                       contenu vibratoire au service de l’être, une quête de beauté au service de
+                                       l’harmonie.",
                     'cta' => 'Les illustrations et les peintures sont disponibles sur commande',
                     'images' => [
                         '/assets/img/créations/peintures/peinture1.jpg',
@@ -158,5 +174,8 @@ return [
                 ],
             ],
         ],
+    'activites' => [
+        ''
+    ]
 
     ];

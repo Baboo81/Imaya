@@ -127,84 +127,319 @@
 
 {{-- Section : Créations --}}
 <section class="sectionCreation text-light text-center py-5">
-    <div class="container">
-        <h1 class="text-center text-muted sectionCreationTitle py-5">{{ $creations['mainTitle'] ?? '' }}</h1>
+        <div class="container">
+            <h1 class="text-center text-muted sectionCreationTitle py-5">{{ $creations['mainTitle'] ?? '' }}</h1>
 
-        @foreach ($creations['sections'] as $index => $section)
-            @if ($section['type'] === 'carousel')
-                <div class="card my-5 border-0 rounded-0">
-                    <div class="row gy-2 align-items-center">
-                        <div class="col-md-12">
-                            @php $carouselId = 'carouselCreation' . $index; @endphp
-                            <div id="{{ $carouselId }}" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
-                                <div class="carousel-indicators">
-                                    @foreach ($section['images'] as $imgIndex => $image)
-                                        <button type="button"
-                                            data-bs-target="#{{ $carouselId }}"
-                                            data-bs-slide-to="{{ $imgIndex }}"
-                                            class="{{ $imgIndex === 0 ? 'active' : '' }}"
-                                            aria-current="{{ $imgIndex === 0 ? 'true' : 'false' }}"
-                                            aria-label="Slide {{ $imgIndex + 1 }}">
-                                        </button>
-                                    @endforeach
+            @foreach ($creations['sections'] as $index => $section)
+                @if ($section['type'] === 'carousel')
+                    <div class="card my-5 border-0 rounded-0">
+                        <div class="row gy-2 align-items-center">
+                            <div class="col-md-12">
+                                @php $carouselId = 'carouselCreation' . $index; @endphp
+                                <div id="{{ $carouselId }}" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+                                    <div class="carousel-indicators">
+                                        @foreach ($section['images'] as $imgIndex => $image)
+                                            <button type="button"
+                                                data-bs-target="#{{ $carouselId }}"
+                                                data-bs-slide-to="{{ $imgIndex }}"
+                                                class="{{ $imgIndex === 0 ? 'active' : '' }}"
+                                                aria-current="{{ $imgIndex === 0 ? 'true' : 'false' }}"
+                                                aria-label="Slide {{ $imgIndex + 1 }}">
+                                            </button>
+                                        @endforeach
+                                    </div>
+
+                                    <div class="carousel-inner">
+                                        @foreach ($section['images'] as $imgIndex => $image)
+                                            <div class="carousel-item {{ $loop->first ? 'active' : '' }}">
+                                                <img src="{{ $image }}" class="d-block w-100 img-fluid rounded-3" alt="...">
+                                            </div>
+                                        @endforeach
+                                    </div>
+
+                                    <button class="carousel-control-prev" type="button" data-bs-target="#{{ $carouselId }}" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button" data-bs-target="#{{ $carouselId }}" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
                                 </div>
+                            </div>
 
-                                <div class="carousel-inner">
-                                    @foreach ($section['images'] as $imgIndex => $image)
-                                        <div class="carousel-item {{ $loop->first ? 'active' : '' }}">
-                                            <img src="{{ $image }}" class="d-block w-100 img-fluid rounded-3" alt="...">
+                            <div class="col-md-12">
+                                <div class="card-body">
+                                    <h4 class="card-title mb-4">{{ $section['title'] }}</h4>
+                                    <p class="card-text p-3">{{ $section['description'] }}</p>
+                                    @if (!empty($section['description2']))
+                                        <p class="card-text p-3">{{ $section['description2'] }}</p>
+                                    @endif
+                                    <p class="card-text">
+                                        <a href="#" class="text-muted btn">{{ $section['cta'] }}</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                @elseif ($section['type'] === 'imageText')
+                    <div class="card my-5 border-0 rounded-0 write">
+                        <div class="row my-5 align-items-center">
+                            <div class="col-md-6">
+                                <img src="{{ $section['image'] }}" class="img-fluid rounded-3" alt="...">
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card-body">
+                                    <h4 class="card-title mb-4">{{ $section['title'] }}</h4>
+                                    <ul class="list-group list-group-flush p-2 my-4">
+                                        @foreach ($section['items'] as $item)
+                                            <li class="list-group-item text-start BodoniFont text-muted">{{ $item }}</li>
+                                        @endforeach
+                                    </ul>
+                                    <p class="card-text">
+                                        <a href="#" class="text-muted btn">{{ $section['cta'] }}</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                @endif
+            @endforeach
+        </div>
+    </section>
+    {{-- Section : Créations END --}}
+
+    {{-- Anchor : Section activités --}}
+    <a id="Activités" href=""></a>
+
+    {{-- Section : Activités --}}
+    <section class="card-bloc py-5 text-light">
+                <div id="cards" class="container">
+                    <div class="row my-5">
+                        <h1 class="text-center mainTitles py-5">Les activités</h1>
+                        <article class="card-body">
+                            <div class="my-5">
+                                <h3 class="card-title whiteFont mb-5">Ateliers & collaborations</h3>
+                            </div>
+                            <ul class="list-group list-group-flush rounded-2">
+                                <li class="list-group-item DastinFont text-center fs-4">
+                                    <div class="row my-4 gy-4 align-items-center">
+                                        <h4>Cérémonies des plantes</h4>
+                                        <div class="col-12 col-md-4">
+                                            <img src="./assets/img/activités/profilActivités.JPG" alt=""
+                                                class="img-fluid rounded-3" style="max-height: 200px; object-fit: cover;">
                                         </div>
-                                    @endforeach
-                                </div>
-
-                                <button class="carousel-control-prev" type="button" data-bs-target="#{{ $carouselId }}" data-bs-slide="prev">
-                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                    <span class="visually-hidden">Previous</span>
-                                </button>
-                                <button class="carousel-control-next" type="button" data-bs-target="#{{ $carouselId }}" data-bs-slide="next">
-                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                    <span class="visually-hidden">Next</span>
-                                </button>
+                                        <div class="col-12 col-md-4">
+                                            <section>
+                                                <article>
+                                                    <p class="p-1">Pour avoir plus de précision (prix, programme,
+                                                        calendrier, ... ) sur l'atelier, n'hésitez pas à cliquer sur le
+                                                        bouton : en savoir ! En cliquant sur le bouton les informations
+                                                        seront visibles à l'écran et téléchargées sur votre ordinateur.</p>
+                                                </article>
+                                                <div class="mt-5">
+                                                    <a href="./assets/pdf/ateliers&collaborations/CérémonieDesPlantes.pdf"
+                                                        class="btn btn-order btn-lg me-5 rounded-5"
+                                                        download="Infos atelier">En savoir plus</a>
+                                                </div>
+                                            </section>
+                                        </div>
+                                        <div class="col-12 col-md-4">
+                                            <!--Slider Bootstrap5-->
+                                            <div id="bijouxSlider" class="carousel carousel-fade mx-auto my-3"
+                                                data-bs-ride="carousel">
+                                                <div class="carousel-inner rounded-2">
+                                                    <div class="carousel-item active">
+                                                        <img src="./assets/img/activités/ateliers&collaborations/cérémonieDesPlantes/cérémonie1.jpeg"
+                                                            class="d-block w-100" alt="Bijoux 1">
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img src="./assets/img/activités/ateliers&collaborations/cérémonieDesPlantes/cérémonie2.jpg"
+                                                            class="d-block w-100" alt="Bijoux 2">
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img src="./assets/img/activités/ateliers&collaborations/cérémonieDesPlantes/cérémonie3.jpg"
+                                                            class="d-block w-100" alt="Bijoux 3">
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img src="./assets/img/activités/ateliers&collaborations/cérémonieDesPlantes/cérémonie4.jpeg"
+                                                            class="d-block w-100" alt="Bijoux 3">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="list-group-item DastinFont text-center fs-4">
+                                    <div class="row my-4 gy-4 align-items-center">
+                                        <h4>Bijoux de l'âme</h4>
+                                        <div class="col-12 col-md-4">
+                                            <img src="./assets/img/activités/profilActivités.JPG" alt=""
+                                                class="img-fluid rounded-3" style="max-height: 200px; object-fit: cover;">
+                                        </div>
+                                        <div class="col-12 col-md-4">
+                                            <section>
+                                                <article>
+                                                    <p class="p-1">Pour avoir plus de précision (prix, programme,
+                                                        calendrier, ... ) sur l'atelier, n'hésitez pas à cliquer sur le
+                                                        bouton : en savoir ! En cliquant sur le bouton les informations
+                                                        seront visibles à l'écran et téléchargées sur votre ordinateur.</p>
+                                                </article>
+                                                <div class="mt-5">
+                                                    <a href="./assets/pdf/ateliers&collaborations/BijouxDeLAme.pdf"
+                                                        class="btn btn-order btn-lg me-5 rounded-5"
+                                                        download="Infos atelier">En savoir plus</a>
+                                                </div>
+                                            </section>
+                                        </div>
+                                        <div class="col-12 col-md-4">
+                                            <!--Slider Bootstrap5-->
+                                            <div id="bijouxSlider" class="carousel carousel-fade mx-auto my-3"
+                                                data-bs-ride="carousel">
+                                                <div class="carousel-inner rounded-2">
+                                                    <div class="carousel-item active">
+                                                        <img src="./assets/img/activités/ateliers&collaborations/bijoux/bijoux1.jpg"
+                                                            class="d-block w-100" alt="Bijoux 1">
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img src="./assets/img/activités/ateliers&collaborations/bijoux/bijoux2.jpg"
+                                                            class="d-block w-100" alt="Bijoux 2">
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img src="./assets/img/activités/ateliers&collaborations/bijoux/bijoux3.jpg"
+                                                            class="d-block w-100" alt="Bijoux 3">
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img src="./assets/img/activités/ateliers&collaborations/bijoux/bijoux4.jpg"
+                                                            class="d-block w-100" alt="Bijoux 3">
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img src="./assets/img/activités/ateliers&collaborations/bijoux/bijoux5.jpg"
+                                                            class="d-block w-100" alt="Bijoux 3">
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img src="./assets/img/activités/ateliers&collaborations/bijoux/bijoux6.jpg"
+                                                            class="d-block w-100" alt="Bijoux 3">
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img src="./assets/img/activités/ateliers&collaborations/bijoux/bijoux7.jpg"
+                                                            class="d-block w-100" alt="Bijoux 3">
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img src="./assets/img/activités/ateliers&collaborations/bijoux/bijoux8.jpg"
+                                                            class="d-block w-100" alt="Bijoux 3">
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img src="./assets/img/activités/ateliers&collaborations/bijoux/bijoux9.jpg"
+                                                            class="d-block w-100" alt="Bijoux 3">
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img src="./assets/img/activités/ateliers&collaborations/bijoux/bijoux10.jpg"
+                                                            class="d-block w-100" alt="Bijoux 3">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </article>
+                        <article class="card-body my-5 blocRetraites">
+                            <div class="my-5">
+                                <h3 class="card-title whiteFont mb-5">Retraites</h3>
                             </div>
-                        </div>
-
-                        <div class="col-md-12">
-                            <div class="card-body">
-                                <h4 class="card-title mb-4">{{ $section['title'] }}</h4>
-                                <p class="card-text p-3">{{ $section['description'] }}</p>
-                                <p class="card-text">
-                                    <a href="#" class="text-muted btn">{{ $section['cta'] }}</a>
-                                </p>
-                            </div>
-                        </div>
+                            <ul class="list-group list-group-flush rounded-2">
+                                <li class="list-group-item text-center">
+                                    <div class="row justify-content-center mt-4 text-center">
+                                        <h4 class="my-5">Le voyage de l'âme</h4>
+                                        <div class="retraiteImg w-100">
+                                            <img src="./assets/img/activités/retraites/voyageDeLame/Visualizza foto recenti.jpg"
+                                                alt="" class="img-half">
+                                        </div>
+                                        <section class="d-flex">
+                                            <article class="col-12 col-sm-6 col-lg-3 my-5">
+                                                <h5 class="mb-4">Le voyage de l'âme sur le 8 + en ligne</h5>
+                                                <div class="blocBtn">
+                                                    <a href="./assets/pdf/voyageDeLAme/retraiteNoto.pdf"
+                                                        class="btn btn-order btn-lg me-5 DastinFont rounded-5"
+                                                        download="Infos retraite à Noto">En savoir plus</a>
+                                                </div>
+                                            </article>
+                                            <article class="col-12 col-sm-6 col-lg-3 my-5">
+                                                <h5 class="mb-4">Le voyage de l'âme sur le 8</h5>
+                                                <div class="blocBtn">
+                                                    <a href="./assets/pdf/voyageDeLAme/retraiteMorv.pdf"
+                                                        class="btn btn-order btn-lg me-5 DastinFont rounded-5"
+                                                        download="Infos retraite Morvan">En savoir plus</a>
+                                                </div>
+                                            </article>
+                                            <article class="col-12 col-sm-6 col-lg-3 my-5">
+                                                <h5 class="mb-4">Le voyage de l'âme & le Fil de Soi</h5>
+                                                <div class="blocBtn">
+                                                    <a href="./assets/pdf/voyageDeLAme/retraiteSicile.pdf"
+                                                        class="btn btn-order btn-lg me-5 DastinFont rounded-5"
+                                                        download="Infos retraite Sicile">En savoir plus</a>
+                                                </div>
+                                            </article>
+                                            <article class="col-12 col-sm-6 col-lg-3 my-5">
+                                                <h5 class="mb-4">Le Voyage de l'Ame & l'Union Sacrée</h5>
+                                                <div class="blocBtn">
+                                                    <a href="./assets/pdf/voyageDeLAme/Union Sacrée .pdf"
+                                                        class="btn btn-order btn-lg me-5 DastinFont rounded-5"
+                                                        download="Infos voyage de l'âme en ligne">En savoir plus</a>
+                                                </div>
+                                            </article>
+                                        </section>
+                                    </div>
+                                </li>
+                                <li class="list-group-item text-center">
+                                    <div class="row justify-content-center mt-4 text-center">
+                                        <h4 class="my-5">Le soleil levant</h4>
+                                        <div class="retraiteImg w-100">
+                                            <img src="./assets/img/activités/retraites/soleilLevant/soleil.jpg" alt=""
+                                                class="img-half">
+                                        </div>
+                                        <section class="d-flex justify-content-center align-center">
+                                            <article class="col-12 col-sm-6 col-lg-3 my-5">
+                                                <h5 class="mb-4">Soleil levant</h5>
+                                                <div class="blocBtn">
+                                                    <a href="./assets/pdf/voyageDeLAme/retraiteNoto.pdf"
+                                                        class="btn btn-order btn-lg me-5 DastinFont rounded-5"
+                                                        download="Infos retraite à Noto">En savoir plus</a>
+                                                </div>
+                                            </article>
+                                        </section>
+                                    </div>
+                                </li>
+                                <li class="list-group-item text-center">
+                                    <div class="row justify-content-center mt-4 text-center">
+                                        <h4 class="my-5">Collaboration à la Wild Hearts Yoga retreat Sicily</h4>
+                                        <div class="retraiteImg w-100">
+                                            <img src="./assets/img/activités/retraites/wildHeartsYoga/wildHearts.jpg" alt=""
+                                                class="img-half">
+                                        </div>
+                                        <section class="d-flex justify-content-center align-center">
+                                            <article class="col-12 col-sm-6 col-lg-3 my-5">
+                                                <h5 class="mb-4">Wild Haerts Yoga retreat Sicily</h5>
+                                                <div class="blocBtn">
+                                                    <a href="./assets/pdf/voyageDeLAme/retraiteNoto.pdf"
+                                                        class="btn btn-order btn-lg me-5 DastinFont rounded-5"
+                                                        download="Infos retraite à Noto">En savoir plus</a>
+                                                </div>
+                                            </article>
+                                        </section>
+                                    </div>
+                                </li>
+                            </ul>
+                        </article>
                     </div>
                 </div>
-            @elseif ($section['type'] === 'imageText')
-                <div class="card my-5 border-0 rounded-0 write">
-                    <div class="row my-5 align-items-center">
-                        <div class="col-md-6">
-                            <img src="{{ $section['image'] }}" class="img-fluid rounded-3" alt="...">
-                        </div>
-                        <div class="col-md-6">
-                            <div class="card-body">
-                                <h4 class="card-title mb-4">{{ $section['title'] }}</h4>
-                                <ul class="list-group list-group-flush p-2 my-4">
-                                    @foreach ($section['items'] as $item)
-                                        <li class="list-group-item text-start BodoniFont text-muted">{{ $item }}</li>
-                                    @endforeach
-                                </ul>
-                                <p class="card-text">
-                                    <a href="#" class="text-muted btn">{{ $section['cta'] }}</a>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            @endif
-        @endforeach
-    </div>
-</section>
-{{-- Section : Créations END --}}
+            </section>
+    {{-- Section : Activités END--}}
 
-        
-        @endsection
+
+
+
+
+
+@endsection
