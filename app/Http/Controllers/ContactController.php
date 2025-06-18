@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Contact;
 use Illuminate\Http\Request;
 
 class ContactController extends Controller
@@ -21,6 +22,7 @@ class ContactController extends Controller
         Contact::create($validated);
 
         //Redirection avec message de succès
-        return redirect()->back()->with('success', 'Merci pour votre message, je vous répondrai bientôt !');
+        return redirect()->to(url()->previous() . '#contact-form')->with('success', 'Merci pour votre message, je vous répondrai bientôt !');
+
     }
 }

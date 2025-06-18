@@ -33,8 +33,14 @@ window.addEventListener('scroll', () => {
   }
 
 });
-
-
+///////////////////////////////  END /////////////////////////
+setTimeout(function() {
+    let alert = document.getAnimations('success-message');
+    if (alert) {
+        alert.classList.remove('show');
+        alert.classList.add('fade');
+    }
+}, 4000);
 ///////////////////////////////  END /////////////////////////
 
 //Footer map:

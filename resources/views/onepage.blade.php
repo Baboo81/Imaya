@@ -447,8 +447,8 @@
             <div class="row">
                 <div class="col-12">
                     <h1 class="text-center text-muted mainTitles py-5">Comment me contacter ?</h1>
-                        <form class="rounded-5 p-5 d-flex align-items-center justify-content-center" action="{{ 'contact.store' }}"
-                              method="POST">
+                        <form class="rounded-5 p-5 d-flex align-items-center justify-content-center" action="{{ route('contact.store')  }}"
+                              method="POST" id="contact-form">
                               @csrf
                             <div class="col-md-12 col-12 my-5 p-5">
                                 <div class="mb-3">
@@ -492,14 +492,14 @@
                                     </div>
                                 </div>
                                 <div class="text-center my-5">
-                                    <button type="submit"
-                                                class="btn btn-order rounded-5 DastinFont">Envoyer</button>
+                                    <button type="submit" class="btn btn-order rounded-5 DastinFont">Envoyer</button>
                                 </div>
                             </div>
                             {{-- Msg de confirmation si l'envoi est ok --}}
                             @if (session('success'))
-                                <div class="alert alert-success">
+                                <div class="alert alert-success alert-dismissible fade show mt-3" role="alert" id="success-message">
                                     {{ session('success') }}
+                                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                                 </div>
                             @endif
                         </form>
