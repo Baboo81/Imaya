@@ -91,197 +91,34 @@
 
     {{-- Section : Soins --}}
     <section class="soins py-5 text-light">
-                <div class="container py-5">
-                    <h1 class="text-center mainTitles py-5 my-5">{{ $data['soins']['mainTitle'] ?? '' }}</h1>
-                    <div class="row g-4 justify-content-center">
-                        <!-- Card 1 : gauche -->
-                        <div class="col-12 col-md-8 mb-5 card-wrapper card-left">
-                            <div class="card h-100">
-                                <img src="{{ $data['soins']['imgCard1'] ??  '' }}" class="card-img-top" alt="Soin énergétique">
-                                <div class="card-body d-flex flex-column text-center text-muted">
-                                    <h2 class="card-title text-muted fs-2 my-4">{{ $data['soins']['titleCard1'] ??  '' }}</h2>
-                                    <article class="my-2">
-                                        <p class="card-text flex-grow-1">
-                                            {{ $data['soins']['txtCard1'] ??  '' }}
-                                        </p>
-                                        <section class="my-5">
-                                            <div class="my-5">
-                                                <h3 class="fw-bolder mb-3">
-                                                    {{ $data['soins']['subTitle1'] ??  '' }}
-                                                </h3>
-                                                <p>{{ $data['soins']['subTxt1'] ??  '' }}</p>
+        <div class="container py-5">
+            <h1 class="text-center mainTitles py-5 my-5">{{ $data['soins']['mainTitle'] ?? '' }}</h1>
+            <div class="row g-4 justify-content-center">
+                @foreach($data['soins']['cards'] as $index => $card)
+                    <div class="col-12 col-md-8 mb-5 card-wrapper {{ $index % 2 === 0 ? 'card-left' : 'card-right' }}">
+                        <div class="card h-100">
+                            <img src="{{ $card['img'] }}" class="card-img-top"
+                                alt="{{ $card['title'] }}"
+                                @if($index === 2) style="height: 250px; object-fit: cover; object-position: 50% 20%;" @endif>
+                            <div class="card-body d-flex flex-column text-center text-muted">
+                                <h2 class="card-title text-muted fs-2 my-4">{{ $card['title'] }}</h2>
+                                <article class="my-2">
+                                    <p class="card-text flex-grow-1">{{ $card['text'] }}</p>
+                                    <section class="my-5">
+                                        @foreach($card['details'] as $detail)
+                                            <div class="my-4">
+                                                <h3 class="fw-bolder mb-2">{{ $detail['title'] }}</h3>
+                                                <p>{!! $detail['text'] !!}</p>
                                             </div>
-                                            <div class="my-5">
-                                                <h3 class="fw-bolder mb-3">
-                                                    {{ $data['soins']['subTitle2'] ??  '' }}
-                                                </h3>
-                                                <p>{{ $data['soins']['subTxt2'] ??  '' }}</p>
-                                            </div>
-                                            <div class="my-5">
-                                                <h3 class="fw-bolder mb-3">
-                                                    {{ $data['soins']['subTitle3'] ??  '' }}
-                                                </h3>
-                                                <p>{{ $data['soins']['subTxt3'] ??  '' }}</p>
-                                            </div>
-                                        </section>
-                                    </article>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Card 2 : droite -->
-                        <div class="col-12 col-md-8 mb-5 card-wrapper card-right">
-                            <div class="card h-100">
-                                <img src="{{ $data['soins']['imgCard2'] ?? '' }}" class="card-img-top" alt="Massage vibratoire">
-                                <div class="card-body d-flex flex-column text-center text-muted">
-                                    <h2 class="card-title text-muted fs-2 my-4">{{ $data['soins']['titleCard2'] ?? '' }}</h2>
-                                    <article class="my-2">
-                                        <p class="card-text flex-grow-1">
-                                            {{ $data['soins']['txtCard2'] ?? '' }}
-                                        </p>
-                                        <section class="my-5">
-                                            <div class="my-5">
-                                                <h3 class="fw-bolder mb-3">{{ $data['soins']['subTitle1Card2'] ?? '' }}</h3>
-                                                <p>
-                                                    {{ $data['soins']['subTxt1Card2'] ?? '' }}
-                                                </p>
-                                            </div>
-                                            <div class="my-5">
-                                                <h3 class="fw-bolder mb-3">{{ $data['soins']['subTitle2Card2'] ?? '' }}</h3>
-                                                <p>
-                                                    {{ $data['soins']['subTxt2Card2'] ?? '' }}
-                                                </p>
-                                            </div>
-                                            <div class="my-5">
-                                                <h3 class="fw-bolder mb-3">{{ $data['soins']['subTitle3Card2'] ?? '' }}</h3>
-                                                <p>
-                                                    {{ $data['soins']['subTxt3Card2'] ?? '' }}
-                                                </p>
-                                            </div>
-                                        </section>
-                                    </article>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Card 3 : gauche -->
-                        <div class="col-12 col-md-8 mb-5 card-wrapper card-left">
-                            <div class="card h-100">
-                                <img src="./assets/img/cards/cards3.jpg" class="card-img-top"
-                                    alt="Accompagnement thérapeutique" style="height: 250px; object-fit: cover; object-position: 50% 20%;">
-                                <div class="card-body d-flex flex-column text-center text-muted">
-                                    <h2 class="card-title text-muted fs-2 my-4">Accompagnement thérapeutique</h2>
-                                    <article class="my-2">
-                                        <p class="card-text flex-grow-1">Par le verbe enraciné dans les outils de la
-                                            psychologie des profondeurs...</p>
-                                        <section class="my-5">
-                                            <div class="my-5">
-                                                <h3 class="fw-bolder mb-3">Lieu</h3>
-                                                <p>Á Bruxelles et en Sicile</p>
-                                            </div>
-                                            <div class="my-5">
-                                                <h3 class="fw-bolder mb-3">Durée 1ère séance</h3>
-                                                <p>2h</p>
-                                            </div>
-                                            <div class="my-5">
-                                                <h3 class="fw-bolder mb-3">Prix</h3>
-                                                <p>130 &euro;</p>
-                                            </div>
-                                            <div class="my-5">
-                                                <h3 class="fw-bolder mb-3">À partir de la 2e séance :</h3>
-                                                <p>1h30</p>
-                                            </div>
-                                            <div class="my-5">
-                                                <h3 class="fw-bolder mb-3">Prix</h3>
-                                                <p>110 &euro;</p>
-                                            </div>
-                                        </section>
-                                    </article>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Card 4 : droite -->
-                        <div class="col-12 col-md-8 mb-5 card-wrapper card-right">
-                            <div class="card h-100">
-                                <img src="./assets/img/cards/cards4.jpg" class="card-img-top" alt="Méditation">
-                                <div class="card-body d-flex flex-column text-center text-muted">
-                                    <h2 class="card-title text-muted fs-2 my-4">Méditation</h2>
-                                    <article class="my-2">
-                                        <p class="card-text flex-grow-1">En petit groupe de max 6 personnes, cet atelier a
-                                            pour intention d’emprunter cette voie ancestrale de connaissance de soi qu’est
-                                            la méditation...</p>
-                                        <section class="my-5">
-                                            <div class="my-5">
-                                                <h3 class="fw-bolder mb-3">Lieu</h3>
-                                                <p>Á Bruxelles et en Sicile</p>
-                                            </div>
-                                            <div class="my-5">
-                                                <h3 class="fw-bolder mb-3">Durée</h3>
-                                                <p>2h</p>
-                                            </div>
-                                            <div class="my-5">
-                                                <h3 class="fw-bolder mb-3">Prix</h3>
-                                                <p>35 &euro;</p>
-                                            </div>
-                                        </section>
-                                    </article>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Card 5 : gauche -->
-                        <div class="col-12 col-md-8 mb-5 card-wrapper card-left">
-                            <div class="card h-100">
-                                <img src="./assets/img/cards/cards5.jpg" class="card-img-top" alt="Soin de l'âme">
-                                <div class="card-body d-flex flex-column text-center text-muted">
-                                    <h2 class="card-title text-muted fs-2 my-4">Soin de l'âme</h2>
-                                    <article class="my-2">
-                                        <p class="card-text flex-grow-1">Soutenu par la transe, ce soin est un dialogue avec
-                                            l’âme...</p>
-                                        <section class="my-5">
-                                            <div class="my-5">
-                                                <h3 class="fw-bolder mb-3">Lieu</h3>
-                                                <p>Á Bruxelles et en Sicile</p>
-                                            </div>
-                                            <div class="my-5">
-                                                <h3 class="fw-bolder mb-3">Durée</h3>
-                                                <p>1h30</p>
-                                            </div>
-                                            <div class="my-5">
-                                                <h3 class="fw-bolder mb-3">Prix</h3>
-                                                <p>110 &euro;</p>
-                                            </div>
-                                        </section>
-                                    </article>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Card 6 : droite -->
-                        <div class="col-12 col-md-8 mb-5 card-wrapper card-right">
-                            <div class="card h-100">
-                                <img src="./assets/img/soins/BainSonor.PNG" class="card-img-top" alt="Bain sonore">
-                                <div class="card-body d-flex flex-column text-center text-muted">
-                                    <h2 class="card-title text-muted fs-2 my-4">Bain sonore</h2>
-                                    <article class="my-2">
-                                        <p class="card-text flex-grow-1">En cercle de max 12 personnes dans une yourte
-                                            mongole, ce soin vibratoire est une immersion dans l’univers des sons...</p>
-                                        <section class="my-5">
-                                            <div class="my-5">
-                                                <h3 class="fw-bolder mb-3">Lieu</h3>
-                                                <p>En Sicile</p>
-                                            </div>
-                                            <div class="my-5">
-                                                <h3 class="fw-bolder mb-3">Durée</h3>
-                                                <p>1h30</p>
-                                            </div>
-                                            <div class="my-5">
-                                                <h3 class="fw-bolder mb-3">Prix</h3>
-                                                <p> &euro;</p>
-                                            </div>
-                                        </section>
-                                    </article>
-                                </div>
+                                        @endforeach
+                                    </section>
+                                </article>
                             </div>
                         </div>
                     </div>
-                </div>
-            </section>
+                @endforeach
+            </div>
+        </div>
+    </section>
 
 @endsection

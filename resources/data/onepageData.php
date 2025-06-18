@@ -48,33 +48,70 @@ return [
                         pour des consultations et des soins individuels, des ateliers et des retraites.',
         ],
     'soins' => [
-        'mainTitle' => 'Les Soins',
-        //Card 1
-        'imgCard1' => '/assets/img/soins/card1.jpg',
-        'titleCard1' => 'Soin énergétique',
-        'txtCard1' => 'Ce soin issu du Reiki régénère le système nerveux
-                       et renforce la vitalité. Il harmonise le corps et l’esprit et se reçoit habillé.',
-        'subTitle1' => 'Lieu',
-        'subTxt1' => 'Bruxelles & Sicile',
-        'subTitle2' => 'Durée',
-        'subTxt2' => '1h30',
-        'subTitle3' => 'Prix',
-        'subTxt3' => '110 &euro;',
-
-        //Card 2
-        'imgCard2' => '/assets/img/soins/card2.jpg',
-        'titleCard2' => 'Massage vibratoire',
-        'txtCard2' => 'Par un toucher à la fois ferme et doux, ce massage
-                       à l’huile libère les tensions logées dans les profondeurs du corps et de
-                       l’esprit. Il est enrichi et accompagné des vibrations du chant intuitif...',
-        'subTitle1Card2' => 'Lieu',
-        'subTxt1Card2' => 'Á Bruxelles et en Sicile',
-        'subTitle2Card2' => 'Durée',
-        'subTxt2Card2' => '1h30',
-        'subTitle3Card2' => 'Prix',
-        'subTxt3Card2' => '110 &euro;',
-
-        //Card 3
-
+            'mainTitle' => 'Les Soins',
+            'cards' => [
+                [
+                    'img' => '/assets/img/soins/card1.jpg',
+                    'title' => 'Soin énergétique',
+                    'text' => 'Ce soin issu du Reiki régénère le système nerveux et renforce la vitalité. Il harmonise le corps et l’esprit et se reçoit habillé.',
+                    'details' => [
+                        ['title' => 'Lieu', 'text' => 'Bruxelles & Sicile'],
+                        ['title' => 'Durée', 'text' => '1h30'],
+                        ['title' => 'Prix', 'text' => '110 &euro;'],
+                    ],
+                ],
+                [
+                    'img' => '/assets/img/soins/card2.jpg',
+                    'title' => 'Massage vibratoire',
+                    'text' => 'Par un toucher à la fois ferme et doux, ce massage à l’huile libère les tensions logées dans les profondeurs du corps et de l’esprit. Il est enrichi et accompagné des vibrations du chant intuitif...',
+                    'details' => [
+                        ['title' => 'Lieu', 'text' => 'À Bruxelles et en Sicile'],
+                        ['title' => 'Durée', 'text' => '1h30'],
+                        ['title' => 'Prix', 'text' => '110 &euro;'],
+                    ],
+                ],
+                [
+                    'img' => '/assets/img/soins/card3.jpg',
+                    'title' => 'Accompagnement thérapeutique',
+                    'text' => 'Par le verbe enraciné dans les outils de la psychologie des profondeurs...',
+                    'details' => [
+                        ['title' => 'Lieu', 'text' => 'À Bruxelles et en Sicile'],
+                        ['title' => 'Durée 1ère séance', 'text' => '2h'],
+                        ['title' => 'Prix', 'text' => '130 &euro;'],
+                        ['title' => 'À partir de la 2e séance :', 'text' => '1h30'],
+                        ['title' => 'Prix', 'text' => '110 &euro;'],
+                    ],
+                ],
+                [
+                    'img' => '/assets/img/soins/card4.jpg',
+                    'title' => 'Méditation',
+                    'text' => 'En petit groupe de max 6 personnes, cet atelier a pour intention d’emprunter cette voie ancestrale de connaissance de soi qu’est la méditation...',
+                    'details' => [
+                        ['title' => 'Lieu', 'text' => 'À Bruxelles et en Sicile'],
+                        ['title' => 'Durée', 'text' => '2h'],
+                        ['title' => 'Prix', 'text' => '35 &euro;'],
+                    ],
+                ],
+                [
+                    'img' => '/assets/img/soins/card5.jpg',
+                    'title' => 'Soin de l\'âme',
+                    'text' => 'Soutenu par la transe, ce soin est un dialogue avec l’âme...',
+                    'details' => [
+                        ['title' => 'Lieu', 'text' => 'À Bruxelles et en Sicile'],
+                        ['title' => 'Durée', 'text' => '1h30'],
+                        ['title' => 'Prix', 'text' => '110 &euro;'],
+                    ],
+                ],
+                [
+                    'img' => '/assets/img/soins/card6.PNG',
+                    'title' => 'Bain sonore',
+                    'text' => 'En cercle de max 12 personnes dans une yourte mongole, ce soin vibratoire est une immersion dans l’univers des sons...',
+                    'details' => [
+                        ['title' => 'Lieu', 'text' => 'En Sicile'],
+                        ['title' => 'Durée', 'text' => '1h30'],
+                        ['title' => 'Prix', 'text' => '&euro;'],
+                    ],
+                ],
+            ],
         ],
     ];
