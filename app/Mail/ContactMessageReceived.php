@@ -16,9 +16,9 @@ class ContactMessageReceived extends Mailable
     /**
      * Create a new message instance.
      */
-    public function __construct()
+    public function __construct(array $data)
     {
-        //
+        $this->data = $data;
     }
 
     /**
@@ -37,7 +37,8 @@ class ContactMessageReceived extends Mailable
     public function content(): Content
     {
         return new Content(
-            view: 'view.name',
+            view: 'emails.contact-message',
+            with: ['data' => $this->data]
         );
     }
 

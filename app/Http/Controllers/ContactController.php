@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use App\Models\Contact;
 use Illuminate\Http\Request;
+use App\Mail\ContactMessageReceived;
+use Illuminate\Support\Facades\Mail;
 
 class ContactController extends Controller
 {
@@ -17,6 +19,18 @@ class ContactController extends Controller
             'email' => 'required|email|max:255',
             'message' => 'required|string',
         ]);
+
+        //Préparer les données à envoyer ds le mail
+        $data = [
+            'name' => $validated['name'],
+            'firstName' => $validated['firstName'],
+            'tel' => $validated['tel'],
+            'email' => $validated['email'],
+            'message' => $validated['message'],
+        ];
+
+        //Envoyer par email à ma cliente
+         Mail::to('chrisrodriguez@hotmail.be')->send(new ContactMessageReceived($data));
 
         //Enregistrement dans la DB
         Contact::create($validated);
