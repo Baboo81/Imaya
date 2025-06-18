@@ -13,6 +13,7 @@ class ContactMessageReceived extends Mailable
 {
     use Queueable, SerializesModels;
 
+    public array $data;
     /**
      * Create a new message instance.
      */
