@@ -114,4 +114,49 @@ return [
                 ],
             ],
         ],
+    'creations' => [
+            'mainTitle' => 'Les créations',
+            'sections' => [
+                [
+                    'type' => 'carousel',
+                    'title' => 'Dessins vibratoires',
+                    'description' => "Le dessin réalisé en état de transe se propose ici telle une mise en ondes [...] harmonise ainsi le niveau vibratoire.",
+                    'cta' => 'Les dessins vibratoires sont disponibles sur commande',
+                    'images' => [
+                        '/assets/img/créations/dessinsVib/Alchimia11.jpeg',
+                        '/assets/img/créations/dessinsVib/Alma1.jpeg',
+                        '/assets/img/créations/dessinsVib/Amnesia e Memoria3.jpeg',
+                        '/assets/img/créations/dessinsVib/Feminae5.jpeg',
+                        '/assets/img/créations/dessinsVib/Imayah6.jpeg',
+                        '/assets/img/créations/dessinsVib/Immensità7.jpeg',
+                        '/assets/img/créations/dessinsVib/Isis Lumière Amen4.jpeg',
+                        '/assets/img/créations/dessinsVib/Luminescence8.jpeg',
+                        '/assets/img/créations/dessinsVib/Nirmayah9.jpeg',
+                        '/assets/img/créations/dessinsVib/Or Numéa Isis Hoden12.jpeg',
+                        '/assets/img/créations/dessinsVib/Yarinah2.jpeg',
+                        '/assets/img/créations/dessinsVib/Yurta10.jpeg',
+                    ],
+                ],
+                [
+                    'type' => 'carousel',
+                    'title' => 'Illustrations & peintures',
+                    'description' => "Les illustrations s’invitent au gré des rencontres [...] au service de l’harmonie.",
+                    'cta' => 'Les illustrations et les peintures sont disponibles sur commande',
+                    'images' => [
+                        '/assets/img/créations/peintures/peinture1.jpg',
+                    ],
+                ],
+                [
+                    'type' => 'imageText',
+                    'title' => 'Écriture',
+                    'image' => '/assets/img/créations/écritures/écritures.jpg',
+                    'items' => [
+                        '"Passage" (trimestriel) en collaboration avec Jessica Dell\'Utri',
+                        '"Les voies de l\'inconnu" œuvre en état de transe',
+                    ],
+                    'cta' => 'Les publications sont disponibles sur commande',
+                ],
+            ],
+        ],
+
     ];

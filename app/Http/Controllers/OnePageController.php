@@ -11,6 +11,7 @@ class OnePageController extends Controller
 
         //Inclure les data
         $data = include resource_path('data/onepageData.php');
+        $creations = include resource_path('data/onepageData.php');
 
         return view('onepage' , [
             'pageTitle' => 'Imayah',
@@ -19,6 +20,7 @@ class OnePageController extends Controller
             'resetCss' => 'assets/css/reset.css',
             'customCss' => 'assets/css/onePage.css',
             'data' => $data,
+            'creations' => $data['creations'],
         ]);
     }
 }
