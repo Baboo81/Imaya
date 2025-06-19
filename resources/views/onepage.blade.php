@@ -23,7 +23,6 @@
                     <div>{{ $data['accueil']['mainTitle1'] ?? '' }}</div>
                     <div class="name">
                         <div>{{ $data['accueil']['mainTitle2'] ?? '' }}</div>
-                        <div>{{ $data['accueil']['mainTitle3'] ?? '' }}</div>
                     </div>
                 </div>
             </div>
@@ -438,12 +437,28 @@
         </section>
     {{-- Section : Activités END--}}
 
-    {{-- Anchor : Section Contact --}}
-    <a id="Contact" href=""></a>
+    {{-- Anchor : Section Casa Imayah --}}
+    <a id="CasaImayah" href=""></a>
 
-    {{-- Section : Contact --}}
+    {{-- Section : Casa Imayah --}}
     <section class="sectionContact py-5">
         <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="text-center text-muted mainTitles py-5">Découvrez Casa Imayah en Sicile</h1>
+                        
+                </div>
+            </div>
+        </div>
+    </section>
+    {{-- Section : Casa Imayah END--}}
+
+    {{-- Anchor : Section Contact --}}
+    <a id="CasaImayah" href=""></a>
+
+    {{-- Section : Contact --}}
+    <section class="card-contact">
+        <div id="cards" class="container">
             <div class="row">
                 <div class="col-12">
                     <h1 class="text-center text-muted mainTitles py-5">Comment me contacter ?</h1>
@@ -506,15 +521,6 @@
                     </div>
                 </div>
             </div>
-        </section>
-        <section class="card-contact">
-
-        </section>
+    </section>
     {{-- Section : Contact END--}}
-
-
-
-
-
-
 @endsection

@@ -38,7 +38,7 @@
                 <ul class="nav flex-column">
                     <h4 class="mb-5">Mail</h4>
                     <p>Envoyez-moi un email en cliquant ci-dessous</p>
-                    <a href="mailto:casaimayah.it" class="text-dark fs-4">
+                    <a href="mailto:imayah@ecomail.fr" class="text-dark fs-4">
                         <i class="fas fa-envelope"></i>
                     </a>
                 </ul>
