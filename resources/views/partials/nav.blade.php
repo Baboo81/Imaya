@@ -31,6 +31,9 @@
                                 <a class="nav-link" aria-current="page" href="#Activités">Les activités</a>
                             </li>
                             <li class="nav-item pe-5">
+                                <a class="nav-link" aria-current="page" href="#CasaImayah">Casa Imayah</a>
+                            </li>
+                            <li class="nav-item pe-5">
                                 <a class="nav-link" aria-current="page" href="#Contact">Contact</a>
                             </li>
                             <li class="nav-item pe-5 d-flex">

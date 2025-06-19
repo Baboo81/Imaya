@@ -15,10 +15,7 @@
 <section class="banner pt-5">
     <div class="container my-5 py-5">
         <div class="row align-items-center justify-content-center">
-            <div class="col-md-6">
-                
-            </div>
-            <div class="col-md-6 casaImayahTitle d-flex flex-column justify-content-center align-items-center">
+            <div class="col-md-12 casaImayahTitle d-flex flex-column justify-content-center align-items-center">
                 <div class="bannerTitle text-center">
                     <div>{{ $data['accueil']['mainTitle1'] ?? '' }}</div>
                     <div class="name">
@@ -442,27 +439,44 @@
 
     {{-- Section : Casa Imayah --}}
     <section class="sectionContact py-5">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <h1 class="text-center text-muted mainTitles py-5">Découvrez Casa Imayah en Sicile</h1>
-                        
-                </div>
+        <h1 class="text-center text-muted mainTitles py-5 my-5">Découvrez Casa Imayah en Sicile</h1>
+        <div class="w-100">
+            <div class="casaImayahBanner">
+                
             </div>
         </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 my-5">
+                    <article class="my-5">
+                        <p class="text-center text-muted p-5">
+                           "Nous vous invitons à entrer dans notre aventure, un espace pensé pour vous offrir du repos, des retraites ressourçantes, une reconnexion profonde, des instants de partage et une touche d’inspiration… le tout dans une simplicité sincère et apaisante.
+                            Envie de vous ressourcer dans un havre de paix ? Vous êtes au bon endroit." 
+                        </p>
+                        <p class="text-center text-muted">
+                           Pour visiter le site web : Casa Imayah, n'hésitez pas cliquer sur le bouton ci-dessous !
+                        </p>
+                    </article>
+                    <div class="mt-5 d-flex align-items-center justify-content-center">
+                        <a href="https://www.casaimayah.it"
+                           class="btn btn-order btn-lg me-5 rounded-5 DastinFont"
+                           download="Infos atelier">Allers vers le site Casa Imayah</a>
+                    </div>
+                </div>
+            </div>
     </section>
     {{-- Section : Casa Imayah END--}}
 
     {{-- Anchor : Section Contact --}}
-    <a id="CasaImayah" href=""></a>
+    <a id="Contact" href=""></a>
 
     {{-- Section : Contact --}}
     <section class="card-contact">
         <div id="cards" class="container">
             <div class="row">
                 <div class="col-12">
-                    <h1 class="text-center text-muted mainTitles py-5">Comment me contacter ?</h1>
-                        <form class="rounded-5 p-5 d-flex align-items-center justify-content-center" action="{{ route('contact.store')  }}"
+                    <h1 class="text-center mainTitles py-5 my-5">Comment me contacter ?</h1>
+                        <form class="rounded-5 border p-5 d-flex align-items-center justify-content-center" action="{{ route('contact.store')  }}"
                               method="POST" id="contact-form">
                               @csrf
                             <div class="col-md-12 col-12 my-5 p-5">

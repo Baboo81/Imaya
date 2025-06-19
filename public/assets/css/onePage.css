@@ -460,6 +460,18 @@ section .picture
 }
 /* END */
 
+/* Section : Casa Imayah*/
+.casaImayahBanner
+{
+  width: 100%;
+  height: 500px;
+  background-image: url('/assets/img/casaImayah/CasaImayah.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+/* Section : Casa Imayah END*/
+
 /* Section :  sectionContact*/
 .sectionContact
 {
@@ -470,6 +482,7 @@ label
 {
   font-family: 'Dastin', sans-serif;
   font-size: 1.2rem;
+  color: var(--beige);
 }
 
 input::placeholder,
