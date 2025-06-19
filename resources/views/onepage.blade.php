@@ -123,11 +123,37 @@
 
 {{-- Section : Créations --}}
 <section class="sectionCreation text-light text-center py-5">
-        <div class="container">
-            <h1 class="text-center text-muted sectionCreationTitle py-5">{{ $creations['mainTitle'] ?? '' }}</h1>
+    
+        <h1 class="text-center text-muted sectionCreationTitle py-5">{{ $creations['mainTitle'] ?? '' }}</h1>
 
-            @foreach ($creations['sections'] as $index => $section)
-                @if ($section['type'] === 'carousel')
+        @foreach ($creations['sections'] as $index => $section)
+            @if ($section['type'] === 'carousel')
+                @if ($loop->first)
+                    {{-- ✅ Slider horizontal personnalisé pour le premier bloc --}}
+                    <div class="card my-5 border-0 rounded-0">
+                        <div class="slider-container">
+                            <div class="slider-track">
+                                @foreach ($section['images'] as $image)
+                                    <div class="slider-item">
+                                        <img src="{{ $image }}" class="img-fluid rounded-3" alt="Création">
+                                    </div>
+                                @endforeach
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title mb-4">{{ $section['title'] }}</h4>
+                            <p class="card-text p-3">{{ $section['description'] }}</p>
+                            @if (!empty($section['description2']))
+                                <p class="card-text p-3">{{ $section['description2'] }}</p>
+                            @endif
+                            <p class="card-text">
+                                <a href="#" class="text-muted btn">{{ $section['cta'] }}</a>
+                            </p>
+                        </div>
+                    </div>
+                @else
+                <div class="container">
+                    {{-- Carousel Bootstrap pour les autres --}}
                     <div class="card my-5 border-0 rounded-0">
                         <div class="row gy-2 align-items-center">
                             <div class="col-md-12">
@@ -136,11 +162,11 @@
                                     <div class="carousel-indicators">
                                         @foreach ($section['images'] as $imgIndex => $image)
                                             <button type="button"
-                                                data-bs-target="#{{ $carouselId }}"
-                                                data-bs-slide-to="{{ $imgIndex }}"
-                                                class="{{ $imgIndex === 0 ? 'active' : '' }}"
-                                                aria-current="{{ $imgIndex === 0 ? 'true' : 'false' }}"
-                                                aria-label="Slide {{ $imgIndex + 1 }}">
+                                                    data-bs-target="#{{ $carouselId }}"
+                                                    data-bs-slide-to="{{ $imgIndex }}"
+                                                    class="{{ $imgIndex === 0 ? 'active' : '' }}"
+                                                    aria-current="{{ $imgIndex === 0 ? 'true' : 'false' }}"
+                                                    aria-label="Slide {{ $imgIndex + 1 }}">
                                             </button>
                                         @endforeach
                                     </div>
@@ -148,7 +174,7 @@
                                     <div class="carousel-inner">
                                         @foreach ($section['images'] as $imgIndex => $image)
                                             <div class="carousel-item {{ $loop->first ? 'active' : '' }}">
-                                                <img src="{{ $image }}" class="d-block w-100 img-fluid rounded-3" alt="...">
+                                                <img src="{{ $image }}" class="d-block w-100 img-fluid rounded-3" alt="Création">
                                             </div>
                                         @endforeach
                                     </div>
@@ -163,7 +189,6 @@
                                     </button>
                                 </div>
                             </div>
-
                             <div class="col-md-12">
                                 <div class="card-body">
                                     <h4 class="card-title mb-4">{{ $section['title'] }}</h4>
@@ -178,32 +203,34 @@
                             </div>
                         </div>
                     </div>
-                @elseif ($section['type'] === 'imageText')
-                    <div class="card my-5 border-0 rounded-0 write">
-                        <div class="row my-5 align-items-center">
-                            <div class="col-md-6">
-                                <img src="{{ $section['image'] }}" class="img-fluid rounded-3" alt="...">
-                            </div>
-                            <div class="col-md-6">
-                                <div class="card-body">
-                                    <h4 class="card-title mb-4">{{ $section['title'] }}</h4>
-                                    <ul class="list-group list-group-flush p-2 my-4">
-                                        @foreach ($section['items'] as $item)
-                                            <li class="list-group-item text-start BodoniFont text-muted">{{ $item }}</li>
-                                        @endforeach
-                                    </ul>
-                                    <p class="card-text">
-                                        <a href="#" class="text-muted btn">{{ $section['cta'] }}</a>
-                                    </p>
-                                </div>
+                @endif
+            @elseif ($section['type'] === 'imageText')
+                {{-- Bloc image + texte --}}
+                <div class="card my-5 border-0 rounded-0 write">
+                    <div class="row my-5 align-items-center">
+                        <div class="col-md-6">
+                            <img src="{{ $section['image'] }}" class="img-fluid rounded-3" alt="Image texte">
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card-body">
+                                <h4 class="card-title mb-4">{{ $section['title'] }}</h4>
+                                <ul class="list-group list-group-flush p-2 my-4">
+                                    @foreach ($section['items'] as $item)
+                                        <li class="list-group-item text-start BodoniFont text-muted">{{ $item }}</li>
+                                    @endforeach
+                                </ul>
+                                <p class="card-text">
+                                    <a href="#" class="text-muted btn">{{ $section['cta'] }}</a>
+                                </p>
                             </div>
                         </div>
                     </div>
-                @endif
-            @endforeach
-        </div>
-    </section>
-    {{-- Section : Créations END --}}
+                </div>
+            @endif
+        @endforeach
+    </div>
+</section>
+{{-- Section : Créations END --}}
 
     {{-- Anchor : Section activités --}}
     <a id="Activités" href=""></a>

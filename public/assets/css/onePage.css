@@ -16,6 +16,7 @@
 {
     --noir: #000;
     --beige : #f0eee9;
+    --beige2 : #ebe7e0;
     --blanc : #ffffff;
     --jaune : #fffede;
     --orange : #feae62;
@@ -302,86 +303,17 @@ section .bannerTitle
 /*Section création*/
 .sectionCreation
 {
-  background-color: var(--orange);
+  background-color: var(--beige2);
 }
 
 .sectionCreation .card 
 {
-  background-color: var(--orange);
+  background-color: var(--beige2);
 }
 
 .card .list-group-item
 {
-  background-color: var(--orange) !important;
-}
-
-/*Mise en évidence des flèches*/
-.carousel-control-prev,
-.carousel-control-next 
-{
-  width: 50px;
-  background: rgba(0, 0, 0, 0.3); /* fond sombre transparent */
-  border-radius: 0 5px 5px 0; /* coins arrondis pour la gauche */
-}
-
-.carousel-control-next 
-{
-  border-radius: 5px 0 0 5px; /* coins arrondis pour la droite */
-}
-
-.carousel-control-prev-icon,
-.carousel-control-next-icon 
-{
-  filter: invert(1); /* rend la flèche blanche */
-}
-/* END Mise en évidence des flèches*/
-
-.carousel-control-prev-icon,
-.carousel-control-next-icon 
-{
-  background-image: none;
-  width: 4rem;
-  height: 3rem;
-  background-color: transparent;
-  mask-image: url('data:image/svg+xml;utf8,<svg fill="black" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/></svg>');
-  -webkit-mask-image: url('data:image/svg+xml;utf8,<svg fill="black" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/></svg>');
-  background-color: var(--orange) !important; 
-  
-}
-
-.carousel-control-prev-icon:hover,
-.carousel-control-next-icon:hover 
-{
-  background-color: #f6bfb5; 
-}
-
-/* Flèche gauche */
-.carousel-control-prev-icon 
-{
-  mask-image: url('data:image/svg+xml;utf8,<svg fill="black" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/></svg>');
-}
-
-/* Flèche droite : la même mais retournée */
-.carousel-control-next-icon 
-{
-  mask-image: url('data:image/svg+xml;utf8,<svg fill="black" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/></svg>');
-}
-
-.carousel-indicators [data-bs-target] {
-  background-color: #ccc; /* couleur des points inactifs */
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  margin: 0 5px;
-  border: none;
-  opacity: 0.7;
-  transition: background-color 0.3s, transform 0.3s;
-}
-
-.carousel-indicators .active {
-  background-color: var(--orange) !important; /* couleur du point actif */
-  transform: scale(1.2); /* optionnel : effet visuel au focus */
-  opacity: 1;
+  background-color: var(--beige2) !important;
 }
 
 section .sectionCreationTitle
@@ -400,6 +332,36 @@ section .sectionCreationTitle
 {
   width: 100%;
   object-fit: contain;
+}
+
+.slider-container {
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+    margin-bottom: 2rem;
+}
+
+.slider-track {
+    display: flex;
+    gap: 1rem;
+    padding: 1rem 0;
+}
+
+.slider-item {
+    flex: 0 0 auto;
+    width: 500px; 
+    height: 400px; 
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.slider-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 10px;
 }
 
 section .picture
