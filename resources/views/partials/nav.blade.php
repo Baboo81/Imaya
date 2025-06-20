@@ -18,20 +18,37 @@
                             <li class="nav-item pe-5">
                                 <a class="nav-link" aria-current="page" href="#">Accueil</a>
                             </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Services
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li>
+                                        <a class="dropdown-item" href="#Soins">
+                                            Les soins
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#Créations">
+                                            Les créations#
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#Activités">
+                                            Les activités
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#CasaImayah">
+                                            Casa Imayah
+                                        </a>
+                                    </li>
+                                    <li><hr class="dropdown-divider"></li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </li>
                             <li class="nav-item pe-5">
                                 <a class="nav-link" aria-current="page" href="#QuiSuisJe">Qui suis-je ?</a>
-                            </li>
-                            <li class="nav-item pe-5">
-                                <a class="nav-link" aria-current="page" href="#Soins">Les Soins</a>
-                            </li>
-                            <li class="nav-item pe-5">
-                                <a class="nav-link" aria-current="page" href="#Créations">Les créations</a>
-                            </li>
-                            <li class="nav-item pe-5">
-                                <a class="nav-link" aria-current="page" href="#Activités">Les activités</a>
-                            </li>
-                            <li class="nav-item pe-5">
-                                <a class="nav-link" aria-current="page" href="#CasaImayah">Casa Imayah</a>
                             </li>
                             <li class="nav-item pe-5">
                                 <a class="nav-link" aria-current="page" href="#Contact">Contact</a>
