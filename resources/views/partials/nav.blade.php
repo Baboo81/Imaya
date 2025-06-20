@@ -7,7 +7,7 @@
             <nav class="perso-navbar navbar navbar-expand-lg position-fixed navbar-dark w-100">
                 <div class="container-fluid">
                     <img class="logo-navbar" src="/assets/img/svg/logoImayah.svg" id="logo2"
-                        alt="Logo Imayah représentant un arbre>
+                        alt="Logo Imayah représentant un arbre">
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">

@@ -71,3 +71,15 @@ nav
   }
 }
 /*Nav END*/
+
+/* Media Queries */
+
+/* Masquer le hamburger en desktop */
+@media (min-width: 992px) 
+{
+  .navbar-toggler 
+  {
+    display: none !important;
+    border: 3px solid red;
+  }
+}

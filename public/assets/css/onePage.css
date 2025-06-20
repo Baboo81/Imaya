@@ -17,12 +17,19 @@
     --noir: #000;
     --beige : #f0eee9;
     --beige2 : #ebe7e0;
+    --beige3 : #F6F6F6;
+    --beige4 : #FAF7F0;
     --blanc : #ffffff;
     --jaune : #fffede;
     --orange : #feae62;
     --taupe : #8e8d8a;
+    --vert : #DDFFBB;
     --brun : #e8d5cc;
+    --rose : #FCD1D1;
+    --rose-gris : #AD9D9D;
     --brunF : #bda18a;
+    --Mauve : #F1E3FF;
+    --vert : #D8E2DC;
 }
 
 body
@@ -303,17 +310,17 @@ section .bannerTitle
 /*Section création*/
 .sectionCreation
 {
-  background-color: var(--beige2);
+  background-color: var(--jaune);
 }
 
 .sectionCreation .card 
 {
-  background-color: var(--beige2);
+  background-color: var(--jaune);
 }
 
 .card .list-group-item
 {
-  background-color: var(--beige2) !important;
+  background-color: var(--jaune) !important;
 }
 
 section .sectionCreationTitle
@@ -353,7 +360,6 @@ section .sectionCreationTitle
     width: 500px; 
     height: 400px; 
     overflow: hidden;
-    border-radius: 10px;
 }
 
 .slider-item img {
@@ -361,7 +367,6 @@ section .sectionCreationTitle
     height: 100%;
     object-fit: cover;
     display: block;
-    border-radius: 10px;
 }
 
 section .picture

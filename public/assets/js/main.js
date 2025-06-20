@@ -2,15 +2,15 @@
 
 //NavBar
 //Sticky Nav :
-$(window).scroll(function(){
+window.addEventListener('scroll', function() {
+  let scroll = window.scrollY;
+  const nav = document.querySelector('nav');
 
-   let scroll = $(this).scrollTop();
-
-   if(scroll > 200){
-     $("nav").addClass('sticky');
-   } else {
-     $("nav").removeClass('sticky');
-   }
+  if (scroll > 200) {
+    nav.classList.add('sticky');
+  } else {
+    nav.classList.remove('sticky');
+  }
 });
 ///////////////////////////////  END /////////////////////////
 
@@ -35,7 +35,7 @@ window.addEventListener('scroll', () => {
 });
 ///////////////////////////////  END /////////////////////////
 setTimeout(function() {
-    let alert = document.getAnimations('success-message');
+    let alert = document.querySelector('success-message');
     if (alert) {
         alert.classList.remove('show');
         alert.classList.add('fade');
