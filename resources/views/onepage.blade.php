@@ -236,229 +236,91 @@
     <a id="Activités" href=""></a>
 
     {{-- Section : Activités --}}
-    {{-- Parti à optimiser --}}
     <section class="card-bloc py-5 text-light">
-                <div id="cards" class="container">
-                    <div class="row my-5">
-                        <h1 class="text-center mainTitles py-5">Les activités</h1>
-                        <article class="card-body">
-                            <div class="my-5">
-                                <h3 class="card-title whiteFont mb-5">Ateliers & collaborations</h3>
-                            </div>
-                            <ul class="list-group list-group-flush rounded-2">
-                                <li class="list-group-item DastinFont text-center fs-4">
-                                    <div class="row my-4 gy-4 align-items-center">
-                                        <h4>Cérémonies des plantes</h4>
-                                        <div class="col-12 col-md-4">
-                                            <img src="./assets/img/activités/profilActivités.JPG" alt=""
-                                                class="img-fluid rounded-3" style="max-height: 200px; object-fit: cover;">
-                                        </div>
-                                        <div class="col-12 col-md-4">
-                                            <section>
-                                                <article>
-                                                    <p class="p-1">Pour avoir plus de précision (prix, programme,
-                                                        calendrier, ... ) sur l'atelier, n'hésitez pas à cliquer sur le
-                                                        bouton : en savoir ! En cliquant sur le bouton les informations
-                                                        seront visibles à l'écran et téléchargées sur votre ordinateur.</p>
-                                                </article>
-                                                <div class="mt-5">
-                                                    <a href="./assets/pdf/ateliers&collaborations/CérémonieDesPlantes.pdf"
-                                                        class="btn btn-order btn-lg me-5 rounded-5"
-                                                        download="Infos atelier">En savoir plus</a>
-                                                </div>
-                                            </section>
-                                        </div>
-                                        <div class="col-12 col-md-4">
-                                            <!--Slider Bootstrap5-->
-                                            <div id="bijouxSlider" class="carousel carousel-fade mx-auto my-3"
-                                                data-bs-ride="carousel">
-                                                <div class="carousel-inner rounded-2">
-                                                    <div class="carousel-item active">
-                                                        <img src="./assets/img/activités/ateliers&collaborations/cérémonieDesPlantes/cérémonie1.jpeg"
-                                                            class="d-block w-100" alt="Bijoux 1">
-                                                    </div>
-                                                    <div class="carousel-item">
-                                                        <img src="./assets/img/activités/ateliers&collaborations/cérémonieDesPlantes/cérémonie2.jpg"
-                                                            class="d-block w-100" alt="Bijoux 2">
-                                                    </div>
-                                                    <div class="carousel-item">
-                                                        <img src="./assets/img/activités/ateliers&collaborations/cérémonieDesPlantes/cérémonie3.jpg"
-                                                            class="d-block w-100" alt="Bijoux 3">
-                                                    </div>
-                                                    <div class="carousel-item">
-                                                        <img src="./assets/img/activités/ateliers&collaborations/cérémonieDesPlantes/cérémonie4.jpeg"
-                                                            class="d-block w-100" alt="Bijoux 3">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="list-group-item DastinFont text-center fs-4">
-                                    <div class="row my-4 gy-4 align-items-center">
-                                        <h4>Bijoux de l'âme</h4>
-                                        <div class="col-12 col-md-4">
-                                            <img src="./assets/img/activités/profilActivités.JPG" alt=""
-                                                class="img-fluid rounded-3" style="max-height: 200px; object-fit: cover;">
-                                        </div>
-                                        <div class="col-12 col-md-4">
-                                            <section>
-                                                <article>
-                                                    <p class="p-1">Pour avoir plus de précision (prix, programme,
-                                                        calendrier, ... ) sur l'atelier, n'hésitez pas à cliquer sur le
-                                                        bouton : en savoir ! En cliquant sur le bouton les informations
-                                                        seront visibles à l'écran et téléchargées sur votre ordinateur.</p>
-                                                </article>
-                                                <div class="mt-5">
-                                                    <a href="./assets/pdf/ateliers&collaborations/BijouxDeLAme.pdf"
-                                                        class="btn btn-order btn-lg me-5 rounded-5"
-                                                        download="Infos atelier">En savoir plus</a>
-                                                </div>
-                                            </section>
-                                        </div>
-                                        <div class="col-12 col-md-4">
-                                            <!--Slider Bootstrap5-->
-                                            <div id="bijouxSlider" class="carousel carousel-fade mx-auto my-3"
-                                                data-bs-ride="carousel">
-                                                <div class="carousel-inner rounded-2">
-                                                    <div class="carousel-item active">
-                                                        <img src="./assets/img/activités/ateliers&collaborations/bijoux/bijoux1.jpg"
-                                                            class="d-block w-100" alt="Bijoux 1">
-                                                    </div>
-                                                    <div class="carousel-item">
-                                                        <img src="./assets/img/activités/ateliers&collaborations/bijoux/bijoux2.jpg"
-                                                            class="d-block w-100" alt="Bijoux 2">
-                                                    </div>
-                                                    <div class="carousel-item">
-                                                        <img src="./assets/img/activités/ateliers&collaborations/bijoux/bijoux3.jpg"
-                                                            class="d-block w-100" alt="Bijoux 3">
-                                                    </div>
-                                                    <div class="carousel-item">
-                                                        <img src="./assets/img/activités/ateliers&collaborations/bijoux/bijoux4.jpg"
-                                                            class="d-block w-100" alt="Bijoux 3">
-                                                    </div>
-                                                    <div class="carousel-item">
-                                                        <img src="./assets/img/activités/ateliers&collaborations/bijoux/bijoux5.jpg"
-                                                            class="d-block w-100" alt="Bijoux 3">
-                                                    </div>
-                                                    <div class="carousel-item">
-                                                        <img src="./assets/img/activités/ateliers&collaborations/bijoux/bijoux6.jpg"
-                                                            class="d-block w-100" alt="Bijoux 3">
-                                                    </div>
-                                                    <div class="carousel-item">
-                                                        <img src="./assets/img/activités/ateliers&collaborations/bijoux/bijoux7.jpg"
-                                                            class="d-block w-100" alt="Bijoux 3">
-                                                    </div>
-                                                    <div class="carousel-item">
-                                                        <img src="./assets/img/activités/ateliers&collaborations/bijoux/bijoux8.jpg"
-                                                            class="d-block w-100" alt="Bijoux 3">
-                                                    </div>
-                                                    <div class="carousel-item">
-                                                        <img src="./assets/img/activités/ateliers&collaborations/bijoux/bijoux9.jpg"
-                                                            class="d-block w-100" alt="Bijoux 3">
-                                                    </div>
-                                                    <div class="carousel-item">
-                                                        <img src="./assets/img/activités/ateliers&collaborations/bijoux/bijoux10.jpg"
-                                                            class="d-block w-100" alt="Bijoux 3">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
-                            </ul>
-                        </article>
-                        <article class="card-body my-5 blocRetraites">
-                            <div class="my-5">
-                                <h3 class="card-title whiteFont mb-5">Retraites</h3>
-                            </div>
-                            <ul class="list-group list-group-flush rounded-2">
-                                <li class="list-group-item text-center">
-                                    <div class="row justify-content-center mt-4 text-center">
-                                        <h4 class="my-5">Le voyage de l'âme</h4>
-                                        <div class="retraiteImg w-100">
-                                            <img src="./assets/img/activités/retraites/voyageDeLame/Visualizza foto recenti.jpg"
-                                                alt="" class="img-half">
-                                        </div>
-                                        <section class="d-flex">
-                                            <article class="col-12 col-sm-6 col-lg-3 my-5">
-                                                <h5 class="mb-4">Le voyage de l'âme sur le 8 + en ligne</h5>
-                                                <div class="blocBtn">
-                                                    <a href="./assets/pdf/voyageDeLAme/retraiteNoto.pdf"
-                                                        class="btn btn-order btn-lg me-5 DastinFont rounded-5"
-                                                        download="Infos retraite à Noto">En savoir plus</a>
-                                                </div>
-                                            </article>
-                                            <article class="col-12 col-sm-6 col-lg-3 my-5">
-                                                <h5 class="mb-4">Le voyage de l'âme sur le 8</h5>
-                                                <div class="blocBtn">
-                                                    <a href="./assets/pdf/voyageDeLAme/retraiteMorv.pdf"
-                                                        class="btn btn-order btn-lg me-5 DastinFont rounded-5"
-                                                        download="Infos retraite Morvan">En savoir plus</a>
-                                                </div>
-                                            </article>
-                                            <article class="col-12 col-sm-6 col-lg-3 my-5">
-                                                <h5 class="mb-4">Le voyage de l'âme & le Fil de Soi</h5>
-                                                <div class="blocBtn">
-                                                    <a href="./assets/pdf/voyageDeLAme/retraiteSicile.pdf"
-                                                        class="btn btn-order btn-lg me-5 DastinFont rounded-5"
-                                                        download="Infos retraite Sicile">En savoir plus</a>
-                                                </div>
-                                            </article>
-                                            <article class="col-12 col-sm-6 col-lg-3 my-5">
-                                                <h5 class="mb-4">Le Voyage de l'Ame & l'Union Sacrée</h5>
-                                                <div class="blocBtn">
-                                                    <a href="./assets/pdf/voyageDeLAme/Union Sacrée .pdf"
-                                                        class="btn btn-order btn-lg me-5 DastinFont rounded-5"
-                                                        download="Infos voyage de l'âme en ligne">En savoir plus</a>
-                                                </div>
-                                            </article>
-                                        </section>
-                                    </div>
-                                </li>
-                                <li class="list-group-item text-center">
-                                    <div class="row justify-content-center mt-4 text-center">
-                                        <h4 class="my-5">Le soleil levant</h4>
-                                        <div class="retraiteImg w-100">
-                                            <img src="./assets/img/activités/retraites/soleilLevant/soleil.jpg" alt=""
-                                                class="img-half">
-                                        </div>
-                                        <section class="d-flex justify-content-center align-center">
-                                            <article class="col-12 col-sm-6 col-lg-3 my-5">
-                                                <h5 class="mb-4">Soleil levant</h5>
-                                                <div class="blocBtn">
-                                                    <a href="./assets/pdf/voyageDeLAme/retraiteNoto.pdf"
-                                                        class="btn btn-order btn-lg me-5 DastinFont rounded-5"
-                                                        download="Infos retraite à Noto">En savoir plus</a>
-                                                </div>
-                                            </article>
-                                        </section>
-                                    </div>
-                                </li>
-                                <li class="list-group-item text-center">
-                                    <div class="row justify-content-center mt-4 text-center">
-                                        <h4 class="my-5">Collaboration à la Wild Hearts Yoga retreat Sicily</h4>
-                                        <div class="retraiteImg w-100">
-                                            <img src="./assets/img/activités/retraites/wildHeartsYoga/wildHearts.jpg" alt=""
-                                                class="img-half">
-                                        </div>
-                                        <section class="d-flex justify-content-center align-center">
-                                            <article class="col-12 col-sm-6 col-lg-3 my-5">
-                                                <h5 class="mb-4">Wild Haerts Yoga retreat Sicily</h5>
-                                                <div class="blocBtn">
-                                                    <a href="./assets/pdf/voyageDeLAme/retraiteNoto.pdf"
-                                                        class="btn btn-order btn-lg me-5 DastinFont rounded-5"
-                                                        download="Infos retraite à Noto">En savoir plus</a>
-                                                </div>
-                                            </article>
-                                        </section>
-                                    </div>
-                                </li>
-                            </ul>
-                        </article>
+        <div class="container">
+            <div class="row my-5">
+                <h1 class="text-center mainTitles py-5">Les activités</h1>
+
+                {{-- Ateliers --}}
+                <article class="card-body">
+                    <div class="my-5">
+                        <h3 class="card-title whiteFont mb-5">Ateliers & collaborations</h3>
                     </div>
-                </div>
-        </section>
+                    <ul class="list-group list-group-flush rounded-2">
+                        @foreach ($data['activites']['ateliers'] as $atelier)
+                            <li class="list-group-item DastinFont text-center fs-4">
+                                <div class="row my-4 gy-4 align-items-center">
+                                    <h4>{{ $atelier['titre'] }}</h4>
+
+                                    <div class="col-12 col-md-4">
+                                        <img src="{{ asset('assets/img/activités/' . $atelier['image']) }}"
+                                            class="img-fluid rounded-3"
+                                            style="max-height: 200px; object-fit: cover;">
+                                    </div>
+
+                                    <div class="col-12 col-md-4">
+                                        <p class="p-1">{{ $atelier['description'] }}</p>
+                                        <a href="{{ asset('assets/pdf/ateliers&collaborations/' . $atelier['pdf']) }}"
+                                        class="btn btn-order btn-lg me-5 rounded-5"
+                                        download="Infos atelier">
+                                            En savoir plus
+                                        </a>
+                                    </div>
+
+                                    <div class="col-12 col-md-4">
+                                        <div id="carousel-{{ \Illuminate\Support\Str::slug($atelier['titre']) }}"
+                                            class="carousel carousel-fade mx-auto my-3" data-bs-ride="carousel">
+                                            <div class="carousel-inner rounded-2">
+                                                @foreach ($atelier['slider'] as $i => $img)
+                                                    <div class="carousel-item @if ($i == 0) active @endif">
+                                                        <img src="{{ asset('assets/img/' . $atelier['sliderPath'] . $img) }}"
+                                                            class="d-block w-100" alt="">
+                                                    </div>
+                                                @endforeach
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        @endforeach
+                    </ul>
+                </article>
+
+                {{-- Retraites --}}
+                <article class="card-body my-5 blocRetraites">
+                    <div class="my-5">
+                        <h3 class="card-title whiteFont mb-5">Retraites</h3>
+                    </div>
+                    <ul class="list-group list-group-flush rounded-2">
+                        @foreach ($data['activites']['retraites'] as $retraite)
+                            <li class="list-group-item text-center">
+                                <div class="row justify-content-center mt-4 text-center">
+                                    <h4 class="my-5">{{ $retraite['groupe'] }}</h4>
+                                    <div class="retraiteImg w-100">
+                                        <img src="{{ asset('assets/img/activités/retraites/' . $retraite['image']) }}" alt="" class="img-half">
+                                    </div>
+                                    <section class="d-flex flex-wrap justify-content-center">
+                                        @foreach ($retraite['evenements'] as $event)
+                                            <article class="col-12 col-sm-6 col-lg-3 my-5">
+                                                <h5 class="mb-4">{{ $event['titre'] }}</h5>
+                                                <div class="blocBtn">
+                                                    <a href="{{ asset('assets/pdf/voyageDeLAme/' . $event['pdf']) }}"
+                                                    class="btn btn-order btn-lg me-5 DastinFont rounded-5"
+                                                    download="{{ $event['nom_pdf'] }}">
+                                                        En savoir plus
+                                                    </a>
+                                                </div>
+                                            </article>
+                                        @endforeach
+                                    </section>
+                                </div>
+                            </li>
+                        @endforeach
+                    </ul>
+                </article>
+            </div>
+        </div>
+    </section>
     {{-- Section : Activités END--}}
 
     {{-- Anchor : Section Casa Imayah --}}
@@ -466,7 +328,9 @@
 
     {{-- Section : Casa Imayah --}}
     <section class="sectionContact py-5">
-        <h1 class="text-center text-muted mainTitles py-5 my-5">Découvrez Casa Imayah en Sicile</h1>
+        <h1 class="text-center text-muted mainTitles py-5 my-5">
+            {{ $data['casaImayah']['title'] ?? '' }}
+        </h1>
         <div class="w-100">
             <div class="casaImayahBanner">
                 
@@ -477,11 +341,10 @@
                 <div class="col-12 my-5">
                     <article class="my-5">
                         <p class="text-center text-muted p-5">
-                           "Nous vous invitons à entrer dans notre aventure, un espace pensé pour vous offrir du repos, des retraites ressourçantes, une reconnexion profonde, des instants de partage et une touche d’inspiration… le tout dans une simplicité sincère et apaisante.
-                            Envie de vous ressourcer dans un havre de paix ? Vous êtes au bon endroit." 
+                          {{ $data['casaImayah']['p1'] ?? '' }}
                         </p>
                         <p class="text-center text-muted">
-                           Pour visiter le site web : Casa Imayah, n'hésitez pas cliquer sur le bouton ci-dessous !
+                          {{ $data['casaImayah']['p2'] ?? '' }}
                         </p>
                     </article>
                     <div class="mt-5 d-flex align-items-center justify-content-center">
@@ -503,65 +366,117 @@
             <div class="row">
                 <div class="col-12">
                     <h1 class="text-center mainTitles py-5 my-5">Comment me contacter ?</h1>
-                        <form class="rounded-5 border p-5 d-flex align-items-center justify-content-center" action="{{ route('contact.store')  }}"
-                              method="POST" id="contact-form">
-                              @csrf
-                            <div class="col-md-12 col-12 my-5 p-5">
-                                <div class="mb-3">
-                                    <label for="name" class="form-label mb-3">Nom</label>
-                                    <div class="input-group">
-                                        <span class="input-group-text"><i class="bi bi-person"></i></span>
-                                        <input type="text" class="form-control" id="name" name="name"
-                                                    placeholder="Veuillez indiquer votre nom de famille" required>
-                                    </div>
-                                </div>
-                                <div class="mb-3">
-                                    <label for="firstName" class="form-label mb-3">Prénom</label>
-                                    <div class="input-group">
-                                        <span class="input-group-text"><i class="bi bi-person"></i></span>
-                                        <input type="text" class="form-control" id="firstName" name="firstName"
-                                                    placeholder="Veuillez indiquer votre prénom" required>
-                                    </div>
-                                </div>
-                                <div class="mb-3">
-                                    <label for="tel" class="form-label mb-3">Téléphone</label>
-                                    <div class="input-group">
-                                        <span class="input-group-text"><i class="bi bi-telephone"></i></span>
-                                        <input type="tel" class="form-control" id="tel" name="tel"
-                                                    placeholder="Veuillez indiquer votre numéro de téléphone" required>
-                                    </div>
-                                </div>
-                                <div class="mb-3">
-                                    <label for="email" class="form-label mb-3">Email</label>
-                                    <div class="input-group">
-                                        <span class="input-group-text"><i class="bi bi-envelope"></i></span>
-                                        <input type="email" class="form-control" id="email" name="email"
-                                                    placeholder="Veuillez indiquer votre adresse mail" required>
-                                    </div>
-                                </div>
-                                <div class="mb-3">
-                                    <label for="message" class="form-label mb-3">Message</label>
-                                    <div class="input-group">
-                                        <span class="input-group-text"><i class="bi bi-chat-text"></i></span>
-                                        <textarea class="form-control " id="message" name="message"
-                                                    placeholder="Laissez-moi votre message" required></textarea>
-                                    </div>
-                                </div>
-                                <div class="text-center my-5">
-                                    <button type="submit" class="btn btn-order rounded-5 DastinFont">Envoyer</button>
+
+                    <form class="rounded-5 border p-5" action="{{ route('contact.store') }}" method="POST" id="contact-form" novalidate>
+                        @csrf
+
+                        <div class="col-md-12 col-12 my-5 p-5">
+
+                            {{-- Nom --}}
+                            <div class="mb-3">
+                                <label for="name" class="form-label mb-2">Nom</label>
+                                <div class="input-group has-validation">
+                                    <span class="input-group-text custom-radius"><i class="bi bi-person"></i></span>
+                                    <input type="text"
+                                        class="form-control @error('name') is-invalid @enderror"
+                                        id="name"
+                                        name="name"
+                                        placeholder="Veuillez indiquer votre nom de famille"
+                                        value="{{ old('name') }}"
+                                        required>
+                                    @error('name')
+                                        <div class="invalid-feedback">{{ $message }}</div>
+                                    @enderror
                                 </div>
                             </div>
-                            {{-- Msg de confirmation si l'envoi est ok --}}
+
+                            {{-- Prénom --}}
+                            <div class="mb-3">
+                                <label for="firstName" class="form-label mb-2">Prénom</label>
+                                <div class="input-group has-validation">
+                                    <span class="input-group-text custom-radius"><i class="bi bi-person"></i></span>
+                                    <input type="text"
+                                        class="form-control @error('firstName') is-invalid @enderror"
+                                        id="firstName"
+                                        name="firstName"
+                                        placeholder="Veuillez indiquer votre prénom"
+                                        value="{{ old('firstName') }}"
+                                        required>
+                                    @error('firstName')
+                                        <div class="invalid-feedback">{{ $message }}</div>
+                                    @enderror
+                                </div>
+                            </div>
+
+                            {{-- Téléphone --}}
+                            <div class="mb-3">
+                                <label for="tel" class="form-label mb-2">Téléphone</label>
+                                <div class="input-group has-validation">
+                                    <span class="input-group-text custom-radius"><i class="bi bi-telephone"></i></span>
+                                    <input type="tel"
+                                        class="form-control @error('tel') is-invalid @enderror"
+                                        id="tel"
+                                        name="tel"
+                                        placeholder="Veuillez indiquer votre numéro de téléphone"
+                                        value="{{ old('tel') }}"
+                                        required>
+                                    @error('tel')
+                                        <div class="invalid-feedback">{{ $message }}</div>
+                                    @enderror
+                                </div>
+                            </div>
+
+                            {{-- Email --}}
+                            <div class="mb-3">
+                                <label for="email" class="form-label mb-2">Email</label>
+                                <div class="input-group has-validation">
+                                    <span class="input-group-text custom-radius"><i class="bi bi-envelope"></i></span>
+                                    <input type="email"
+                                        class="form-control @error('email') is-invalid @enderror"
+                                        id="email"
+                                        name="email"
+                                        placeholder="Veuillez indiquer votre adresse mail"
+                                        value="{{ old('email') }}"
+                                        required>
+                                    @error('email')
+                                        <div class="invalid-feedback">{{ $message }}</div>
+                                    @enderror
+                                </div>
+                            </div>
+
+                            {{-- Message --}}
+                            <div class="mb-3">
+                                <label for="message" class="form-label mb-2">Message</label>
+                                <div class="input-group has-validation">
+                                    <span class="input-group-text custom-radius"><i class="bi bi-chat-text"></i></span>
+                                    <textarea class="form-control @error('message') is-invalid @enderror"
+                                            id="message"
+                                            name="message"
+                                            placeholder="Laissez-moi votre message"
+                                            required>{{ old('message') }}</textarea>
+                                    @error('message')
+                                        <div class="invalid-feedback">{{ $message }}</div>
+                                    @enderror
+                                </div>
+                            </div>
+
+                            {{-- Bouton d'envoi --}}
+                            <div class="text-center my-5">
+                                <button type="submit" class="btn btn-order rounded-5 DastinFont">Envoyer</button>
+                            </div>
+
+                            {{-- Message de succès --}}
                             @if (session('success'))
                                 <div class="alert alert-success alert-dismissible fade show mt-3" role="alert" id="success-message">
                                     {{ session('success') }}
                                     <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                                 </div>
                             @endif
-                        </form>
-                    </div>
+                        </div>
+                    </form>
                 </div>
             </div>
+        </div>
     </section>
-    {{-- Section : Contact END--}}
+    {{-- Section : Contact END --}}
 @endsection

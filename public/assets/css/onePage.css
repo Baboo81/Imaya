@@ -461,6 +461,12 @@ textarea::placeholder
   color: #999;                           /* Couleur */
   opacity: 1;                            /* Nécessaire sur certains navigateurs */
 }
+
+.custom-radius
+{
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
 /*  END Section :  sectionContact*/
 
 /*Media queries*/

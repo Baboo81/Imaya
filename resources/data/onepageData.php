@@ -174,7 +174,98 @@ return [
             ],
         ],
     'activites' => [
-        ''
-    ]
+        'ateliers' => [
+            [
+                'titre' => 'Cérémonies des plantes',
+                'image' => 'profilActivités.JPG',
+                'description' => "Pour avoir plus de précision (prix, programme, calendrier, ...) sur l'atelier, cliquez sur 'En savoir plus'.",
+                'pdf' => 'CérémonieDesPlantes.pdf',
+                'slider' => [
+                    'cérémonie1.jpeg',
+                    'cérémonie2.jpg',
+                    'cérémonie3.jpg',
+                    'cérémonie4.jpeg',
+                ],
+                'sliderPath' => 'activités/ateliers&collaborations/cérémonieDesPlantes/',
+            ],
+            [
+                'titre' => "Bijoux de l'âme",
+                'image' => 'profilActivités.JPG',
+                'description' => "Pour avoir plus de précision (prix, programme, calendrier, ...) sur l'atelier, cliquez sur 'En savoir plus'.",
+                'pdf' => 'BijouxDeLAme.pdf',
+                'slider' => [
+                    'bijoux1.jpg',
+                    'bijoux2.jpg',
+                    'bijoux3.jpg',
+                    'bijoux4.jpg',
+                    'bijoux5.jpg',
+                    'bijoux6.jpg',
+                    'bijoux7.jpg',
+                    'bijoux8.jpg',
+                    'bijoux9.jpg',
+                    'bijoux10.jpg',
+                ],
+                'sliderPath' => 'activités/ateliers&collaborations/bijoux/',
+            ],
+        ],
+        'retraites' => [
+            [
+                'groupe' => "Le voyage de l'âme",
+                'image' => '/voyageDeLame/Visualizza foto recenti.jpg',
+                'evenements' => [
+                    [
+                        'titre' => "Le voyage de l'âme sur le 8 + en ligne",
+                        'pdf' => 'retraiteNoto.pdf',
+                        'nom_pdf' => 'Infos retraite à Noto',
+                    ],
+                    [
+                        'titre' => "Le voyage de l'âme sur le 8",
+                        'pdf' => 'retraiteMorv.pdf',
+                        'nom_pdf' => 'Infos retraite Morvan',
+                    ],
+                    [
+                        'titre' => "Le voyage de l'âme & le Fil de Soi",
+                        'pdf' => 'retraiteSicile.pdf',
+                        'nom_pdf' => 'Infos retraite Sicile',
+                    ],
+                    [
+                        'titre' => "Le Voyage de l'Ame & l'Union Sacrée",
+                        'pdf' => 'Union Sacrée .pdf',
+                        'nom_pdf' => "Infos voyage de l'âme en ligne",
+                    ],
+                ]
+            ],
+            [
+                'groupe' => "Le soleil levant",
+                'image' => '/soleilLevant/soleil.jpg',
+                'evenements' => [
+                    [
+                        'titre' => "Soleil levant",
+                        'pdf' => 'retraiteNoto.pdf',
+                        'nom_pdf' => 'Infos retraite à Noto',
+                    ]
+                ]
+            ],
+            [
+                'groupe' => "Collaboration à la Wild Hearts Yoga retreat Sicily",
+                'image' => '/wildHeartsYoga/wildHearts.jpg',
+                'evenements' => [
+                    [
+                        'titre' => "Wild Hearts Yoga retreat Sicily",
+                        'pdf' => 'retraiteNoto.pdf',
+                        'nom_pdf' => 'Infos retraite WH Sicily',
+                    ]
+                ]
+            ]
+        ]
+    ],
+    'casaImayah' => [
+        'title' => 'Découvrez Casa Imayah en Sicile',
+        'p1' => ' "Nous vous invitons à entrer dans notre aventure, un espace pensé pour vous offrir du repos, des retraites ressourçantes, une reconnexion profonde, des instants de partage et une touche d’inspiration… le tout dans une simplicité sincère et apaisante.
+                            Envie de vous ressourcer dans un havre de paix ? Vous êtes au bon endroit." ',
+        'p2' => ' Pour visiter le site web : Casa Imayah, n\'hésitez pas cliquer sur le bouton ci-dessous !',
+    ],
+    'contact' => [
 
-    ];
+    ],
+];

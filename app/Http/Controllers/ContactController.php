@@ -13,11 +13,11 @@ class ContactController extends Controller
     {
         //Validation des données
         $validated = $request->validate([
-            'name' => 'required|string|max:255',
-            'firstName' => 'required|string|max:255',
-            'tel' => 'required|string|max:20',
-            'email' => 'required|email|max:255',
-            'message' => 'required|string',
+            'name'      => 'required|string|max:100',
+            'firstName' => 'required|string|max:100',
+            'tel'       => 'required|string|regex:/^[0-9\\s\\-\\+\\(\\)]+$/',
+            'email'     => 'required|email',
+            'message'   => 'required|string|max:1000',
         ]);
 
         //Préparer les données à envoyer ds le mail
@@ -36,7 +36,10 @@ class ContactController extends Controller
         Contact::create($validated);
 
         //Redirection avec message de succès
-        return redirect()->to(url()->previous() . '#contact-form')->with('success', 'Merci pour votre message, je vous répondrai bientôt !');
+        return redirect()
+            ->to(url()->previous() . '#contact-form')
+            ->with('success', 'Merci pour votre message, je vous répondrai bientôt !')
+            ->withInput();
 
     }
 }
