@@ -65,7 +65,7 @@
     </div>
     <div class="container">
         <div class="row my-5 align-items-center">
-            <div class="col-lg-6 my-5">
+            <div class="col-lg-12 my-5">
                 <article class="my-5">
                     @foreach (range(1, 4) as $i)
                     @php $txtKey = "txtBxlSi{$i}"; @endphp
@@ -77,18 +77,19 @@
                     @endforeach
                 </article>
             </div>
-            <div class="col-lg-6 d-flex justify-content-center align-items-center h-100">
+        </div>
+        <div class="row my-5 align-items-center">
+            <div class="col-lg-12 d-flex justify-content-center align-items-center h-100">
                 @php
                     $cabinetImages = explode(',', $data['qui-suis-je']['imgSliderCabinet']);
                 @endphp
 
                 <div id="carouselCabinet" class="carousel slide carousel-fade mx-5" data-bs-ride="carousel">
-                    <div class="carousel-inner rounded-3">
+                    <div class="carousel-inner">
                         @foreach ($cabinetImages as $index => $img)
                             <div class="carousel-item @if ($index === 0) active @endif">
                                 <img src="{{ asset(trim($img)) }}"
                                     class="d-block w-100"
-                                    style="width: 100%; height: 600px; object-fit: cover; border-radius: 1rem;"
                                     alt="Cabinet image {{ $index + 1 }}">
                             </div>
                         @endforeach

@@ -244,6 +244,18 @@ section .bannerTitle
   object-position: 50% 44%; /* affiche le haut de l'image */
   display: block;
 }
+
+#carouselCabinet .carousel-inner
+{
+  border-radius: 50%;
+  width: 100%;
+  object-fit: cover;
+}
+
+#carouselCabinet .carousel-inner img
+{
+  height: 500px;
+}
 /*Section Qui sui-je ? END*/
 
 /* Section : soins */
