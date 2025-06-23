@@ -127,6 +127,7 @@
         <h1 class="text-center text-muted sectionCreationTitle py-5">{{ $creations['mainTitle'] ?? '' }}</h1>
 
         @foreach ($creations['sections'] as $index => $section)
+        <h4 class="card-title my-5">{{ $section['title'] }}</h4>
             @if ($section['type'] === 'carousel')
                 @if ($loop->first)
                     {{-- ✅ Slider horizontal personnalisé pour le premier bloc --}}
@@ -141,7 +142,7 @@
                             </div>
                         </div>
                         <div class="card-body">
-                            <h4 class="card-title mb-4">{{ $section['title'] }}</h4>
+                            
                             <p class="card-text p-3">{{ $section['description'] }}</p>
                             @if (!empty($section['description2']))
                                 <p class="card-text p-3">{{ $section['description2'] }}</p>
@@ -156,7 +157,7 @@
                     {{-- Carousel Bootstrap pour les autres --}}
                     <div class="card my-5 border-0 rounded-0">
                         <div class="row gy-2 align-items-center">
-                            <div class="col-md-12">
+                            <div class="col-md-12 my-5">
                                 @php $carouselId = 'carouselCreation' . $index; @endphp
                                 <div id="{{ $carouselId }}" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
                                     <div class="carousel-indicators">
@@ -191,7 +192,6 @@
                             </div>
                             <div class="col-md-12">
                                 <div class="card-body">
-                                    <h4 class="card-title mb-4">{{ $section['title'] }}</h4>
                                     <p class="card-text p-3">{{ $section['description'] }}</p>
                                     @if (!empty($section['description2']))
                                         <p class="card-text p-3">{{ $section['description2'] }}</p>
@@ -213,7 +213,6 @@
                         </div>
                         <div class="col-md-6">
                             <div class="card-body">
-                                <h4 class="card-title mb-4">{{ $section['title'] }}</h4>
                                 <ul class="list-group list-group-flush p-2 my-4">
                                     @foreach ($section['items'] as $item)
                                         <li class="list-group-item text-start BodoniFont text-muted">{{ $item }}</li>

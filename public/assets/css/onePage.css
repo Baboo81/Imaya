@@ -231,7 +231,7 @@ section .bannerTitle
 .Bxl-Sicile 
 {
   width: 100vw;
-  height: 700px; /* ou 300px selon ton besoin */
+  height: 700px; 
   overflow: hidden;
 }
 
@@ -240,7 +240,7 @@ section .bannerTitle
   flex: 1;
   height: 100%;
   width: 100%;
-  object-fit: cover; /* ou contain */
+  object-fit: cover; 
   object-position: 50% 44%; /* affiche le haut de l'image */
   display: block;
 }
@@ -395,6 +395,14 @@ section .picture
     height: 100%;
 }
 
+.carousel-inner img 
+{
+  height: 300px;           /* même hauteur que l'autre image */
+  object-fit: cover;       /* pour garder un cadrage harmonieux */
+  width: 100%;             /* pour remplir le conteneur */
+  border-radius: 0.5rem;   /* arrondi cohérent avec Bootstrap */
+}
+
 #bijouxSlider img 
 {
   width: 100%;
@@ -455,11 +463,11 @@ label
 input::placeholder,
 textarea::placeholder 
 {
-  font-family: 'Bodoni Moda', serif; /* Change la police */
-  font-size: 1rem;                        /* Taille */
-  font-style: italic;                    /* Style optionnel */
-  color: #999;                           /* Couleur */
-  opacity: 1;                            /* Nécessaire sur certains navigateurs */
+  font-family: 'Bodoni Moda', serif; 
+  font-size: 1rem;                       
+  font-style: italic;                    
+  color: #999;                         
+  opacity: 1;                            
 }
 
 .custom-radius
@@ -468,6 +476,4 @@ textarea::placeholder
   border-bottom-right-radius: 0;
 }
 /*  END Section :  sectionContact*/
-
-/*Media queries*/
 

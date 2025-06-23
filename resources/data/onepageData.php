@@ -265,7 +265,5 @@ return [
                             Envie de vous ressourcer dans un havre de paix ? Vous êtes au bon endroit." ',
         'p2' => ' Pour visiter le site web : Casa Imayah, n\'hésitez pas cliquer sur le bouton ci-dessous !',
     ],
-    'contact' => [
 
-    ],
 ];

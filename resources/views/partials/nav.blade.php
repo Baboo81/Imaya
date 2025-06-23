@@ -15,10 +15,10 @@
                     </button>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                            <li class="nav-item pe-5">
+                            <li class="nav-item mx-5">
                                 <a class="nav-link" aria-current="page" href="#">Accueil</a>
                             </li>
-                            <li class="nav-item dropdown">
+                            <li class="nav-item dropdown mx-5">
                                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                     Services
                                 </a>
@@ -48,13 +48,13 @@
                                     </li>
                                 </ul>
                             </li>
-                            <li class="nav-item pe-5">
+                            <li class="nav-item mx-5">
                                 <a class="nav-link" aria-current="page" href="#QuiSuisJe">Qui suis-je ?</a>
                             </li>
-                            <li class="nav-item pe-5">
+                            <li class="nav-item mx-5">
                                 <a class="nav-link" aria-current="page" href="#Contact">Contact</a>
                             </li>
-                            <li class="nav-item pe-5 d-flex">
+                            <li class="nav-item d-flex mx-5">
                                 <a class="nav-link {{ app()->getLocale() === 'fr' ? 'active' : '' }} " aria-current="page" href="{{ route('onepage', ['locale' => 'fr']) }}">FR</a>
                                 <a class="nav-link {{ app()->getLocale() === 'en' ? 'active' : '' }}" aria-current="page" href="{{ route('onepage', ['locale' => 'en']) }}">EN</a>
                                 <a class="nav-link {{ app()->getLocale() === 'it' ? 'active' : '' }}" aria-current="page" href="{{ route('onepage', ['locale' => 'it']) }}">IT</a>
