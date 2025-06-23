@@ -28,23 +28,24 @@
                                             Les soins
                                         </a>
                                     </li>
+                                    <li><hr class="dropdown-divider"></li>
                                     <li>
                                         <a class="dropdown-item" href="#Créations">
-                                            Les créations#
+                                            Les créations
                                         </a>
                                     </li>
+                                    <li><hr class="dropdown-divider"></li>
                                     <li>
                                         <a class="dropdown-item" href="#Activités">
                                             Les activités
                                         </a>
                                     </li>
+                                    <li><hr class="dropdown-divider"></li>
                                     <li>
                                         <a class="dropdown-item" href="#CasaImayah">
                                             Casa Imayah
                                         </a>
                                     </li>
-                                    <li><hr class="dropdown-divider"></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
                                 </ul>
                             </li>
                             <li class="nav-item pe-5">
@@ -54,9 +55,9 @@
                                 <a class="nav-link" aria-current="page" href="#Contact">Contact</a>
                             </li>
                             <li class="nav-item pe-5 d-flex">
-                                <a class="nav-link" aria-current="page" href="#rdv">FR</a>
-                                <a class="nav-link" aria-current="page" href="#rdv">EN</a>
-                                <a class="nav-link" aria-current="page" href="#rdv">IT</a>
+                                <a class="nav-link {{ app()->getLocale() === 'fr' ? 'active' : '' }} " aria-current="page" href="{{ route('onepage', ['locale' => 'fr']) }}">FR</a>
+                                <a class="nav-link {{ app()->getLocale() === 'en' ? 'active' : '' }}" aria-current="page" href="{{ route('onepage', ['locale' => 'en']) }}">EN</a>
+                                <a class="nav-link {{ app()->getLocale() === 'it' ? 'active' : '' }}" aria-current="page" href="{{ route('onepage', ['locale' => 'it']) }}">IT</a>
                             </li>
                         </ul>
                     </div>
