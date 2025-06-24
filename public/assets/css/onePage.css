@@ -245,17 +245,45 @@ section .bannerTitle
   display: block;
 }
 
-#carouselCabinet .carousel-inner
+/* Slider : cabinet */
+.slider-track 
 {
-  border-radius: 50%;
-  width: 100%;
-  object-fit: cover;
+  animation: scroll 40s linear infinite;
+  width: max-content;
 }
 
-#carouselCabinet .carousel-inner img
+.slider-item
 {
-  height: 500px;
+  flex: 0 0 auto;
+  width: 25vw; /* 4 images visibles à la fois → ajuste selon ce que tu veux */
 }
+
+.slider-item img 
+{
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+@keyframes scroll 
+{
+  0% {
+        transform: translateX(0);
+     }
+  100% 
+     {
+        transform: translateX(-50%);
+     }
+}
+
+  /* Supprime les espaces blancs */
+.slider-track,
+.slider-item 
+{
+  margin: 0;
+  padding: 0;
+}
+/* Slider : cabinet END*/
 /*Section Qui sui-je ? END*/
 
 /* Section : soins */

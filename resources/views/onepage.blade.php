@@ -78,24 +78,21 @@
                 </article>
             </div>
         </div>
-        <div class="row my-5 align-items-center">
-            <div class="col-lg-12 d-flex justify-content-center align-items-center h-100">
-                @php
-                    $cabinetImages = explode(',', $data['qui-suis-je']['imgSliderCabinet']);
-                @endphp
+    </div>
+    <!-- Slider : cabinet -->
+    <div class="w-100 overflow-hidden" style="background-color: #000;">
+        <div class="slider-track d-flex">
+            @php
+                $cabinetImages = explode(',', $data['qui-suis-je']['imgSliderCabinet']);
+                // On duplique les images pour donner l'impression d'une boucle infinie
+                $allImages = array_merge($cabinetImages, $cabinetImages);
+            @endphp
 
-                <div id="carouselCabinet" class="carousel slide carousel-fade mx-5" data-bs-ride="carousel">
-                    <div class="carousel-inner">
-                        @foreach ($cabinetImages as $index => $img)
-                            <div class="carousel-item @if ($index === 0) active @endif">
-                                <img src="{{ asset(trim($img)) }}"
-                                    class="d-block w-100"
-                                    alt="Cabinet image {{ $index + 1 }}">
-                            </div>
-                        @endforeach
-                    </div>
+            @foreach ($allImages as $img)
+                <div class="slider-item">
+                    <img src="{{ asset(trim($img)) }}" alt="Cabinet" />
                 </div>
-            </div>
+            @endforeach
         </div>
     </div>
 </section>
