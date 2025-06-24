@@ -3,6 +3,23 @@
 //resources onepage.blade.php
 
 return [
+    'nav' => [
+        'accueil' => 'Accueil',
+        'services' => 'Services',
+        'dropdown' => [
+            'soins' => 'Les soins',
+            'creations' => 'Les créations',
+            'activites' => 'Les activités',
+            'casa' => 'Casa Imayah',
+        ],
+        'qui-suis-je' => 'Qui suis-je ?',
+        'contact' => 'Contact',
+        'langues' => [
+            'fr' => 'FR',
+            'en' => 'EN',
+            'it' => 'IT',
+        ],
+    ],
     'accueil' => [
         'mainTitle1' => 'Imayah',
         'mainTitle2' => 'France-Alexandra Vigouroux',

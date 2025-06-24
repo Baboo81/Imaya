@@ -16,48 +16,60 @@
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                             <li class="nav-item mx-5">
-                                <a class="nav-link" aria-current="page" href="#">Accueil</a>
+                                <a class="nav-link" aria-current="page" href="#">
+                                    {{ __('onepageData.nav.accueil') }}
+                                </a>
                             </li>
                             <li class="nav-item dropdown mx-5">
                                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    Services
+                                    {{ __('onepageData.nav.services') }}
                                 </a>
                                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                                     <li>
                                         <a class="dropdown-item" href="#Soins">
-                                            Les soins
+                                            {{ __('onepageData.nav.dropdown.soins') }}
                                         </a>
                                     </li>
                                     <li><hr class="dropdown-divider"></li>
                                     <li>
                                         <a class="dropdown-item" href="#Créations">
-                                            Les créations
+                                            {{ __('onepageData.nav.dropdown.creations') }}
                                         </a>
                                     </li>
                                     <li><hr class="dropdown-divider"></li>
                                     <li>
                                         <a class="dropdown-item" href="#Activités">
-                                            Les activités
+                                            {{ __('onepageData.nav.dropdown.activites') }}
                                         </a>
                                     </li>
                                     <li><hr class="dropdown-divider"></li>
                                     <li>
                                         <a class="dropdown-item" href="#CasaImayah">
-                                            Casa Imayah
+                                            {{ __('onepageData.nav.dropdown.casa') }}
                                         </a>
                                     </li>
                                 </ul>
                             </li>
                             <li class="nav-item mx-5">
-                                <a class="nav-link" aria-current="page" href="#QuiSuisJe">Qui suis-je ?</a>
+                                <a class="nav-link" aria-current="page" href="#QuiSuisJe">
+                                    {{ __('onepageData.nav.qui-suis-je') }}
+                                </a>
                             </li>
                             <li class="nav-item mx-5">
-                                <a class="nav-link" aria-current="page" href="#Contact">Contact</a>
+                                <a class="nav-link" aria-current="page" href="#Contact">
+                                    {{ __('onepageData.nav.contact') }}
+                                </a>
                             </li>
                             <li class="nav-item d-flex mx-5">
-                                <a class="nav-link {{ app()->getLocale() === 'fr' ? 'active' : '' }} " aria-current="page" href="{{ route('onepage', ['locale' => 'fr']) }}">FR</a>
-                                <a class="nav-link {{ app()->getLocale() === 'en' ? 'active' : '' }}" aria-current="page" href="{{ route('onepage', ['locale' => 'en']) }}">EN</a>
-                                <a class="nav-link {{ app()->getLocale() === 'it' ? 'active' : '' }}" aria-current="page" href="{{ route('onepage', ['locale' => 'it']) }}">IT</a>
+                                <a class="nav-link {{ app()->getLocale() === 'fr' ? 'active' : '' }} " aria-current="page" href="{{ route('onepage', ['locale' => 'fr']) }}">
+                                    {{ __('onepageData.nav.langues.fr') }}
+                                </a>
+                                <a class="nav-link {{ app()->getLocale() === 'en' ? 'active' : '' }}" aria-current="page" href="{{ route('onepage', ['locale' => 'en']) }}">
+                                    {{ __('onepageData.nav.langues.en') }}
+                                </a>
+                                <a class="nav-link {{ app()->getLocale() === 'it' ? 'active' : '' }}" aria-current="page" href="{{ route('onepage', ['locale' => 'it']) }}">
+                                    {{ __('onepageData.nav.langues.it') }}
+                                </a>
                             </li>
                         </ul>
                     </div>

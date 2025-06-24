@@ -3,6 +3,23 @@
 // resources onepage.blade.php
 
 return [
+    'nav' => [
+        'accueil' => 'Home',
+        'services' => 'Servizi',
+        'dropdown' => [
+            'soins' => 'Cure',
+            'creations' => 'Creazioni',
+            'activites' => 'Attività',
+            'casa' => 'Casa Imayah',
+        ],
+        'qui-suis-je' => 'Chi sono ?',
+        'contact' => 'Contatto',
+        'langues' => [
+            'fr' => 'FR',
+            'en' => 'EN',
+            'it' => 'IT',
+        ],
+    ],
     'accueil' => [
         'mainTitle1' => 'Imayah',
         'mainTitle2' => 'France‑Alexandra Vigouroux',
@@ -143,12 +160,12 @@ return [
             'description' => "Per maggiori dettagli (prezzi, programma, calendario, ...) sull'atelier, clicca su 'Per saperne di più'.",
             'pdf' => 'CerimoniaDellePiante.pdf',
             'slider' => [
-                'cerimonia1.jpeg',
-                'cerimonia2.jpg',
-                'cerimonia3.jpg',
-                'cerimonia4.jpeg',
+                'cérémonie1.jpeg',
+                'cérémonie2.jpg',
+                'cérémonie3.jpg',
+                'cérémonie4.jpeg',
             ],
-            'sliderPath' => 'attività/laboratori&collaborazioni/cerimoniaDellePiante/',
+            'sliderPath' => 'activités/ateliers&collaborations/cérémonieDesPlantes/',
         ],
         [
             'titre' => "Gioielli dell'anima",
@@ -156,24 +173,24 @@ return [
             'description' => "Per maggiori dettagli (prezzi, programma, calendario, ...) sull'atelier, clicca su 'Per saperne di più'.",
             'pdf' => 'GioielliDellAnima.pdf',
             'slider' => [
-                'gioielli1.jpg',
-                'gioielli2.jpg',
-                'gioielli3.jpg',
-                'gioielli4.jpg',
-                'gioielli5.jpg',
-                'gioielli6.jpg',
-                'gioielli7.jpg',
-                'gioielli8.jpg',
-                'gioielli9.jpg',
-                'gioielli10.jpg',
+                'bijoux1.jpg',
+                'bijoux2.jpg',
+                'bijoux3.jpg',
+                'bijoux4.jpg',
+                'bijoux5.jpg',
+                'bijoux6.jpg',
+                'bijoux7.jpg',
+                'bijoux8.jpg',
+                'bijoux9.jpg',
+                'bijoux10.jpg',
             ],
-            'sliderPath' => 'attività/laboratori&collaborazioni/gioielli/',
+            'sliderPath' => 'activités/ateliers&collaborations/bijoux/',
         ],
     ],
     'retraites' => [
             [
                 'groupe' => "Il viaggio dell'anima",
-                'image' => '/viaggioDellAnima/Visualizza foto recenti.jpg',
+                'image' => '/voyageDeLame/Visualizza foto recenti.jpg',
                 'evenements' => [
                     [
                         'titre' => "Il viaggio dell'anima sul 8 + online",
@@ -199,7 +216,7 @@ return [
             ],
             [
                 'groupe' => "Il sole nascente",
-                'image' => '/soleNascente/sole.jpg',
+                'image' => '/soleilLevant/soleil.jpg',
                 'evenements' => [
                     [
                         'titre' => "Sole nascente",
