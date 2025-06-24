@@ -148,7 +148,7 @@ return [
                 'ceremony3.jpg',
                 'ceremony4.jpeg',
             ],
-            'sliderPath' => 'activities/workshops&collaborations/plantCeremony/',
+            'sliderPath' => 'activités/ateliers&collaborations/cérémonieDesPlantes/',
         ],
         [
             'titre' => "Soul Jewelry",
@@ -167,13 +167,13 @@ return [
                 'jewelry9.jpg',
                 'jewelry10.jpg',
             ],
-            'sliderPath' => 'activities/workshops&collaborations/jewelry/',
+            'sliderPath' => 'activités/ateliers&collaborations/bijoux/',
         ],
     ],
     'retraites' => [
         [
             'groupe' => "The Soul Journey",
-            'image' => '/soulJourney/View recent photos.jpg',
+            'image' => '/voyageDeLame/Visualizza foto recenti.jpg',
             'evenements' => [
                 [
                     'titre' => "The Soul Journey on the 8 + online",
@@ -199,7 +199,7 @@ return [
         ],
         [
             'groupe' => "The Rising Sun",
-            'image' => '/risingSun/sun.jpg',
+            'image' => '/soleilLevant/soleil.jpg',
             'evenements' => [
                 [
                     'titre' => "Rising Sun",

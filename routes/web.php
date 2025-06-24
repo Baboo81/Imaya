@@ -20,7 +20,11 @@ Route::get('/{locale?}', function ($locale = 'fr') {
 
     $data = include resource_path("lang/{$locale}/onepageData.php");
 
-    return view('onepage', compact('data'));
+    return view('onepage', [
+        'data' => $data,
+        'creations' => $data['creations'] ?? []
+    ]);
+    
 })->name('onepage');
 
 
