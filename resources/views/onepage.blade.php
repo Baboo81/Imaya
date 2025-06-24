@@ -141,11 +141,14 @@
 <a id="Créations" href=""></a>
 
 {{-- Section : Créations --}}
-<section class="sectionCreation text-light text-center py-5">
+@isset($creations)
     
-        <h1 class="text-center text-muted sectionCreationTitle py-5">{{ $creations['mainTitle'] ?? '' }}</h1>
-
-        @foreach ($creations['sections'] as $index => $section)
+<section class="sectionCreation text-light text-center py-5">
+    <h1 class="text-center text-muted sectionCreationTitle py-5">
+        {{ $creations['mainTitle'] ?? '' }}
+    </h1>
+     @foreach ($creations['sections'] as $index => $section)
+     
         <h4 class="card-title my-5">{{ $section['title'] }}</h4>
             @if ($section['type'] === 'carousel')
                 @if ($loop->first)
@@ -248,6 +251,7 @@
         @endforeach
     </div>
 </section>
+@endisset
 {{-- Section : Créations END --}}
 
     {{-- Anchor : Section activités --}}

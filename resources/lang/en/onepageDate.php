@@ -10,7 +10,7 @@ return [
     'qui-suis-je' => [
         'mainTitle' => 'Who am I?',
         'imgProfil' => '/assets/img/quiSuisJe/profil.jpg',
-        'txtProfil' => '“Explorer of life and its movement, I support the being on their life path. My resources have been woven throughout my own journey, guided by an early experience of trance in childhood, which gradually led me to the visible and invisible traces of the being’s story in body and mind. Studying dance and its notation, painting, music, psychology, kinesiology, Reiki taught me different languages, which trance unites into one: the healing of the soul through words, its song, and its touch.”',
+        'txtProfil' => '“Explorer of life and its movement, I support the being on     their life path. My resources have been woven throughout my own journey, guided by an early experience of trance in childhood, which gradually led me to the visible and invisible traces of the being’s story in body and mind. Studying dance and its notation, painting, music, psychology, kinesiology, Reiki taught me different languages, which trance unites into one: the healing of the soul through words, its song, and its touch.”',
         'secondTitle' => 'Between Brussels and Sicily',
         'imgBxl' => '/assets/img/quiSuisJe/Bxl.jpg',
         'imgSicile' => '/assets/img/quiSuisJe/Sicile.jpg',
@@ -18,6 +18,10 @@ return [
         'txtBxlSi2' => 'During these explorations, my resources were also guided and inspired by the early experience of trance. It came to me very young, but it took many years to recognize it, understand it, find stability in it, accept it, and harmonize my personality enough to welcome it with as much accuracy and alignment as possible — for my highest good and that of all.',
         'txtBxlSi3' => 'For about ten years now, it has been the one that brings together all these languages I learned, experienced, and integrated into one: the healing and evolution of the soul and spirit through words, song, and touch.',
         'txtBxlSi4' => 'Finally, after offering my work in Brussels for over twenty years, the desire to create a complementary space to the city emerged. Thus was born Casa Imayah, on the volcanic island of Sicily, connecting the south and countryside to the energies of the north and the continental city. These two places of practice enrich and inspire each other, welcoming you for consultations and individual care, workshops, and retreats.',
+        'imgSliderCabinet' => 'assets/img/quiSuisje/  cabinetBxl/cabinet1.jpg,
+                               assets/img/quiSuisje/cabinetBxl/cabinet2.jpg, 
+                               assets/img/quiSuisje/cabinetBxl/cabinet3.jpg,
+                               assets/img/quiSuisje/cabinetBxl/cabinet4.jpg',
     ],
     'soins' => [
     'mainTitle' => 'Treatments',
@@ -131,5 +135,96 @@ return [
         ],
     ],
   ],
-  
+  'activites' => [
+    'ateliers' => [
+        [
+            'titre' => 'Plant Ceremonies',
+            'image' => 'profilActivités.JPG',
+            'description' => "For more details (price, program, schedule, ...) about the workshop, click on 'Learn more'.",
+            'pdf' => 'PlantCeremony.pdf',
+            'slider' => [
+                'ceremony1.jpeg',
+                'ceremony2.jpg',
+                'ceremony3.jpg',
+                'ceremony4.jpeg',
+            ],
+            'sliderPath' => 'activities/workshops&collaborations/plantCeremony/',
+        ],
+        [
+            'titre' => "Soul Jewelry",
+            'image' => 'profilActivités.JPG',
+            'description' => "For more details (price, program, schedule, ...) about the workshop, click on 'Learn more'.",
+            'pdf' => 'SoulJewelry.pdf',
+            'slider' => [
+                'jewelry1.jpg',
+                'jewelry2.jpg',
+                'jewelry3.jpg',
+                'jewelry4.jpg',
+                'jewelry5.jpg',
+                'jewelry6.jpg',
+                'jewelry7.jpg',
+                'jewelry8.jpg',
+                'jewelry9.jpg',
+                'jewelry10.jpg',
+            ],
+            'sliderPath' => 'activities/workshops&collaborations/jewelry/',
+        ],
+    ],
+    'retraites' => [
+        [
+            'groupe' => "The Soul Journey",
+            'image' => '/soulJourney/View recent photos.jpg',
+            'evenements' => [
+                [
+                    'titre' => "The Soul Journey on the 8 + online",
+                    'pdf' => 'retreatNoto.pdf',
+                    'nom_pdf' => 'Retreat info in Noto',
+                ],
+                [
+                    'titre' => "The Soul Journey on the 8",
+                    'pdf' => 'retreatMorv.pdf',
+                    'nom_pdf' => 'Retreat info Morvan',
+                ],
+                [
+                    'titre' => "The Soul Journey & The Thread of Self",
+                    'pdf' => 'retreatSicily.pdf',
+                    'nom_pdf' => 'Retreat info Sicily',
+                ],
+                [
+                    'titre' => "The Soul Journey & the Sacred Union",
+                    'pdf' => 'SacredUnion.pdf',
+                    'nom_pdf' => "Online soul journey info",
+                ],
+            ]
+        ],
+        [
+            'groupe' => "The Rising Sun",
+            'image' => '/risingSun/sun.jpg',
+            'evenements' => [
+                [
+                    'titre' => "Rising Sun",
+                    'pdf' => 'retreatNoto.pdf',
+                    'nom_pdf' => 'Retreat info in Noto',
+                ]
+            ]
+        ],
+        [
+            'groupe' => "Collaboration at the Wild Hearts Yoga retreat Sicily",
+            'image' => '/wildHeartsYoga/wildHearts.jpg',
+            'evenements' => [
+                [
+                    'titre' => "Wild Hearts Yoga retreat Sicily",
+                    'pdf' => 'retreatNoto.pdf',
+                    'nom_pdf' => 'WH Sicily retreat info',
+                ]
+            ]
+        ]
+    ]
+],
+'casaImayah' => [
+    'title' => 'Discover Casa Imayah in Sicily',
+    'p1' => ' "We invite you to enter our adventure, a space designed to offer you rest, rejuvenating retreats, deep reconnection, moments of sharing, and a touch of inspiration… all in sincere and soothing simplicity.
+              Want to recharge in a haven of peace? You are in the right place." ',
+    'p2' => ' To visit the website: Casa Imayah, feel free to click on the button below!',
+    ],
 ];
