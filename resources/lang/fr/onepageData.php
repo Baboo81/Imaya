@@ -199,6 +199,8 @@ return [
             [
                 'titre' => 'Cérémonies des plantes',
                 'image' => 'profilDuo.jpg',
+                'txt_propose' => 'Activité proposée par :',
+                'auteur' => 'Jessica & France-Alexandra',
                 'description' => "Pour avoir plus de précision (prix, programme, calendrier, ...) sur l'atelier, cliquez sur 'En savoir plus'.",
                 'pdf' => 'CérémonieDesPlantes.pdf',
                 'slider' => [
@@ -212,6 +214,8 @@ return [
             [
                 'titre' => "Bijoux de l'âme",
                 'image' => 'profilActivités.JPG',
+                'txt_propose' => 'Activité proposée par :',
+                'auteur' => 'France-Alexandra',
                 'description' => "Pour avoir plus de précision (prix, programme, calendrier, ...) sur l'atelier, cliquez sur 'En savoir plus'.",
                 'pdf' => 'BijouxDeLAme.pdf',
                 'slider' => [

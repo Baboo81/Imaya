@@ -273,8 +273,15 @@
 
                                     <div class="col-12 col-md-4">
                                         <img src="{{ asset('assets/img/activités/' . $atelier['image']) }}"
-                                            class="img-fluid rounded-3"
-                                            style="width: 100%; aspect-ratio: 4 / 3; object-fit: cover;">
+                                            class="img-fluid rounded-circle"
+                                            style="width: 300px; height: 300px; object-fit: cover;">
+
+                                        {{-- Annotations sous l'image --}}
+                                        @if (!empty($atelier['auteur']))
+                                            <p class="mt-3 fst-italic small text-muted">
+                                                {{ $data['activites']['txt_propose'] ?? '' }} {{ $atelier['auteur'] }}
+                                            </p>
+                                        @endif
                                     </div>
 
                                     <div class="col-12 col-md-4">

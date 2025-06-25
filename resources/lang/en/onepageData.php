@@ -157,6 +157,8 @@ return [
         [
             'titre' => 'Plant Ceremonies',
             'image' => 'profilDuo.jpg',
+            'txt_propose' => 'Activity proposed by :',
+            'auteur' => 'Jessica & France-Alexandra',
             'description' => "For more details (price, program, schedule, ...) about the workshop, click on 'Learn more'.",
             'pdf' => 'PlantCeremony.pdf',
             'slider' => [
@@ -170,6 +172,8 @@ return [
         [
             'titre' => "Soul Jewelry",
             'image' => 'profilActivités.JPG',
+            'txt_propose' => 'Activity proposed by :',
+            'auteur' => 'France-Alexandra',
             'description' => "For more details (price, program, schedule, ...) about the workshop, click on 'Learn more'.",
             'pdf' => 'SoulJewelry.pdf',
             'slider' => [
