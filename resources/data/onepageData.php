@@ -292,5 +292,19 @@ return [
                             Envie de vous ressourcer dans un havre de paix ? Vous êtes au bon endroit." ',
         'p2' => ' Pour visiter le site web : Casa Imayah, n\'hésitez pas cliquer sur le bouton ci-dessous !',
     ],
-
+    'contact' => [
+        'name' => 'Nom',
+        'name_placeholder' => 'Veuillez indiquer votre nom de famille',
+        'first_name' => 'Prénom',
+        'first_name_placeholder' => 'Veuillez indiquer votre prénom',
+        'phone' => 'Téléphone',
+        'phone_placeholder' => 'Veuillez indiquer votre numéro de téléphone',
+        'email' => 'Email',
+        'email_placeholder' => 'Veuillez indiquer votre adresse mail',
+        'message' => 'Message',
+        'message_placeholder' => 'Laissez-moi votre message',
+        'send' => 'Envoyer',
+        'success' => 'Votre message a été envoyé avec succès.',
+    ],
 ];
+

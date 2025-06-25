@@ -250,5 +250,19 @@ return [
                Volete rigenerarvi in un’oasi di pace? Siete nel posto giusto." ',
         'p2' => ' Per visitare il sito web: Casa Imayah, non esitate a cliccare sul pulsante qui sotto!',
     ],
+    'contact' => [
+    'name' => 'Cognome',
+    'name_placeholder' => 'Per favore, inserisci il tuo cognome',
+    'first_name' => 'Nome',
+    'first_name_placeholder' => 'Per favore, inserisci il tuo nome',
+    'phone' => 'Telefono',
+    'phone_placeholder' => 'Per favore, inserisci il tuo numero di telefono',
+    'email' => 'Email',
+    'email_placeholder' => 'Per favore, inserisci il tuo indirizzo email',
+    'message' => 'Messaggio',
+    'message_placeholder' => 'Lasciami il tuo messaggio',
+    'send' => 'Invia',
+    'success' => 'Il tuo messaggio è stato inviato con successo.',
+    ],
 
 ];

@@ -250,4 +250,19 @@ return [
               Want to recharge in a haven of peace? You are in the right place." ',
     'p2' => ' To visit the website: Casa Imayah, feel free to click on the button below!',
     ],
+'contact' => [
+    'name' => 'Last Name',
+    'name_placeholder' => 'Please enter your last name',
+    'first_name' => 'First Name',
+    'first_name_placeholder' => 'Please enter your first name',
+    'phone' => 'Phone',
+    'phone_placeholder' => 'Please enter your phone number',
+    'email' => 'Email',
+    'email_placeholder' => 'Please enter your email address',
+    'message' => 'Message',
+    'message_placeholder' => 'Leave me your message',
+    'send' => 'Send',
+    'success' => 'Your message has been sent successfully.',
+    ],
+
 ];
