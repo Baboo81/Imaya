@@ -258,7 +258,9 @@
     <section class="card-bloc py-5 text-light">
         <div class="container">
             <div class="row my-5">
-                <h1 class="text-center mainTitles py-5">Les activités</h1>
+                <h1 class="text-center mainTitles py-5">
+                    {{ $data['activite_title'] ?? '' }}
+                </h1>
 
                 {{-- Ateliers --}}
                 <article class="card-body">
@@ -279,7 +281,7 @@
                                         {{-- Annotations sous l'image --}}
                                         @if (!empty($atelier['auteur']))
                                             <p class="mt-3 fst-italic small text-muted">
-                                                {{ $data['activites']['txt_propose'] ?? '' }} {{ $atelier['auteur'] }}
+                                                {{ $atelier['txt_propose'] ?? '' }} {{ $atelier['auteur'] }}
                                             </p>
                                         @endif
                                     </div>
@@ -391,7 +393,9 @@
         <div id="cards" class="container">
             <div class="row">
                 <div class="col-12">
-                    <h1 class="text-center mainTitles py-5 my-5">Comment me contacter ?</h1>
+                    <h1 class="text-center mainTitles py-5 my-5">
+                        {{ $data['contact_title'] ?? '' }}
+                    </h1>
 
                     <form class="rounded-5 border p-5" action="{{ route('contact.store') }}" method="POST" id="contact-form" novalidate>
                         @csrf

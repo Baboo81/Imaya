@@ -3,6 +3,8 @@
 // resources/lang/en/onepageData.php
 
 return [
+    'activite_title' => 'The activities',
+    'contact_title' => 'How to contact me ?',
     'nav' => [
         'accueil' => 'Home',
         'services' => 'Services',
@@ -158,7 +160,7 @@ return [
             'titre' => 'Plant Ceremonies',
             'image' => 'profilDuo.jpg',
             'txt_propose' => 'Activity proposed by :',
-            'auteur' => 'Jessica & France-Alexandra',
+            'auteur' => 'France-Alexandra & Jessica',
             'description' => "For more details (price, program, schedule, ...) about the workshop, click on 'Learn more'.",
             'pdf' => 'PlantCeremony.pdf',
             'slider' => [

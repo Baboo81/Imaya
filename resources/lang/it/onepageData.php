@@ -3,6 +3,8 @@
 // resources onepage.blade.php
 
 return [
+    'activite_title' => 'Le attività',
+    'contact_title' => 'Come contattarmi ?',
     'nav' => [
         'accueil' => 'Home',
         'services' => 'Servizi',
@@ -158,7 +160,7 @@ return [
             'titre' => 'Cerimonie delle piante',
             'image' => 'profilDuo.jpg',
             'txt_propose' => 'Attività proposta da :',
-            'auteur' => 'Jessica & France-Alexandra',
+            'auteur' => 'France-Alexandra & Jessica',
             'description' => "Per maggiori dettagli (prezzi, programma, calendario, ...) sull'atelier, clicca su 'Per saperne di più'.",
             'pdf' => 'CerimoniaDellePiante.pdf',
             'slider' => [
