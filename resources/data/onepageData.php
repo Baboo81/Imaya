@@ -198,7 +198,7 @@ return [
         'ateliers' => [
             [
                 'titre' => 'Cérémonies des plantes',
-                'image' => 'profilActivités.JPG',
+                'image' => 'profilDuo.jpg',
                 'description' => "Pour avoir plus de précision (prix, programme, calendrier, ...) sur l'atelier, cliquez sur 'En savoir plus'.",
                 'pdf' => 'CérémonieDesPlantes.pdf',
                 'slider' => [

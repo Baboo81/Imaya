@@ -274,7 +274,7 @@
                                     <div class="col-12 col-md-4">
                                         <img src="{{ asset('assets/img/activités/' . $atelier['image']) }}"
                                             class="img-fluid rounded-3"
-                                            style="max-height: 200px; object-fit: cover;">
+                                            style="width: 100%; aspect-ratio: 4 / 3; object-fit: cover;">
                                     </div>
 
                                     <div class="col-12 col-md-4">

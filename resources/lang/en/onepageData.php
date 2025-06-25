@@ -156,7 +156,7 @@ return [
     'ateliers' => [
         [
             'titre' => 'Plant Ceremonies',
-            'image' => 'profilActivités.JPG',
+            'image' => 'profilDuo.jpg',
             'description' => "For more details (price, program, schedule, ...) about the workshop, click on 'Learn more'.",
             'pdf' => 'PlantCeremony.pdf',
             'slider' => [
