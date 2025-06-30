@@ -404,14 +404,14 @@
 
                             {{-- Nom --}}
                             <div class="mb-3">
-                                <label for="name" class="form-label mb-2">Nom</label>
+                                <label for="name" class="form-label mb-2"> {{ $data['contact']['name'] }} </label>
                                 <div class="input-group has-validation">
                                     <span class="input-group-text custom-radius"><i class="bi bi-person"></i></span>
                                     <input type="text"
                                         class="form-control @error('name') is-invalid @enderror"
                                         id="name"
                                         name="name"
-                                        placeholder="Veuillez indiquer votre nom de famille"
+                                        placeholder="{{ $data['contact']['name_placeholder'] }}"
                                         value="{{ old('name') }}"
                                         required>
                                     @error('name')
@@ -422,14 +422,14 @@
 
                             {{-- Prénom --}}
                             <div class="mb-3">
-                                <label for="firstName" class="form-label mb-2">Prénom</label>
+                                <label for="firstName" class="form-label mb-2">{{ $data['contact']['first_name'] }}/label>
                                 <div class="input-group has-validation">
                                     <span class="input-group-text custom-radius"><i class="bi bi-person"></i></span>
                                     <input type="text"
                                         class="form-control @error('firstName') is-invalid @enderror"
                                         id="firstName"
                                         name="firstName"
-                                        placeholder="Veuillez indiquer votre prénom"
+                                        placeholder="{{ $data['contact']['first_name_placeholder'] }}"
                                         value="{{ old('firstName') }}"
                                         required>
                                     @error('firstName')
@@ -440,14 +440,14 @@
 
                             {{-- Téléphone --}}
                             <div class="mb-3">
-                                <label for="tel" class="form-label mb-2">Téléphone</label>
+                                <label for="tel" class="form-label mb-2">{{ $data['contact']['phone'] }}</label>
                                 <div class="input-group has-validation">
                                     <span class="input-group-text custom-radius"><i class="bi bi-telephone"></i></span>
                                     <input type="tel"
                                         class="form-control @error('tel') is-invalid @enderror"
                                         id="tel"
                                         name="tel"
-                                        placeholder="Veuillez indiquer votre numéro de téléphone"
+                                        placeholder="{{ $data['contact']['phone_placeholder'] }}"
                                         value="{{ old('tel') }}"
                                         required>
                                     @error('tel')
@@ -458,14 +458,14 @@
 
                             {{-- Email --}}
                             <div class="mb-3">
-                                <label for="email" class="form-label mb-2">Email</label>
+                                <label for="email" class="form-label mb-2"> {{ $data['contact']['email'] }} </label>
                                 <div class="input-group has-validation">
                                     <span class="input-group-text custom-radius"><i class="bi bi-envelope"></i></span>
                                     <input type="email"
                                         class="form-control @error('email') is-invalid @enderror"
                                         id="email"
                                         name="email"
-                                        placeholder="Veuillez indiquer votre adresse mail"
+                                        placeholder="{{ $data['contact']['email_placeholder'] }}"
                                         value="{{ old('email') }}"
                                         required>
                                     @error('email')
