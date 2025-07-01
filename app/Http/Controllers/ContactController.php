@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use Illuminate\Support\Facades\App;
 use App\Models\Contact;
 use Illuminate\Http\Request;
 use App\Mail\ContactMessageReceived;
@@ -35,10 +36,19 @@ class ContactController extends Controller
         //Enregistrement dans la DB
         Contact::create($validated);
 
+        //Récupération de la langue active depuis la session ('locale')
+        $lang = session('locale', 'fr');
+
+        //Permet de s'assurer que la langue est bien activée
+        App::setLocale($lang);
+
+        $successMessage = __('onepageData.contact.success');
+        
+
         //Redirection avec message de succès
         return redirect()
             ->to(url()->previous() . '#contact-form')
-            ->with('success', 'Merci pour votre message, je vous répondrai bientôt !')
+            ->with('success', $successMessage)
             ->withInput();
 
     }

@@ -422,7 +422,7 @@
 
                             {{-- Prénom --}}
                             <div class="mb-3">
-                                <label for="firstName" class="form-label mb-2">{{ $data['contact']['first_name'] }}/label>
+                                <label for="firstName" class="form-label mb-2">{{ $data['contact']['first_name'] }}</label>
                                 <div class="input-group has-validation">
                                     <span class="input-group-text custom-radius"><i class="bi bi-person"></i></span>
                                     <input type="text"
@@ -476,13 +476,13 @@
 
                             {{-- Message --}}
                             <div class="mb-3">
-                                <label for="message" class="form-label mb-2">Message</label>
+                                <label for="message" class="form-label mb-2">{{ $data['contact']['message'] }}</label>
                                 <div class="input-group has-validation">
                                     <span class="input-group-text custom-radius"><i class="bi bi-chat-text"></i></span>
                                     <textarea class="form-control @error('message') is-invalid @enderror"
                                             id="message"
                                             name="message"
-                                            placeholder="Laissez-moi votre message"
+                                            placeholder="{{ $data['contact']['message_placeholder'] }}"
                                             required>{{ old('message') }}</textarea>
                                     @error('message')
                                         <div class="invalid-feedback">{{ $message }}</div>
@@ -492,13 +492,13 @@
 
                             {{-- Bouton d'envoi --}}
                             <div class="text-center my-5">
-                                <button type="submit" class="btn btn-order rounded-5 DastinFont">Envoyer</button>
+                                <button type="submit" class="btn btn-order rounded-5 DastinFont">{{ $data['contact']['send'] }}</button>
                             </div>
 
                             {{-- Message de succès --}}
                             @if (session('success'))
                                 <div class="alert alert-success alert-dismissible fade show mt-3" role="alert" id="success-message">
-                                    {{ session('success') }}
+                                    {{ session('success') }} {{ $data['contact']['success2'] }}
                                     <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                                 </div>
                             @endif
