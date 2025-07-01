@@ -39,10 +39,10 @@ class ContactController extends Controller
         //Récupération de la langue active depuis la session ('locale')
         $lang = session('locale', 'fr');
 
-        //Permet de s'assurer que la langue est bien activée
-        App::setLocale($lang);
+        //Charger dynamiquement le fichier de langue
+        $data = include resource_path("lang/{$lang}/onepageData.php");
 
-        $successMessage = __('onepageData.contact.success');
+        $successMessage = $data['contact']['success'] ?? 'Merci pour votre message, je vous répondrai bientôt !';
         
 
         //Redirection avec message de succès
