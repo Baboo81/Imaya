@@ -28,7 +28,7 @@ class ContactMessageReceived extends Mailable
     public function envelope(): Envelope
     {
         return new Envelope(
-            subject: 'Contact Message Received',
+            subject: 'Imayah',
         );
     }
 
