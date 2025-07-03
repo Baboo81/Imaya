@@ -46,10 +46,8 @@ class ContactController extends Controller
         
 
         //Redirection avec message de succès
-        return redirect()
-            ->to(url()->previous() . '#contact-form')
-            ->with('success', $successMessage)
-            ->withInput();
+        return redirect(url()->previous() . '#contact-form')
+            ->with('success', $successMessage);
 
     }
 }
