@@ -6,6 +6,8 @@ use App\Http\Controllers\OnePageController;
 
 Route::get('/', [OnePageController::class, 'index']);
 Route::post('/contact', [ContactController::class, 'store'])->name('contact.store');
+Route::get('/admin/logs', [AdminLogController::class, 'index'])->middleware('restrict.ip');
+
 
 //Route en fonction de la langue choisie :
 Route::get('/{locale?}', function ($locale = 'fr') {

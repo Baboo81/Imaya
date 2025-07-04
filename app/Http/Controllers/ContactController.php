@@ -12,6 +12,24 @@ class ContactController extends Controller
 {
     public function store(Request $request)
     {
+        //Honeypot
+        if ($request->filled('website')) {
+            Log::warning('Honeypot déclenché par IP : ' . $request->ip());
+            abort(403, 'Bot détecté !');
+        }
+
+        //Rate limiting
+        $ip = $request->ip();
+        $key = 'contact-form:' . $ip;
+
+        if (RateLimiter::tooManyAttempts($key, 5)) {
+            Log::warning("Trop de tentatives depuis l'IP : $ip");
+            abort(429, 'Trop de tentatives ! Veuillez réessayer plus tard !');
+        }
+
+        RateLimiter::hit($key, 60);//vérouillé pdt 60sec après 5 tentavives
+
+
         //Validation des données
         $validated = $request->validate([
             'name'      => 'required|string|max:100',
@@ -48,6 +66,8 @@ class ContactController extends Controller
         //Redirection avec message de succès
         return redirect(url()->previous() . '#contact-form')
             ->with('success', $successMessage);
+
+       
 
     }
 }

@@ -402,6 +402,9 @@
 
                         <div class="col-md-12 col-12 my-5 p-5">
 
+                            {{-- Champ : honeypot --}}
+                            <input type="text" name="website" style="display: none">
+
                             {{-- Nom --}}
                             <div class="mb-3">
                                 <label for="name" class="form-label mb-2"> {{ $data['contact']['name'] }} </label>
