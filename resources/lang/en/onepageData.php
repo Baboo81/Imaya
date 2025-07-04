@@ -262,8 +262,7 @@ return [
     'message' => 'Message',
     'message_placeholder' => 'Leave me your message',
     'send' => 'Send',
-    'success' => 'Thank you for your message, I will reply soon!',
-    'success2' => 'Your message has been sent successfully.',
+    'success2' => 'Thank you for your message, I will reply soon! Your message has been sent successfully.',
     ],
 
 ];

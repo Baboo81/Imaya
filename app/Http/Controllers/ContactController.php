@@ -42,7 +42,7 @@ class ContactController extends Controller
         //Charger dynamiquement le fichier de langue
         $data = include resource_path("lang/{$lang}/onepageData.php");
 
-        $successMessage = $data['contact']['success'] ?? 'Merci pour votre message, je vous répondrai bientôt !';
+        $successMessage = $data['contact']['success'] ?? '<i class="bi bi-check-circle-fill text-success"></i>';
         
 
         //Redirection avec message de succès

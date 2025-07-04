@@ -262,8 +262,7 @@ return [
         'message' => 'Messaggio',
         'message_placeholder' => 'Lasciami il tuo messaggio',
         'send' => 'Invia',
-        'success' => 'Grazie per il tuo messaggio, ti risponderò presto!',
-        'success2' => 'Il tuo messaggio è stato inviato con successo.',
+        'success2' => 'Grazie per il tuo messaggio, ti risponderò presto ! Il tuo messaggio è stato inviato con successo.',
     ],
 
 ];

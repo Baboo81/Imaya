@@ -498,7 +498,7 @@
                             {{-- Message de succès --}}
                             @if (session('success'))
                                 <div class="alert alert-success alert-dismissible fade show mt-3" role="alert" id="success-message">
-                                    {{ session('success') }} {{ $data['contact']['success2'] }}
+                                    {!! session('success') !!} {!! $data['contact']['success2'] !!}
                                     <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                                 </div>
                             @endif

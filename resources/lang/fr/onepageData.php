@@ -304,8 +304,7 @@ return [
         'message' => 'Message',
         'message_placeholder' => 'Laissez-moi votre message',
         'send' => 'Envoyer',
-        'success' => 'Merci pour votre message, je vous répondrai bientôt !',
-        'success2' => 'Votre message a été envoyé avec succès.',
+        'success2' => 'Merci pour votre message, je vous répondrai bientôt ! Votre message a été envoyé avec succès.',
     ],
   
 ];
