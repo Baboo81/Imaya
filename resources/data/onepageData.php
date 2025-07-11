@@ -36,7 +36,7 @@ return [
                         musique, de la psychologie, de la kinésiologie, du Reiki m’enseignèrent
                         différents langages que la transe réunit en un seul, celui de la guérison de
                         l’âme par le verbe, son chant et son toucher. »',
-        'secondTitle' => 'Entre Bruxelles et la Sicile',
+        'secondTitle' => 'Entre Bruxelles et Noto',
         'imgBxl' => '/assets/img/quiSuisJe/Bxl.jpg',
         'imgSicile' => '/assets/img/quiSuisJe/Sicile.jpg',
         'txtBxlSi1' => 'Exploratrice du vivant et de son mouvement, j’accompagne
@@ -66,7 +66,9 @@ return [
         'imgSliderCabinet' => 'assets/img/quiSuisje/cabinetBxl/cabinet1.jpg,
                                assets/img/quiSuisje/cabinetBxl/cabinet2.jpg, 
                                assets/img/quiSuisje/cabinetBxl/cabinet3.jpg,
-                               assets/img/quiSuisje/cabinetBxl/cabinet4.jpg',
+                               assets/img/quiSuisje/cabinetBxl/cabinet4.jpg,
+                               assets/img/quiSuisje/cabinetBxl/cabinet5.jpg,
+                               assets/img/quiSuisje/cabinetBxl/cabinet6.jpg',
         ],
     'soins' => [
             'mainTitle' => 'Les Soins',

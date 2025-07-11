@@ -80,7 +80,7 @@
         </div>
     </div>
     <!-- Slider : cabinet -->
-    <div class="w-100 overflow-hidden" style="background-color: #000;">
+    <div class="w-100 overflow-hidden" style="background-color: #B36700;">
         <div class="slider-track d-flex">
             @php
                 $cabinetImages = explode(',', $data['qui-suis-je']['imgSliderCabinet']);
