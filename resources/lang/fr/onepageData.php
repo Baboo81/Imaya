@@ -6,7 +6,6 @@ return [
     'activite_title' => 'Les activités',
     'contact_title' => 'Comment me contacter ?',
     'nav' => [
-        'accueil' => 'Accueil',
         'services' => 'Services',
         'dropdown' => [
             'soins' => 'Les soins',

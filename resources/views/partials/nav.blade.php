@@ -17,7 +17,7 @@
                         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                             <li class="nav-item mx-5">
                                 <a class="nav-link" aria-current="page" href="#">
-                                    {{ __('onepageData.nav.accueil') }}
+                                    <i class="fas fa-home"></i>
                                 </a>
                             </li>
                             <li class="nav-item dropdown mx-5">
