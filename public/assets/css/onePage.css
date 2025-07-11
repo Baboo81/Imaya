@@ -194,15 +194,13 @@ section .bannerTitle
 
 .soins
 {
-    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, 0)), url(../img/banner/fond1.jpeg) center center fixed no-repeat;
-    background-size: 142%;
+    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, 0)), url(../img/banner/fond1.jpg) center center fixed no-repeat;
     min-height: 2800px;
 }
 
 .card-bloc
 {
-    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(../img/banner/fond2.jpeg) center center fixed no-repeat;
-    background-size: 107%;
+    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(../img/banner/fond2.jpg) center center fixed no-repeat;
     min-height: 1800px;
 }
 
