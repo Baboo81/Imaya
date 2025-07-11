@@ -3,10 +3,10 @@
 // resources onepage.blade.php
 
 return [
-    'activite_title' => 'Le attività',
+    'activite_title' => 'Laboratori',
     'contact_title' => 'Come contattarmi ?',
     'nav' => [
-        'services' => 'Servizi',
+        'services' => 'Laboratori e altro',
         'dropdown' => [
             'soins' => 'Cure',
             'creations' => 'Creazioni',
@@ -160,7 +160,7 @@ return [
         [
             'titre' => 'Cerimonie delle piante',
             'image' => 'profilDuo.jpg',
-            'txt_propose' => 'Attività proposta da :',
+            'txt_propose' => 'Laboratorio proposta da :',
             'auteur' => 'France-Alexandra & Jessica',
             'description' => "Per maggiori dettagli (prezzi, programma, calendario, ...) sull'atelier, clicca su 'Per saperne di più'.",
             'pdf' => 'CerimoniaDellePiante.pdf',
@@ -175,7 +175,7 @@ return [
         [
             'titre' => "Gioielli dell'anima",
             'image' => 'profilActivités.JPG',
-            'txt_propose' => 'Attività proposta da :',
+            'txt_propose' => 'Laboratorio proposta da :',
             'auteur' => 'France-Alexandra',
             'description' => "Per maggiori dettagli (prezzi, programma, calendario, ...) sull'atelier, clicca su 'Per saperne di più'.",
             'pdf' => 'GioielliDellAnima.pdf',

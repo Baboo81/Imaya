@@ -3,10 +3,10 @@
 // resources/lang/en/onepageData.php
 
 return [
-    'activite_title' => 'The activities',
+    'activite_title' => 'Workshops',
     'contact_title' => 'How to contact me ?',
     'nav' => [
-        'services' => 'Services',
+        'services' => 'Workshops & more',
         'dropdown' => [
             'soins' => 'Care',
             'creations' => 'Creations',
@@ -160,7 +160,7 @@ return [
         [
             'titre' => 'Plant Ceremonies',
             'image' => 'profilDuo.jpg',
-            'txt_propose' => 'Activity proposed by :',
+            'txt_propose' => 'Workshop proposed by :',
             'auteur' => 'France-Alexandra & Jessica',
             'description' => "For more details (price, program, schedule, ...) about the workshop, click on 'Learn more'.",
             'pdf' => 'PlantCeremony.pdf',
@@ -175,7 +175,7 @@ return [
         [
             'titre' => "Soul Jewelry",
             'image' => 'profilActivités.JPG',
-            'txt_propose' => 'Activity proposed by :',
+            'txt_propose' => 'Workshop proposed by :',
             'auteur' => 'France-Alexandra',
             'description' => "For more details (price, program, schedule, ...) about the workshop, click on 'Learn more'.",
             'pdf' => 'SoulJewelry.pdf',

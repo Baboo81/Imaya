@@ -265,7 +265,7 @@
                 {{-- Ateliers --}}
                 <article class="card-body">
                     <div class="my-5">
-                        <h3 class="card-title whiteFont mb-5">Ateliers & collaborations</h3>
+                        <h3 class="card-title whiteFont mb-5">Collaborations</h3>
                     </div>
                     <ul class="list-group list-group-flush rounded-2">
                         @foreach ($data['activites']['ateliers'] as $atelier)

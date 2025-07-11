@@ -3,10 +3,10 @@
 //resources onepage.blade.php
 
 return [
-    'activite_title' => 'Les activités',
+    'activite_title' => 'Les ateliers',
     'contact_title' => 'Comment me contacter ?',
     'nav' => [
-        'services' => 'Services',
+        'services' => 'Ateliers & plus',
         'dropdown' => [
             'soins' => 'Les soins',
             'creations' => 'Les créations',
@@ -202,7 +202,7 @@ return [
             [
                 'titre' => 'Cérémonies des plantes',
                 'image' => 'profilDuo.jpg',
-                'txt_propose' => 'Activité proposée par :',
+                'txt_propose' => 'Atelier proposé par :',
                 'auteur' => 'France-Alexandra & Jessica',
                 'description' => "Pour avoir plus de précision (prix, programme, calendrier, ...) sur l'atelier, cliquez sur 'En savoir plus'.",
                 'pdf' => 'CérémonieDesPlantes.pdf',
@@ -217,7 +217,7 @@ return [
             [
                 'titre' => "Bijoux de l'âme",
                 'image' => 'profilActivités.JPG',
-                'txt_propose' => 'Activité proposée par :',
+                'txt_propose' => 'Atelier proposé par :',
                 'auteur' => 'France-Alexandra',
                 'description' => "Pour avoir plus de précision (prix, programme, calendrier, ...) sur l'atelier, cliquez sur 'En savoir plus'.",
                 'pdf' => 'BijouxDeLAme.pdf',
