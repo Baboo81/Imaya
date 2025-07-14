@@ -265,7 +265,7 @@ return [
             ],
             [
                 'groupe' => "Le soleil levant",
-                'image' => '/soleilLevant/soleil.jpg',
+                'image' => '/soleilLevant/retraiteSoleilLevant.jpeg',
                 'evenements' => [
                     [
                         'titre' => "Soleil levant",

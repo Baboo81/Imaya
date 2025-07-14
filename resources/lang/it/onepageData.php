@@ -223,7 +223,7 @@ return [
             ],
             [
                 'groupe' => "Il sole nascente",
-                'image' => '/soleilLevant/soleil.jpg',
+                'image' => '/soleilLevant/retraiteSoleilLevant.jpeg',
                 'evenements' => [
                     [
                         'titre' => "Sole nascente",

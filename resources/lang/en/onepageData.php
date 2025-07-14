@@ -223,7 +223,7 @@ return [
         ],
         [
             'groupe' => "The Rising Sun",
-            'image' => '/soleilLevant/soleil.jpg',
+            'image' => '/soleilLevant/retraiteSoleilLevant.jpeg',
             'evenements' => [
                 [
                     'titre' => "Rising Sun",
