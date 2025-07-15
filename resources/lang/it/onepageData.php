@@ -286,5 +286,17 @@ return [
         'send' => 'Invia',
         'success2' => 'Grazie per il tuo messaggio, ti risponderò presto ! Il tuo messaggio è stato inviato con successo.',
     ],
+    'footer' => [
+        'adresse_title' => 'Indirizzo',
+        'adresse_it' => 'Contrada Cavasecca / 96017 Noto',
+        'coordonnees_title' => 'Contatti',
+        'subTitle_it' => 'Sicilia',
+        'subTitle_bxl' => 'Bruxelles',
+        'tel_it' => '+39 345 243 3689',
+        'tel_bxl' => '+39 345 243 3689',
+        'mail_title' => 'Email',
+        'txt_mail' => 'Inviami un’email cliccando qui sotto',
+        'webmaster' => '&copy;&nbsp;Kenko - 2025',
+    ],
 
 ];

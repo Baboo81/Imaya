@@ -286,5 +286,17 @@ return [
     'send' => 'Send',
     'success2' => 'Thank you for your message, I will reply soon! Your message has been sent successfully.',
     ],
+'footer' => [
+    'adresse_title' => 'Address',
+    'adresse_it' => 'Contrada Cavasecca / 96017 Noto',
+    'coordonnees_title' => 'Contact',
+    'subTitle_it' => 'Sicily',
+    'subTitle_bxl' => 'Brussels',
+    'tel_it' => '+39 345 243 3689',
+    'tel_bxl' => '+39 345 243 3689',
+    'mail_title' => 'Email',
+    'txt_mail' => 'Send me an email by clicking below',
+    'webmaster' => '&copy;&nbsp;Kenko - 2025',
+    ],
 
 ];
