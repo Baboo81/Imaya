@@ -319,7 +319,9 @@
                 {{-- Retraites --}}
                 <article class="card-body my-5 blocRetraites">
                     <div class="my-5">
-                        <h3 class="card-title whiteFont mb-5">Retraites</h3>
+                        <h3 class="card-title whiteFont mb-5">
+                            {{ $data['activite_subTitle2'] ?? '' }}
+                        </h3>
                     </div>
                     <ul class="list-group list-group-flush rounded-2">
                         @foreach ($data['activites']['retraites'] as $retraite)

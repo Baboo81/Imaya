@@ -5,6 +5,7 @@
 return [
     'activite_title' => 'Les ateliers',
     'activite_subTitle' => 'Collaborations',
+    'activite_subTitle2' => 'Retraites',
     'contact_title' => 'Comment me contacter ?',
     'nav' => [
         'services' => 'Ateliers & +',
