@@ -4,6 +4,7 @@
 
 return [
     'activite_title' => 'Workshops',
+    'activite_subTitle' => 'Collaborations',
     'contact_title' => 'How to contact me ?',
     'nav' => [
         'services' => 'Workshops & more',

@@ -4,6 +4,7 @@
 
 return [
     'activite_title' => 'Les ateliers',
+    'activite_subTitle' => 'Collaborations',
     'contact_title' => 'Comment me contacter ?',
     'nav' => [
         'services' => 'Ateliers & plus',

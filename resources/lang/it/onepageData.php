@@ -4,6 +4,7 @@
 
 return [
     'activite_title' => 'Laboratori',
+    'activite_subTitle' => 'Collaborazioni',
     'contact_title' => 'Come contattarmi ?',
     'nav' => [
         'services' => 'Laboratori e altro',
