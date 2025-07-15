@@ -288,16 +288,16 @@
                                         @endif
                                     </div>
 
-                                    <div class="col-12 col-md-4">
+                                    <div class="col-12 col-md-3 text-center d-flex flex-column align-items-center">
                                         <p class="p-1">{{ $atelier['description'] }}</p>
                                         <a href="{{ asset('assets/pdf/ateliers&collaborations/' . $atelier['pdf']) }}"
-                                        class="btn btn-order btn-lg me-5 rounded-5"
+                                        class="btn btn-order btn-lg mt-2 rounded-5"
                                         download="Infos atelier">
-                                            En savoir plus
+                                            {{ $data['btn_enSavoirPlus'] ?? '' }}
                                         </a>
                                     </div>
 
-                                    <div class="col-12 col-md-4">
+                                    <div class="col-12 col-md-5 p-5">
                                         <div id="carousel-{{ \Illuminate\Support\Str::slug($atelier['titre']) }}"
                                             class="carousel carousel-fade mx-auto my-3" data-bs-ride="carousel">
                                             <div class="carousel-inner rounded-2">
@@ -339,7 +339,7 @@
                                                     <a href="{{ asset('assets/pdf/voyageDeLAme/' . $event['pdf']) }}"
                                                     class="btn btn-order btn-lg me-5 DastinFont rounded-5"
                                                     download="{{ $event['nom_pdf'] }}">
-                                                        En savoir plus
+                                                        {{ $data['btn_enSavoirPlus'] ?? '' }}
                                                     </a>
                                                 </div>
                                             </article>
@@ -382,7 +382,9 @@
                     <div class="mt-5 d-flex align-items-center justify-content-center">
                         <a href="https://www.casaimayah.it"
                            class="btn btn-order btn-lg me-5 rounded-5 DastinFont"
-                           download="Infos atelier">Allers vers le site Casa Imayah</a>
+                           download="Infos atelier">
+                           {{ $data['btn_allerVers'] ?? '' }}
+                        </a>
                     </div>
                 </div>
             </div>

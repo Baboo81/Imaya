@@ -7,6 +7,8 @@ return [
     'activite_subTitle' => 'Collaborations',
     'activite_subTitle2' => 'Retraites',
     'contact_title' => 'Comment me contacter ?',
+    'btn_enSavoirPlus' => 'En savoir plus',
+    'btn_allerVers' => 'Allers vers le site Casa Imayah',
     'nav' => [
         'services' => 'Ateliers & plus',
         'dropdown' => [

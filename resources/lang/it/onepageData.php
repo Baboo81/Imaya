@@ -7,6 +7,8 @@ return [
     'activite_subTitle' => 'Collaborazioni',
     'activite_subTitle2' => 'Ritiri',
     'contact_title' => 'Come contattarmi ?',
+    'btn_enSavoirPlus' => 'Scopri di piú',
+    'btn_allerVers' => 'Visita il sito Casa Imayah',
     'nav' => [
         'services' => 'Laboratori e altro',
         'dropdown' => [

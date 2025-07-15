@@ -7,6 +7,8 @@ return [
     'activite_subTitle' => 'Collaborations',
     'activite_subTitle2' => 'Retreats',
     'contact_title' => 'How to contact me ?',
+    'btn_enSavoirPlus' => 'Learn more',
+    'btn_allerVers' => 'Go to Casa Imayah',
     'nav' => [
         'services' => 'Workshops & more',
         'dropdown' => [
