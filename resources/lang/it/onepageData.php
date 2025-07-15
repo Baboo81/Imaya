@@ -195,6 +195,23 @@ return [
             ],
             'sliderPath' => 'activités/ateliers&collaborations/bijoux/',
         ],
+        [
+            'titre' => "Viaggio dell'Anima",
+            'image' => 'profilActivitésVoyageDeLAme.jpg',
+            'txt_propose' => 'Laboratorio proposto da:',
+            'auteur' => 'Béatrice & France-Alexandra',
+            'description' => "Per maggiori dettagli (prezzo, programma, calendario, ecc.) sul laboratorio, clicca su 'Per saperne di più'.",
+            'pdf' => 'BijouxDeLAme.pdf',
+            'slider' => [
+                'voyage1.jpg',
+                'voyage2.jpg',
+                'voyage3.jpg',
+                'voyage4.jpg',
+                'voyage5.PNG',
+            ],
+            'sliderPath' => 'activités/ateliers&collaborations/voyageDeLAme/',
+],
+
     ],
     'retraites' => [
             [

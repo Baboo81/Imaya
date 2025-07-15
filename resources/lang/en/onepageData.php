@@ -195,6 +195,23 @@ return [
             ],
             'sliderPath' => 'activités/ateliers&collaborations/bijoux/',
         ],
+        [
+            'titre' => "Soul Journey",
+            'image' => 'profilActivitésVoyageDeLAme.jpg',
+            'txt_propose' => 'Workshop offered by:',
+            'auteur' => 'Béatrice & France-Alexandra',
+            'description' => "For more details (price, program, schedule, etc.) about the workshop, click on 'Learn more'.",
+            'pdf' => 'BijouxDeLAme.pdf',
+            'slider' => [
+                'voyage1.jpg',
+                'voyage2.jpg',
+                'voyage3.jpg',
+                'voyage4.jpg',
+                'voyage5.PNG',
+            ],
+            'sliderPath' => 'activités/ateliers&collaborations/voyageDeLAme/',
+],
+
     ],
     'retraites' => [
         [

@@ -237,6 +237,22 @@ return [
                 ],
                 'sliderPath' => 'activités/ateliers&collaborations/bijoux/',
             ],
+            [
+                'titre' => "Voyage de l'Âme",
+                'image' => 'profilActivitésVoyageDeLAme.jpg',
+                'txt_propose' => 'Atelier proposé par :',
+                'auteur' => 'Béatrice & France-Alexandra',
+                'description' => "Pour avoir plus de précision (prix, programme, calendrier, ...) sur l'atelier, cliquez sur 'En savoir plus'.",
+                'pdf' => 'BijouxDeLAme.pdf',
+                'slider' => [
+                    'voyage1.jpg',
+                    'voyage2.jpg',
+                    'voyage3.jpg',
+                    'voyage4.jpg',
+                    'voyage5.PNG',
+                ],
+                'sliderPath' => 'activités/ateliers&collaborations/voyageDeLAme/',
+            ],
         ],
         'retraites' => [
             [
