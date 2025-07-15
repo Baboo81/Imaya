@@ -435,7 +435,7 @@ section .picture
 
 .carousel-inner img 
 {
-  height: 300px;           /* même hauteur que l'autre image */
+  height: 500px;           /* même hauteur que l'autre image */
   object-fit: cover;       /* pour garder un cadrage harmonieux */
   width: 100%;             /* pour remplir le conteneur */
   border-radius: 0.5rem;   /* arrondi cohérent avec Bootstrap */

@@ -198,7 +198,7 @@ return [
         [
             'titre' => "Soul Journey",
             'image' => 'profilActivitésVoyageDeLAme.jpg',
-            'txt_propose' => 'Workshop offered by:',
+            'txt_propose' => 'Workshop proposed by :',
             'auteur' => 'Béatrice & France-Alexandra',
             'description' => "For more details (price, program, schedule, etc.) about the workshop, click on 'Learn more'.",
             'pdf' => 'BijouxDeLAme.pdf',
