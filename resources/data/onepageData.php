@@ -12,7 +12,7 @@ return [
         'dropdown' => [
             'soins' => 'Les soins',
             'creations' => 'Les créations',
-            'activites' => 'Les activités',
+            'activites' => 'Les ateliers',
             'casa' => 'Casa Imayah',
         ],
         'qui-suis-je' => 'Qui suis-je ?',
