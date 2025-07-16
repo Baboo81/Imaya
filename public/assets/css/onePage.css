@@ -373,6 +373,11 @@ section .sectionCreationTitle
     height: 600px;
 }
 
+.sliderPaintings img
+{
+    height: 800px !important;
+}
+
 .carousel-item img
 {
   width: 100%;

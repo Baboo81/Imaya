@@ -191,7 +191,7 @@
                                         @endforeach
                                     </div>
 
-                                    <div class="carousel-inner">
+                                    <div class="carousel-inner sliderPaintings">
                                         @foreach ($section['images'] as $imgIndex => $image)
                                             <div class="carousel-item {{ $loop->first ? 'active' : '' }}">
                                                 <img src="{{ $image }}" class="d-block w-100 img-fluid rounded-3" alt="Création">

@@ -147,6 +147,16 @@ return [
                 'cta'          => 'Illustrazioni e dipinti sono disponibili su richiesta',
                 'images'       => [
                     '/assets/img/créations/peintures/peinture1.jpg',
+                    '/assets/img/créations/peintures/peinture2.jpg',
+                    '/assets/img/créations/peintures/peinture3.jpg',
+                    '/assets/img/créations/peintures/peinture4.jpeg',
+                    '/assets/img/créations/peintures/peinture5.jpg',
+                    '/assets/img/créations/peintures/peinture6.jpg',
+                    '/assets/img/créations/peintures/peinture7.jpeg',
+                    '/assets/img/créations/peintures/peinture8.jpeg',
+                    '/assets/img/créations/peintures/peinture9.jpeg',
+                    '/assets/img/créations/peintures/peinture10.jpeg',
+                    '/assets/img/créations/peintures/peinture11.jpeg',
                 ],
             ],
             [
