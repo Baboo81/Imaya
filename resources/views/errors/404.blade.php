@@ -1,4 +1,9 @@
+
 @extends(('layouts.app'))
+
+@section('styles')
+    <link rel="stylesheet" href="{{ asset('assets/css/error.css') }}">
+@endsection
 
 @section('title', 'Page non trouvée')
 
@@ -9,7 +14,7 @@
     <h2 class="mb-4">Oups... Page introuvable</h2>
     <p class="lead mb-4">La page que vous cherchez n'existe pas ou a été déplacée.</p>
     
-    <a href="{{ url('/') }}" class="btn btn-primary">
+    <a href="{{ url('/') }}" class="btn btn-order btn-lg mt-2 rounded-5">
         Retour à l'accueil
     </a>
 

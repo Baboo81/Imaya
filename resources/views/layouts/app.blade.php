@@ -1,8 +1,10 @@
 
 <!DOCTYPE html>
 <html lang="fr">
+    
     <head>
         @include('partials.header')
+        @yield('styles')
     </head>
     <body>
         <header>
