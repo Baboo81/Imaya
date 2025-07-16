@@ -283,6 +283,8 @@ return [
     'p1' => ' "We invite you to enter our adventure, a space designed to offer you rest, rejuvenating retreats, deep reconnection, moments of sharing, and a touch of inspiration… all in sincere and soothing simplicity.
               Want to recharge in a haven of peace? You are in the right place." ',
     'p2' => ' To visit the website: Casa Imayah, feel free to click on the button below!',
+    'imgCasaImayah' => '/assets/img/casaImayah/CasaImayah.jpg',
+    'imgPiscine' => '/assets/img/casaImayah/piscine.jpg',
     ],
 'contact' => [
     'name' => 'Last Name',

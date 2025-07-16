@@ -324,6 +324,8 @@ return [
         'p1' => ' "Nous vous invitons à entrer dans notre aventure, un espace pensé pour vous offrir du repos, des retraites ressourçantes, une reconnexion profonde, des instants de partage et une touche d’inspiration… le tout dans une simplicité sincère et apaisante.
                             Envie de vous ressourcer dans un havre de paix ? Vous êtes au bon endroit." ',
         'p2' => ' Pour visiter le site web : Casa Imayah, n\'hésitez pas cliquer sur le bouton ci-dessous !',
+        'imgCasaImayah' => '/assets/img/casaImayah/CasaImayah.jpg',
+        'imgPiscine' => '/assets/img/casaImayah/piscine.jpg',
     ],
      'contact' => [
         'name' => 'Nom',

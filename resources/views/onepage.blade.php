@@ -363,10 +363,12 @@
         <h1 class="text-center text-muted mainTitles py-5 my-5">
             {{ $data['casaImayah']['title'] ?? '' }}
         </h1>
-        <div class="w-100">
-            <div class="casaImayahBanner">
-                
-            </div>
+        <div class="d-flex casaImayah">
+             @foreach (['imgCasaImayah' => 'Photo de aérienne de Casa Imayah', 'imgPiscine' => 'Photo de la piscine'] as $key => $alt)
+                <div class="w-50">
+                    <img src="{{ $data['casaImayah'][$key] ?? '' }}" class="img-half" alt="{{ $alt }}">
+                </div>
+            @endforeach
         </div>
         <div class="container">
             <div class="row">
@@ -388,6 +390,7 @@
                     </div>
                 </div>
             </div>
+        </div>
     </section>
     {{-- Section : Casa Imayah END--}}
 

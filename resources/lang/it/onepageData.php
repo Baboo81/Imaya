@@ -283,6 +283,8 @@ return [
         'p1' => ' "Vi invitiamo a entrare nella nostra avventura, uno spazio pensato per offrirvi riposo, ritiri rigeneranti, una profonda riconnessione, momenti di condivisione e un tocco di ispirazione… tutto nella semplicità sincera e rilassante.
                Volete rigenerarvi in un’oasi di pace? Siete nel posto giusto." ',
         'p2' => ' Per visitare il sito web: Casa Imayah, non esitate a cliccare sul pulsante qui sotto!',
+        'imgCasaImayah' => '/assets/img/casaImayah/CasaImayah.jpg',
+        'imgPiscine' => '/assets/img/casaImayah/piscine.jpg',
     ],
     'contact' => [
         'name' => 'Cognome',
