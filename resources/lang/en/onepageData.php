@@ -266,6 +266,7 @@ return [
                     'titre' => "Rising Sun",
                     'pdf' => 'retreatNoto.pdf',
                     'nom_pdf' => 'Retreat info in Noto',
+                    'path' => 'assets/pdf/voyageDeLAme/UnionSacrée.pdf',
                 ]
             ]
         ],
@@ -277,6 +278,7 @@ return [
                     'titre' => "Wild Hearts Yoga retreat Sicily",
                     'pdf' => 'retreatNoto.pdf',
                     'nom_pdf' => 'WH Sicily retreat info',
+                    'path' => 'assets/pdf/voyageDeLAme/UnionSacrée.pdf',
                 ]
             ]
         ]

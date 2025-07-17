@@ -307,6 +307,7 @@ return [
                         'titre' => "Soleil levant",
                         'pdf' => 'retraiteNoto.pdf',
                         'nom_pdf' => 'Infos retraite à Noto',
+                        'path' => 'assets/pdf/voyageDeLAme/UnionSacrée.pdf',
                     ]
                 ]
             ],
@@ -318,6 +319,7 @@ return [
                         'titre' => "Wild Hearts Yoga retreat Sicily",
                         'pdf' => 'retraiteNoto.pdf',
                         'nom_pdf' => 'Infos retraite WH Sicily',
+                        'path' => 'assets/pdf/voyageDeLAme/UnionSacrée.pdf',
                     ]
                 ]
             ]

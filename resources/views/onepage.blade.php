@@ -332,8 +332,6 @@
                                         <img src="{{ asset('assets/img/activités/retraites/' . $retraite['image']) }}" alt="" class="img-half">
                                     </div>
                                     <section class="d-flex flex-wrap justify-content-center">
-                                        @dd($data['activites']['retraites'])
-
                                         @foreach ($retraite['evenements'] as $event)
                                             @php
                                                 $pdfPath = $event['path']; // pas besoin d'ajouter $event['pdf']
