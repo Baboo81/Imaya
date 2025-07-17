@@ -236,25 +236,25 @@ return [
                     'titre' => "The Soul Journey on the 8 + online",
                     'pdf' => 'Meditation on line.pdf',
                     'nom_pdf' => 'Soul Journey : meditation on line',
-                    'path' => 'assets/pdf/voyageDeLAme/VoyageDeLAmeSurLe8-EnLigne.pdf',
+                    'path' => 'assets/pdf/retraites/voyageDeLAme/VoyageDeLAmeSurLe8-EnLigne.pdf',
                 ],
                 [
                     'titre' => "The Soul Journey on the 8",
                     'pdf' => 'retreatMorv.pdf',
                     'nom_pdf' => 'Retreat info Morvan',
-                    'path' => 'assets/pdf/voyageDeLAme/retraiteMorv.pdf',
+                    'path' => 'assets/pdf/retraites/voyageDeLAme/retraiteMorv.pdf',
                 ],
                 [
                     'titre' => "The Soul Journey & The Thread of Self",
                     'pdf' => 'retreatSicily.pdf',
                     'nom_pdf' => 'Retreat info Sicily',
-                    'path' => 'assets/pdf/voyageDeLAme/retraiteSicile.pdf',
+                    'path' => 'assets/pdf/retraites/voyageDeLAme/retraiteSicile.pdf',
                 ],
                 [
                     'titre' => "The Soul Journey & the Sacred Union",
                     'pdf' => 'SacredUnion.pdf',
                     'nom_pdf' => "Online soul journey info",
-                    'path' => 'assets/pdf/voyageDeLAme/UnionSacrée.pdf',
+                    'path' => 'assets/pdf/retraites/voyageDeLAme/UnionSacrée.pdf',
                 ],
             ]
         ],
@@ -266,7 +266,7 @@ return [
                     'titre' => "Rising Sun",
                     'pdf' => 'retreatNoto.pdf',
                     'nom_pdf' => 'Retreat info in Noto',
-                    'path' => 'assets/pdf/voyageDeLAme/UnionSacrée.pdf',
+                    'path' => 'assets/pdf/retraites/voyageDeLAme/UnionSacrée.pdf',
                 ]
             ]
         ],
@@ -278,7 +278,7 @@ return [
                     'titre' => "Wild Hearts Yoga retreat Sicily",
                     'pdf' => 'retreatNoto.pdf',
                     'nom_pdf' => 'WH Sicily retreat info',
-                    'path' => 'assets/pdf/voyageDeLAme/UnionSacrée.pdf',
+                    'path' => 'assets/pdf/retraites/voyageDeLAme/UnionSacrée.pdf',
                 ]
             ]
         ]
