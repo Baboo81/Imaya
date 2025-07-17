@@ -332,15 +332,27 @@
                                         <img src="{{ asset('assets/img/activités/retraites/' . $retraite['image']) }}" alt="" class="img-half">
                                     </div>
                                     <section class="d-flex flex-wrap justify-content-center">
+                                        @dd($data['activites']['retraites'])
+
                                         @foreach ($retraite['evenements'] as $event)
+                                            @php
+                                                $pdfPath = $event['path']; // pas besoin d'ajouter $event['pdf']
+                                                $pdfExists = file_exists(public_path($pdfPath));
+                                                $pdfUrl = asset($pdfPath);
+                                            @endphp
+
                                             <article class="col-12 col-sm-6 col-lg-3 my-5">
                                                 <h5 class="mb-4">{{ $event['titre'] }}</h5>
                                                 <div class="blocBtn">
-                                                    <a href="{{ asset('assets/pdf/voyageDeLAme/' . $event['pdf']) }}"
-                                                    class="btn btn-order btn-lg me-5 DastinFont rounded-5"
-                                                    download="{{ $event['nom_pdf'] }}">
-                                                        {{ $data['btn_enSavoirPlus'] ?? '' }}
-                                                    </a>
+                                                    @if ($pdfExists)
+                                                        <a href="{{ $pdfUrl }}"
+                                                        class="btn btn-order btn-lg me-5 DastinFont rounded-5"
+                                                        download="{{ $event['nom_pdf'] }}">
+                                                            {{ $data['btn_enSavoirPlus'] ?? '' }}
+                                                        </a>
+                                                    @else
+                                                        <button class="btn btn-secondary disabled">PDF indisponible</button>
+                                                    @endif
                                                 </div>
                                             </article>
                                         @endforeach

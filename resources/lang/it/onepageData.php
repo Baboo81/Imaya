@@ -234,23 +234,27 @@ return [
                 'evenements' => [
                     [
                         'titre' => "Il viaggio dell'anima sul 8 + online",
-                        'pdf' => 'retraiteNoto.pdf',
+                        'pdf' => 'online.pdf',
                         'nom_pdf' => 'Info ritiro a Noto',
+                        'path' => 'assets/pdf/voyageDeLAme/VoyageDeLAmeSurLe8-EnLigne.pdf',
                     ],
                     [
                         'titre' => "Il viaggio dell'anima sul 8",
                         'pdf' => 'retraiteMorv.pdf',
                         'nom_pdf' => 'Info ritiro Morvan',
+                        'path' => 'assets/pdf/voyageDeLAme/retraiteMorv.pdf',
                     ],
                     [
                         'titre' => "Il viaggio dell'anima & il Filo di Sé",
                         'pdf' => 'retraiteSicile.pdf',
                         'nom_pdf' => 'Info ritiro Sicilia',
+                        'path' => 'assets/pdf/voyageDeLAme/retraiteSicile.pdf',
                     ],
                     [
                         'titre' => "Il Viaggio dell'Anima & l'Unione Sacra",
                         'pdf' => 'Unione Sacra.pdf',
                         'nom_pdf' => "Info viaggio dell'anima online",
+                        'path' => 'assets/pdf/voyageDeLAme/UnionSacrée.pdf',
                     ],
                 ]
             ],

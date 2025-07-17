@@ -275,23 +275,27 @@ return [
                 'evenements' => [
                     [
                         'titre' => "Le voyage de l'âme sur le 8 + en ligne",
-                        'pdf' => 'retraiteNoto.pdf',
+                        'pdf' => 'Méditation en ligne.pdf',
                         'nom_pdf' => 'Infos retraite à Noto',
+                        'path' => 'assets/pdf/voyageDeLAme/VoyageDeLAmeSurLe8-EnLigne.pdf',
                     ],
                     [
                         'titre' => "Le voyage de l'âme sur le 8",
                         'pdf' => 'retraiteMorv.pdf',
                         'nom_pdf' => 'Infos retraite Morvan',
+                        'path' => 'assets/pdf/voyageDeLAme/retraiteMorv.pdf',
                     ],
                     [
                         'titre' => "Le voyage de l'âme & le Fil de Soi",
                         'pdf' => 'retraiteSicile.pdf',
                         'nom_pdf' => 'Infos retraite Sicile',
+                        'path' => 'assets/pdf/voyageDeLAme/retraiteSicile.pdf',
                     ],
                     [
                         'titre' => "Le Voyage de l'Ame & l'Union Sacrée",
-                        'pdf' => 'Union Sacrée .pdf',
+                        'pdf' => 'Union Sacrée.pdf',
                         'nom_pdf' => "Infos voyage de l'âme en ligne",
+                        'path' => 'assets/pdf/voyageDeLAme/UnionSacrée.pdf',
                     ],
                 ]
             ],
