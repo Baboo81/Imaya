@@ -374,7 +374,7 @@
             {{ $data['casaImayah']['title'] ?? '' }}
         </h1>
         <div class="d-flex casaImayah">
-             @foreach (['imgCasaImayah' => 'Photo de aérienne de Casa Imayah', 'imgPiscine' => 'Photo de la piscine'] as $key => $alt)
+             @foreach (['imgCasaImayah' => 'Photo aérienne de Casa Imayah', 'imgPiscine' => 'Photo de la piscine'] as $key => $alt)
                 <div class="w-50">
                     <img src="{{ $data['casaImayah'][$key] ?? '' }}" class="img-half" alt="{{ $alt }}">
                 </div>
