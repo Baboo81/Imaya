@@ -240,7 +240,7 @@ return [
                     ],
                     [
                         'titre' => "Il viaggio dell'anima sul 8",
-                        'pdf' => 'retraiteMorv.pdf',
+                        'pdf' => 'retraiteNoto.pdf',
                         'nom_pdf' => 'Info ritiro Morvan',
                         'path' => 'assets/pdf/retraites/voyageDeLAme/retraiteMorv.pdf',
                     ],

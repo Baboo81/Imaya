@@ -281,7 +281,7 @@ return [
                     ],
                     [
                         'titre' => "Le voyage de l'âme sur le 8",
-                        'pdf' => 'retraiteMorv.pdf',
+                        'pdf' => 'retraiteNoto.pdf',
                         'nom_pdf' => 'Infos retraite Morvan',
                         'path' => 'assets/pdf/retraites/voyageDeLAme/retraiteMorv.pdf',
                     ],
