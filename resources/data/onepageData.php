@@ -117,7 +117,7 @@ return [
                     'text' => 'En petit groupe de max 6 personnes, cet atelier a pour intention d’emprunter cette voie ancestrale de connaissance de soi qu’est la méditation...',
                     'details' => [
                         ['title' => 'Lieu', 'text' => 'À Bruxelles et en Sicile'],
-                        ['title' => 'Durée', 'text' => '2h'],
+                        ['title' => 'Durée', 'text' => '1h30'],
                         ['title' => 'Prix', 'text' => '35 &euro;'],
                     ],
                 ],
@@ -138,7 +138,7 @@ return [
                     'details' => [
                         ['title' => 'Lieu', 'text' => 'En Sicile'],
                         ['title' => 'Durée', 'text' => '1h30'],
-                        ['title' => 'Prix', 'text' => '&euro;'],
+                        ['title' => 'Prix', 'text' => 'Au chapeau'],
                     ],
                 ],
             ],

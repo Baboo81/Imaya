@@ -90,7 +90,7 @@ return [
                 'text'    => 'In piccolo gruppo di max 6 persone, questo laboratorio ha l’intenzione di intraprendere questa via ancestrale di conoscenza di sé che è la meditazione…',
                 'details' => [
                     ['title' => 'Luogo',   'text' => 'A Bruxelles e in Sicilia'],
-                    ['title' => 'Durata',  'text' => '2h'],
+                    ['title' => 'Durata',  'text' => '1h30'],
                     ['title' => 'Prezzo',  'text' => '35 €'],
                 ],
             ],
@@ -111,7 +111,7 @@ return [
                 'details' => [
                     ['title' => 'Luogo',   'text' => 'In Sicilia'],
                     ['title' => 'Durata',  'text' => '1h30'],
-                    ['title' => 'Prezzo',  'text' => '€'],
+                    ['title' => 'Prezzo',  'text' => 'A cappello'],
                 ],
             ],
         ],

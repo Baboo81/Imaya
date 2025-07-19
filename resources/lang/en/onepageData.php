@@ -90,7 +90,7 @@ return [
             'text' => 'In small groups of max 6 people, this workshop intends to follow the ancient path of self-knowledge that meditation offers...',
             'details' => [
                 ['title' => 'Location', 'text' => 'In Brussels and Sicily'],
-                ['title' => 'Duration', 'text' => '2h'],
+                ['title' => 'Duration', 'text' => '1h30'],
                 ['title' => 'Price', 'text' => '€35'],
             ],
         ],
@@ -111,7 +111,7 @@ return [
             'details' => [
                 ['title' => 'Location', 'text' => 'In Sicily'],
                 ['title' => 'Duration', 'text' => '1h30'],
-                ['title' => 'Price', 'text' => '€'],
+                ['title' => 'Price', 'text' => 'Passing the hat'],
             ],
         ],
     ],
