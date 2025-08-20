@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Caveat:wght@400..700&display=swap" rel="stylesheet">');
 
-@font-face 
+@font-face
 {
   font-family: 'Dastin';
   src : url('../fonts/Dastin.otf') format('opentype'),
@@ -100,7 +100,7 @@ p
 
 /* Indicateur de progression */
 
-#scroll-indicator 
+#scroll-indicator
 {
   position: fixed;
   bottom: 20px;
@@ -117,7 +117,7 @@ p
 }
 
 /* Cercle intérieur pour l'effet de "remplissage circulaire" */
-.inner-circle 
+.inner-circle
 {
   position: relative;
   width: 50px;
@@ -177,7 +177,7 @@ p
 /* END  Section : banner */
 
 /*Parallaxe*/
-.banner 
+.banner
 {
     background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, 0)), url(../img/banner/banner.jpeg) center center fixed no-repeat;
     background-size: cover;
@@ -217,7 +217,7 @@ section .bannerTitle
 .F-A
 {
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-    
+
 }
 
 .sectionQuiSuisJe
@@ -226,25 +226,25 @@ section .bannerTitle
     min-height: 1200px;
 }
 
-.Bxl-Sicile 
+.Bxl-Sicile
 {
   width: 100vw;
-  height: 700px; 
+  height: 700px;
   overflow: hidden;
 }
 
-.img-half 
+.img-half
 {
   flex: 1;
   height: 100%;
   width: 100%;
-  object-fit: cover; 
+  object-fit: cover;
   object-position: 50% 44%; /* affiche le haut de l'image */
   display: block;
 }
 
 /* Slider : cabinet */
-.slider-track 
+.slider-track
 {
   animation: scroll 40s linear infinite;
   width: max-content;
@@ -256,19 +256,19 @@ section .bannerTitle
   width: 25vw; /* 4 images visibles à la fois → ajuste selon ce que tu veux */
 }
 
-.slider-item img 
+.slider-item img
 {
   width: 100%;
   height: auto;
   display: block;
 }
 
-@keyframes scroll 
+@keyframes scroll
 {
   0% {
         transform: translateX(0);
      }
-  100% 
+  100%
      {
         transform: translateX(-50%);
      }
@@ -276,7 +276,7 @@ section .bannerTitle
 
   /* Supprime les espaces blancs */
 .slider-track,
-.slider-item 
+.slider-item
 {
   margin: 0;
   padding: 0;
@@ -285,18 +285,18 @@ section .bannerTitle
 /*Section Qui sui-je ? END*/
 
 /* Section : soins */
-.soins .container 
+.soins .container
 {
   max-width: 800px;
   margin: 0 auto;
 }
 
-.card-wrapper 
+.card-wrapper
 {
   margin-bottom: 3rem;
 }
 
-.card 
+.card
 {
   border: none;
   border-radius: 1rem;
@@ -307,7 +307,7 @@ section .bannerTitle
   height: 100%;
 }
 
-.card-img-top 
+.card-img-top
 {
   height: 250px;
   object-fit: cover;
@@ -316,14 +316,14 @@ section .bannerTitle
   width: 100%;
 }
 
-.card-body 
+.card-body
 {
   padding: 1.5rem;
   display: flex;
   flex-direction: column;
 }
 
-.card-title 
+.card-title
 {
   font-size: 1.5rem;
   margin-bottom: 1rem;
@@ -331,14 +331,14 @@ section .bannerTitle
   color: #222;
 }
 
-.card-body h4 
+.card-body h4
 {
   font-size: 1.1rem;
   margin-top: 1rem;
   color: #444;
 }
 
-.card-text 
+.card-text
 {
   font-size: 1rem;
   color: #555;
@@ -351,7 +351,7 @@ section .bannerTitle
   background-color: var(--jaune);
 }
 
-.sectionCreation .card 
+.sectionCreation .card
 {
   background-color: var(--jaune);
 }
@@ -400,8 +400,8 @@ section .sectionCreationTitle
 
 .slider-item {
     flex: 0 0 auto;
-    width: 500px; 
-    height: 400px; 
+    width: 500px;
+    height: 400px;
     overflow: hidden;
 }
 
@@ -424,7 +424,7 @@ section .picture
 /*END*/
 
 /*Section activités*/
-#bijouxSlider 
+#bijouxSlider
 {
   max-width: 600px; /* taille du slider */
   height: 400px;
@@ -438,7 +438,7 @@ section .picture
     height: 100%;
 }
 
-.carousel-inner img 
+.carousel-inner img
 {
   height: 500px;           /* même hauteur que l'autre image */
   object-fit: cover;       /* pour garder un cadrage harmonieux */
@@ -446,7 +446,7 @@ section .picture
   border-radius: 0.5rem;   /* arrondi cohérent avec Bootstrap */
 }
 
-#bijouxSlider img 
+#bijouxSlider img
 {
   width: 100%;
   object-fit: cover;
@@ -464,9 +464,9 @@ section .picture
     margin-right: -15% !important;
 }
 
-.carousel.carousel-fade .carousel-item 
+.carousel.carousel-fade .carousel-item
 {
-  transition: opacity 2s ease-in-out; 
+  transition: opacity 2s ease-in-out;
 }
 
 /*END*/
@@ -476,6 +476,9 @@ section .picture
 {
     margin-bottom: 20% !important;
 }
+
+
+
 /* END */
 
 /* Section : Casa Imayah*/
@@ -496,13 +499,13 @@ label
 }
 
 input::placeholder,
-textarea::placeholder 
+textarea::placeholder
 {
-  font-family: 'Bodoni Moda', serif; 
-  font-size: 1rem;                       
-  font-style: italic;                    
-  color: #999;                         
-  opacity: 1;                            
+  font-family: 'Bodoni Moda', serif;
+  font-size: 1rem;
+  font-style: italic;
+  color: #999;
+  opacity: 1;
 }
 
 .custom-radius
