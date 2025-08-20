@@ -305,9 +305,9 @@ return [
                 'evenements' => [
                     [
                         'titre' => "Soleil levant",
-                        'pdf' => 'retraiteNoto.pdf',
+                        'pdf' => 'retraite du Soleil Levant.pdf',
                         'nom_pdf' => 'Infos retraite à Noto',
-                        'path' => 'assets/pdf/retraites/voyageDeLAme/UnionSacrée.pdf',
+                        'path' => 'assets/pdf/retraites/leSoleilLevant/RetraiteSoleilLevant.pdf',
                     ]
                 ]
             ],

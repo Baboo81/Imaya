@@ -265,8 +265,8 @@ return [
                     [
                         'titre' => "Sole nascente",
                         'pdf' => 'retraiteNoto.pdf',
-                        'nom_pdf' => 'Info ritiro a Noto',
-                        'path' => 'assets/pdf/retraites/voyageDeLAme/UnionSacrée.pdf',
+                        'nom_pdf' => 'ritiro Sole Nascente',
+                        'path' => 'assets/pdf/retraites/leSoleilLevant/RetraiteSoleilLevant.pdf',
                     ]
                 ]
             ],

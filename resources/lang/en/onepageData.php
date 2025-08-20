@@ -264,9 +264,9 @@ return [
             'evenements' => [
                 [
                     'titre' => "Rising Sun",
-                    'pdf' => 'retreatNoto.pdf',
-                    'nom_pdf' => 'Retreat info in Noto',
-                    'path' => 'assets/pdf/retraites/voyageDeLAme/UnionSacrée.pdf',
+                    'pdf' => 'retreat Rising Sun.pdf',
+                    'nom_pdf' => 'Retreat : Rising Sun',
+                    'path' => 'assets/pdf/retraites/leSoleilLevant/RetraiteSoleilLevant.pdf',
                 ]
             ]
         ],
