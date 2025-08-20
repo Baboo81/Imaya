@@ -41,7 +41,7 @@ return [
         'txtBxlSi3'   => 'Da circa dieci anni, essa è colei che unisce tutti questi linguaggi appresi, sperimentati e integrati in uno solo: quello della guarigione e dell’evoluzione dell’anima e dello spirito attraverso la parola, il canto e il tocco.',
         'txtBxlSi4'   => 'Infine, dopo aver offerto il mio lavoro a Bruxelles per oltre vent’anni, è sorta la necessità di creare uno spazio complementare alla città. Così è nata Casa Imayah sull’isola vulcanica della Sicilia, che unisce il sud e la campagna alle energie del nord e della città continentale. Questi due luoghi di pratica si arricchiscono a vicenda e vi accolgono per consultazioni e trattamenti individuali, workshop e ritiri.',
         'imgSliderCabinet' => 'assets/img/quiSuisje/cabinetBxl/cabinet1.jpg,
-                               assets/img/quiSuisje/cabinetBxl/cabinet2.jpg, 
+                               assets/img/quiSuisje/cabinetBxl/cabinet2.jpg,
                                assets/img/quiSuisje/cabinetBxl/cabinet3.jpg,
                                assets/img/quiSuisje/cabinetBxl/cabinet4.jpg,
                                assets/img/quiSuisje/cabinetBxl/cabinet5.jpg,
@@ -272,7 +272,12 @@ return [
             ],
             [
                 'groupe' => "Collaborazione al Wild Hearts Yoga retreat Sicilia",
-                'image' => '/wildHeartsYoga/wildHearts.jpg',
+                'image' => [
+                    '/wildHeartsYoga/wildHeartsYoga1.jpeg',
+                    '/wildHeartsYoga/wildHeartsYoga2.jpeg',
+                    '/wildHeartsYoga/wildHeartsYoga3.jpeg',
+
+                ],
                 'evenements' => [
                     [
                         'titre' => "Wild Hearts Yoga retreat Sicilia",

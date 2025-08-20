@@ -41,7 +41,7 @@ return [
         'txtBxlSi3' => 'For about ten years now, it has been the one that brings together all these languages I learned, experienced, and integrated into one: the healing and evolution of the soul and spirit through words, song, and touch.',
         'txtBxlSi4' => 'Finally, after offering my work in Brussels for over twenty years, the desire to create a complementary space to the city emerged. Thus was born Casa Imayah, on the volcanic island of Sicily, connecting the south and countryside to the energies of the north and the continental city. These two places of practice enrich and inspire each other, welcoming you for consultations and individual care, workshops, and retreats.',
         'imgSliderCabinet' => 'assets/img/quiSuisje/cabinetBxl/cabinet1.jpg,
-                               assets/img/quiSuisje/cabinetBxl/cabinet2.jpg, 
+                               assets/img/quiSuisje/cabinetBxl/cabinet2.jpg,
                                assets/img/quiSuisje/cabinetBxl/cabinet3.jpg,
                                assets/img/quiSuisje/cabinetBxl/cabinet4.jpg,
                                assets/img/quiSuisje/cabinetBxl/cabinet5.jpg,
@@ -272,7 +272,12 @@ return [
         ],
         [
             'groupe' => "Collaboration at the Wild Hearts Yoga retreat Sicily",
-            'image' => '/wildHeartsYoga/wildHearts.jpg',
+            'image' => [
+                    '/wildHeartsYoga/wildHeartsYoga1.jpeg',
+                    '/wildHeartsYoga/wildHeartsYoga2.jpeg',
+                    '/wildHeartsYoga/wildHeartsYoga3.jpeg',
+
+                ],
             'evenements' => [
                 [
                     'titre' => "Wild Hearts Yoga retreat Sicily",

@@ -139,13 +139,13 @@
 
 {{-- Section : Créations --}}
 @isset($creations)
-    
+
 <section class="sectionCreation text-light text-center py-5">
     <h1 class="text-center text-muted sectionCreationTitle py-5">
         {{ $creations['mainTitle'] ?? '' }}
     </h1>
      @foreach ($creations['sections'] as $index => $section)
-     
+
         <h4 class="card-title my-5">{{ $section['title'] }}</h4>
             @if ($section['type'] === 'carousel')
                 @if ($loop->first)
@@ -161,7 +161,7 @@
                             </div>
                         </div>
                         <div class="card-body">
-                            
+
                             <p class="card-text p-3">{{ $section['description'] }}</p>
                             @if (!empty($section['description2']))
                                 <p class="card-text p-3">{{ $section['description2'] }}</p>
@@ -317,53 +317,78 @@
                 </article>
 
                 {{-- Retraites --}}
-                <article class="card-body my-5 blocRetraites">
-                    <div class="my-5">
-                        <h3 class="card-title whiteFont mb-5">
-                            {{ $data['activite_subTitle2'] ?? '' }}
-                        </h3>
-                    </div>
-                    <ul class="list-group list-group-flush rounded-2">
-                        @foreach ($data['activites']['retraites'] as $retraite)
-                            <li class="list-group-item text-center">
-                                <div class="row justify-content-center mt-4 text-center">
-                                    <h4 class="my-5">{{ $retraite['groupe'] }}</h4>
-                                    <div class="retraiteImg w-100">
-                                        <img src="{{ asset('assets/img/activités/retraites/' . $retraite['image']) }}" alt="" class="img-half">
-                                    </div>
-                                    <section class="d-flex flex-wrap justify-content-center">
-                                        @foreach ($retraite['evenements'] as $event)
-                                            @php
-                                                $pdfPath = $event['path']; // pas besoin d'ajouter $event['pdf']
-                                                $pdfExists = file_exists(public_path($pdfPath));
-                                                $pdfUrl = asset($pdfPath);
-                                            @endphp
+<article class="card-body my-5 blocRetraites">
+    <div class="my-5">
+        <h3 class="card-title whiteFont mb-5">
+            {{ $data['activite_subTitle2'] ?? '' }}
+        </h3>
+    </div>
+    <ul class="list-group list-group-flush rounded-2">
+        @foreach ($data['activites']['retraites'] as $retraite)
+            <li class="list-group-item text-center">
+                <div class="row justify-content-center mt-4 text-center">
+                    <h4 class="my-5">{{ $retraite['groupe'] }}</h4>
 
-                                            <article class="col-12 col-sm-6 col-lg-3 my-5">
-                                                <h5 class="mb-4">{{ $event['titre'] }}</h5>
-                                                <div class="blocBtn">
-                                                    @if ($pdfExists)
-                                                        <a href="{{ $pdfUrl }}"
-                                                        class="btn btn-order btn-lg me-5 DastinFont rounded-5"
-                                                        download="{{ $event['nom_pdf'] }}">
-                                                            {{ $data['btn_enSavoirPlus'] ?? '' }}
-                                                        </a>
-                                                    @else
-                                                        <button class="btn btn-secondary disabled">PDF indisponible</button>
-                                                    @endif
-                                                </div>
-                                            </article>
-                                        @endforeach
-                                    </section>
+                    <div class="retraiteImg w-100">
+                        {{-- Si plusieurs images => carousel, sinon image simple --}}
+                        @if(isset($retraite['images']) && is_array($retraite['images']))
+                            <div id="carousel-{{ Str::slug($retraite['groupe']) }}" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                    @foreach ($retraite['images'] as $index => $img)
+                                        <div class="carousel-item {{ $index === 0 ? 'active' : '' }}">
+                                            <img src="{{ asset('assets/img/activités/retraites/' . $img) }}"
+                                                 class="d-block w-100 img-half"
+                                                 alt="Image retraite {{ $retraite['groupe'] }}">
+                                        </div>
+                                    @endforeach
                                 </div>
-                            </li>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carousel-{{ Str::slug($retraite['groupe']) }}" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon"></span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carousel-{{ Str::slug($retraite['groupe']) }}" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon"></span>
+                                </button>
+                            </div>
+                        @elseif(isset($retraite['image']))
+                            <img src="{{ asset('assets/img/activités/retraites/' . $retraite['image']) }}"
+                                 alt=""
+                                 class="img-half">
+                        @endif
+                    </div>
+
+                    <section class="d-flex flex-wrap justify-content-center">
+                        @foreach ($retraite['evenements'] as $event)
+                            @php
+                                $pdfPath = $event['path'];
+                                $pdfExists = file_exists(public_path($pdfPath));
+                                $pdfUrl = asset($pdfPath);
+                            @endphp
+
+                            <article class="col-12 col-sm-6 col-lg-3 my-5">
+                                <h5 class="mb-4">{{ $event['titre'] }}</h5>
+                                <div class="blocBtn">
+                                    @if ($pdfExists)
+                                        <a href="{{ $pdfUrl }}"
+                                           class="btn btn-order btn-lg me-5 DastinFont rounded-5"
+                                           download="{{ $event['nom_pdf'] }}">
+                                            {{ $data['btn_enSavoirPlus'] ?? '' }}
+                                        </a>
+                                    @else
+                                        <button class="btn btn-secondary disabled">PDF indisponible</button>
+                                    @endif
+                                </div>
+                            </article>
                         @endforeach
-                    </ul>
-                </article>
-            </div>
-        </div>
-    </section>
-    {{-- Section : Activités END--}}
+                    </section>
+                </div>
+            </li>
+        @endforeach
+    </ul>
+</article>
+</div>
+</div>
+</section>
+{{-- Section : Activités END--}}
 
     {{-- Anchor : Section Casa Imayah --}}
     <a id="CasaImayah" href=""></a>

@@ -68,7 +68,7 @@ return [
                         Ces deux lieux de pratique s’enrichissent et s’inspirent et vous accueillent
                         pour des consultations et des soins individuels, des ateliers et des retraites.',
         'imgSliderCabinet' => 'assets/img/quiSuisje/cabinetBxl/cabinet1.jpg,
-                               assets/img/quiSuisje/cabinetBxl/cabinet2.jpg, 
+                               assets/img/quiSuisje/cabinetBxl/cabinet2.jpg,
                                assets/img/quiSuisje/cabinetBxl/cabinet3.jpg,
                                assets/img/quiSuisje/cabinetBxl/cabinet4.jpg,
                                assets/img/quiSuisje/cabinetBxl/cabinet5.jpg,
@@ -313,7 +313,12 @@ return [
             ],
             [
                 'groupe' => "Collaboration à la Wild Hearts Yoga retreat Sicily",
-                'image' => '/wildHeartsYoga/wildHearts.jpg',
+                'image' => [
+                    '/wildHeartsYoga/wildHeartsYoga1.jpeg',
+                    '/wildHeartsYoga/wildHeartsYoga2.jpeg',
+                    '/wildHeartsYoga/wildHeartsYoga3.jpeg',
+
+                ],
                 'evenements' => [
                     [
                         'titre' => "Wild Hearts Yoga retreat Sicily",
