@@ -356,13 +356,13 @@ return [
         'adresse_title' => 'Adresse',
         'adresse_it' => 'Contrada Cavasecca / 96017 Noto',
         'coordonnees_title' => 'Coordonnées',
-        'subTitle_it' => 'Sicile',
-        'subTitle_bxl' => 'Bruxelles',
         'tel_it' => '+39 348 359 42 81',
-        'tel_bxl' => '+00 000 00 00',
         'mail_title' => 'Mail',
         'txt_mail' => 'Envoyez-moi un email en cliquant ci-dessous',
-        'webmaster' => '&copy;&nbsp;Kenko - 2025',
+        'webmaster' => [
+            'name' => 'Kenko - 2025',
+            'url' => 'https://kenko-web.be',
+        ]
     ],
 ];
 

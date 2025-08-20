@@ -16,7 +16,13 @@ footer i:hover
     color: var(--orange);
 }
 
-#mapid 
+footer a
+{
+    text-decoration: none;
+    color: var(--orange);
+}
+
+#mapid
 {
     height: 250px !important;
     border-radius: 10px;

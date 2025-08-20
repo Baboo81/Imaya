@@ -19,23 +19,10 @@
                         {{ $data['footer']['coordonnees_title'] ?? '' }}
                     </h4>
                     <div>
-                        <h3>
-                            {{ $data['footer']['subTitle_it'] ?? '' }}
-                        </h3>
                         <a href="tel:"
                             class="d-inline-flex justify-content-center align-items-center text-decoration-none text-dark">
                             <i class="fas fa-phone me-2 fs-5"></i>
                             {{ $data['footer']['tel_it'] ?? '' }}
-                        </a>
-                    </div>
-                    <div class="my-5">
-                        <h3>
-                            {{ $data['footer']['subTitle_bxl'] ?? '' }}
-                        </h3>
-                        <a href="tel:"
-                            class="d-inline-flex justify-content-center align-items-center text-decoration-none text-dark">
-                            <i class="fas fa-phone me-2 fs-5"></i>
-                            {{ $data['footer']['tel_bxl'] ?? '' }}
                         </a>
                     </div>
                 </section>
@@ -58,6 +45,11 @@
         </div>
 
         <div class="my-5">
-            <p class="text-center DastinFont mt-2"></p>
+            <p class="text-center DastinFont mt-2">
+                &copy;
+                <a href="<?= $data['footer']['webmaster']['url'] ?>" target="_blank" rel="noopener noreferer">
+                    {{ $data['footer']['webmaster']['name'] ?? '' }}
+                </a>
+            </p>
         </div>
     </footer>
