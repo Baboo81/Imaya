@@ -272,10 +272,10 @@ return [
             ],
             [
                 'groupe' => "Collaborazione al Wild Hearts Yoga retreat Sicilia",
-                'image' => [
-                    '/wildHeartsYoga/wildHeartsYoga1.jpeg',
-                    '/wildHeartsYoga/wildHeartsYoga2.jpeg',
-                    '/wildHeartsYoga/wildHeartsYoga3.jpeg',
+                'images' => [
+                    'wildHeartsYoga/wildHeartsYoga1.jpeg',
+                    'wildHeartsYoga/wildHeartsYoga2.jpeg',
+                    'wildHeartsYoga/wildHeartsYoga3.jpeg',
 
                 ],
                 'evenements' => [

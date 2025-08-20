@@ -316,13 +316,14 @@
                     </ul>
                 </article>
 
-                {{-- Retraites --}}
+{{-- Retraites --}}
 <article class="card-body my-5 blocRetraites">
     <div class="my-5">
         <h3 class="card-title whiteFont mb-5">
             {{ $data['activite_subTitle2'] ?? '' }}
         </h3>
     </div>
+
     <ul class="list-group list-group-flush rounded-2">
         @foreach ($data['activites']['retraites'] as $retraite)
             <li class="list-group-item text-center">
@@ -331,28 +332,37 @@
 
                     <div class="retraiteImg w-100">
                         {{-- Si plusieurs images => carousel, sinon image simple --}}
-                        @if(isset($retraite['images']) && is_array($retraite['images']))
-                            <div id="carousel-{{ Str::slug($retraite['groupe']) }}" class="carousel slide" data-bs-ride="carousel">
+                        @if (!empty($retraite['images']) && is_array($retraite['images']))
+                            @php $carouselId = 'carousel-' . $loop->index; @endphp
+                            <div id="{{ $carouselId }}" class="carousel slide" data-bs-ride="carousel">
                                 <div class="carousel-inner">
                                     @foreach ($retraite['images'] as $index => $img)
                                         <div class="carousel-item {{ $index === 0 ? 'active' : '' }}">
-                                            <img src="{{ asset('assets/img/activités/retraites/' . $img) }}"
-                                                 class="d-block w-100 img-half"
-                                                 alt="Image retraite {{ $retraite['groupe'] }}">
+                                            <img
+                                                src="{{ asset('assets/img/activités/retraites/' . ltrim($img, '/')) }}"
+                                                class="d-block w-100 img-half"
+                                                alt="Image retraite {{ $retraite['groupe'] }}"
+                                            >
                                         </div>
                                     @endforeach
                                 </div>
-                                <button class="carousel-control-prev" type="button" data-bs-target="#carousel-{{ Str::slug($retraite['groupe']) }}" data-bs-slide="prev">
-                                    <span class="carousel-control-prev-icon"></span>
-                                </button>
-                                <button class="carousel-control-next" type="button" data-bs-target="#carousel-{{ Str::slug($retraite['groupe']) }}" data-bs-slide="next">
-                                    <span class="carousel-control-next-icon"></span>
-                                </button>
+
+                                @if (count($retraite['images']) > 1)
+                                    <button class="carousel-control-prev" type="button" data-bs-target="#{{ $carouselId }}" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon"></span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button" data-bs-target="#{{ $carouselId }}" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon"></span>
+                                    </button>
+                                @endif
                             </div>
-                        @elseif(isset($retraite['image']))
-                            <img src="{{ asset('assets/img/activités/retraites/' . $retraite['image']) }}"
-                                 alt=""
-                                 class="img-half">
+
+                        @elseif (!empty($retraite['image']) && is_string($retraite['image']))
+                            <img
+                                src="{{ asset('assets/img/activités/retraites/' . ltrim($retraite['image'], '/')) }}"
+                                alt="Image retraite {{ $retraite['groupe'] }}"
+                                class="img-half"
+                            >
                         @endif
                     </div>
 
