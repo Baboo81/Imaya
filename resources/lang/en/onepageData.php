@@ -190,7 +190,7 @@ return [
         ],
         [
             'titre' => "Soul Jewelry",
-            'image' => 'profilActivités.JPG',
+            'image' => 'profilActivités.jpeg',
             'txt_propose' => 'Workshop proposed by :',
             'auteur' => 'France-Alexandra',
             'description' => "For more details (price, program, schedule, ...) about the workshop, click on 'Learn more'.",

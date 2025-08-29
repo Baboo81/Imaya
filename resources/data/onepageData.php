@@ -232,7 +232,7 @@ return [
             ],
             [
                 'titre' => "Bijoux de l'âme",
-                'image' => 'profilActivités.JPG',
+                'image' => 'profilActivités.jpeg',
                 'txt_propose' => 'Atelier proposé par :',
                 'auteur' => 'France-Alexandra',
                 'description' => "Pour avoir plus de précision (prix, programme, calendrier, ...) sur l'atelier, cliquez sur 'En savoir plus'.",

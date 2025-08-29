@@ -190,7 +190,7 @@ return [
         ],
         [
             'titre' => "Gioielli dell'anima",
-            'image' => 'profilActivités.JPG',
+            'image' => 'profilActivités.jpeg',
             'txt_propose' => 'Laboratorio proposta da :',
             'auteur' => 'France-Alexandra',
             'description' => "Per maggiori dettagli (prezzi, programma, calendario, ...) sull'atelier, clicca su 'Per saperne di più'.",
