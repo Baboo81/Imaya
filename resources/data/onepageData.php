@@ -273,7 +273,8 @@ return [
                         'titre' => "Le voyage de l'âme sur le 8",
                         'pdf' => 'retraiteNoto.pdf',
                         'nom_pdf' => 'Infos retraite Morvan',
-                        'path' => 'assets/pdf/retraites/voyageDeLAme/retraiteMorv.pdf',
+                        'path' => 'assets/pdf/retraites/voyageDeLAme/VoyageDeLAmeSurLe8.pdf',
+                        'path2' => 'assets/pdf/retraites/voyageDeLAme/retraiteMorv.pdf',
                     ],
                     [
                         'titre' => "Le voyage de l'âme & le Fil de Soi",
@@ -290,9 +291,7 @@ return [
                 ],
                 'info-retraite' => [
                     [
-                        'img' => 'profilActivitésVoyageDeLAme.jpg',
-                        'txt_info' => 'Atelier en collaboration avec :',
-                        'collaboratrice' => 'Béatrice Robin Brézina',
+                        'collaboratrice' => 'La retraite du Voyage de l\'Âme est animée en collaboration avec Béatrice Robin Brézina',
                         'slider' => [
                             'voyage1.jpg',
                             'voyage2.jpg',

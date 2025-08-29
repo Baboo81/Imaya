@@ -222,22 +222,6 @@ return [
             ],
             'sliderPath' => 'activités/ateliers&collaborations/bijoux/',
         ],
-        [
-            'titre' => "Soul Journey",
-            'image' => 'profilActivitésVoyageDeLAme.jpg',
-            'txt_propose' => 'Workshop in collaboration with :',
-            'auteur' => 'Béatrice Robin Brézina',
-            'description' => "For more details (price, program, schedule, etc.) about the workshop, click on 'Learn more'.",
-            'pdf' => 'BijouxDeLAme.pdf',
-            'slider' => [
-                'voyage1.jpg',
-                'voyage2.jpg',
-                'voyage3.jpg',
-                'voyage4.jpg',
-                'voyage5.PNG',
-            ],
-            'sliderPath' => 'activités/ateliers&collaborations/voyageDeLAme/',
-],
 
     ],
     'retraites' => [
@@ -255,13 +239,14 @@ return [
                     'titre' => "The Soul Journey on the 8",
                     'pdf' => 'retraiteNoto.pdf',
                     'nom_pdf' => 'Retreat info Morvan',
-                    'path' => 'assets/pdf/retraites/voyageDeLAme/retraiteMorv.pdf',
+                    'path' => 'assets/pdf/retraites/voyageDeLAme/VoyageDeLAmeSurLe8.pdf',
+                        'path2' => 'assets/pdf/retraites/voyageDeLAme/retraiteMorv.pdf',
                 ],
                 [
                     'titre' => "The Soul Journey & The Thread of Self",
                     'pdf' => 'retreatSicily.pdf',
                     'nom_pdf' => 'Retreat info Sicily',
-                    'path' => 'assets/pdf/retraites/voyageDeLAme/retraiteSicile.pdf',
+                      'path' => 'assets/pdf/retraites/voyageDeLAme/retraiteSicile.pdf',
                 ],
                 [
                     'titre' => "The Soul Journey & the Sacred Union",
@@ -269,6 +254,18 @@ return [
                     'nom_pdf' => "Online soul journey info",
                     'path' => 'assets/pdf/retraites/voyageDeLAme/UnionSacrée.pdf',
                 ],
+            ],
+            'info-retraite' => [
+                [
+                    'collaboratrice' => 'The Soul Journey retreat is led in collaboration with Béatrice Robin Brézina',
+                    'slider' => [
+                            'voyage1.jpg',
+                            'voyage2.jpg',
+                            'voyage3.jpg',
+                            'voyage4.jpg',
+                            'voyage5.PNG',
+                    ],
+                ]
             ]
         ],
         [

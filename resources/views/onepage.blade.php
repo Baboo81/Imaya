@@ -383,9 +383,14 @@
                                     <section class="d-flex flex-wrap justify-content-center">
                                         @foreach ($retraite['evenements'] as $event)
                                             @php
+                                                //Pour le &er pdf:
                                                 $pdfPath = $event['path'];
                                                 $pdfExists = file_exists(public_path($pdfPath));
                                                 $pdfUrl = asset($pdfPath);
+                                                //Pour le ée pdf:
+                                                 $pdfPath2 = $event['path2'] ?? null;
+                                                 $pdfExists2 = $pdfPath2 && file_exists(public_path($pdfPath2));
+                                                 $pdfUrl2 = $pdfPath2 ? asset($pdfPath2) : null;
                                             @endphp
 
                                             <article class="col-12 col-sm-6 col-lg-3 my-5">
@@ -400,54 +405,52 @@
                                                     @else
                                                         <button class="btn btn-secondary disabled">PDF indisponible</button>
                                                     @endif
+
+                                                    @if ($pdfExists2)
+                                                        <a href="{{ $pdfUrl2 }}"
+                                                        class="btn btn-order btn-lg DastinFont rounded-5"
+                                                        download="{{ $event['nom_pdf'] }}">
+                                                            {{ $data['btn_enSavoirPlus'] ?? 'En savoir plus' }}
+                                                        </a>
+                                                    @endif
                                                 </div>
                                             </article>
                                         @endforeach
                                     </section>
-                                    <!-- Infos supp. avec Béatrice Robin Brézina -->
+                                   <!-- Infos supp. avec Béatrice Robin Brézina -->
                                     <section class="mt-5">
                                         @if (!empty($retraite['info-retraite']))
                                             @foreach ($retraite['info-retraite'] as $info)
                                                 <div class="row justify-content-center align-items-center my-5">
-                                                    <!-- Image profil -->
-                                                    <div class="col-12 col-md-4 text-center mb-4 mb-md-0">
-                                                        <img
-                                                            src="{{ asset('assets/img/activités/retraites/' . ltrim($info['img'], '/')) }}"
-                                                            alt="Profil retraite"
-                                                            class="img-fluid rounded-3 shadow"
-                                                        >
-                                                    </div>
-
                                                     <!-- Texte + collaboratrice -->
                                                     <div class="col-12 col-md-8">
-                                                        <p class="fw-bold fs-4">{{ $info['txt_info'] }}</p>
                                                         <h5 class="mb-4">{{ $info['collaboratrice'] }}</h5>
-
-                                                        <!-- Slider -->
-                                                        @if (!empty($info['slider']))
-                                                            @php $sliderId = 'slider-' . uniqid(); @endphp
-                                                            <div id="{{ $sliderId }}" class="carousel slide" data-bs-ride="carousel">
-                                                                <div class="carousel-inner">
-                                                                    @foreach ($info['slider'] as $index => $slideImg)
-                                                                        <div class="carousel-item {{ $index === 0 ? 'active' : '' }}">
-                                                                            <img
-                                                                                src="{{ asset('assets/img/activités/retraites/voyageDeLAme/' . ltrim($slideImg, '/')) }}"
-                                                                                class="d-block w-100 rounded-3"
-                                                                                alt="Image voyage de l'âme"
-                                                                            >
-                                                                        </div>
-                                                                    @endforeach
-                                                                </div>
-                                                                <button class="carousel-control-prev" type="button" data-bs-target="#{{ $sliderId }}" data-bs-slide="prev">
-                                                                    <span class="carousel-control-prev-icon"></span>
-                                                                </button>
-                                                                <button class="carousel-control-next" type="button" data-bs-target="#{{ $sliderId }}" data-bs-slide="next">
-                                                                    <span class="carousel-control-next-icon"></span>
-                                                                </button>
-                                                            </div>
-                                                        @endif
                                                     </div>
                                                 </div>
+
+                                                <!-- Slider pleine largeur -->
+                                                @if (!empty($info['slider']))
+                                                    @php $sliderId = 'slider-' . uniqid(); @endphp
+                                                    <div id="{{ $sliderId }}" class="carousel slide mb-5" data-bs-ride="carousel">
+                                                        <div class="carousel-inner">
+                                                            @foreach ($info['slider'] as $index => $slideImg)
+                                                                <div class="carousel-item {{ $index === 0 ? 'active' : '' }}">
+                                                                    <img
+                                                                        src="{{ asset('assets/img/activités/retraites/voyageDeLAme/slider/' . ltrim($slideImg, '/')) }}"
+                                                                        class="d-block w-100 rounded-3"
+                                                                        alt="Photo de la retraite : Le Voyage de l'Âme"
+                                                                    >
+                                                                </div>
+                                                            @endforeach
+                                                        </div>
+                                                        <button class="carousel-control-prev" type="button" data-bs-target="#{{ $sliderId }}" data-bs-slide="prev">
+                                                            <span class="carousel-control-prev-icon"></span>
+                                                        </button>
+                                                        <button class="carousel-control-next" type="button" data-bs-target="#{{ $sliderId }}" data-bs-slide="next">
+                                                            <span class="carousel-control-next-icon"></span>
+                                                        </button>
+                                                    </div>
+                                                @endif
                                             @endforeach
                                         @endif
                                     </section>

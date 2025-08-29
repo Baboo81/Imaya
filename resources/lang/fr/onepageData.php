@@ -257,22 +257,6 @@ return [
                 ],
                 'sliderPath' => 'activités/ateliers&collaborations/bijoux/',
             ],
-            [
-                'titre' => "Voyage de l'Âme",
-                'image' => 'profilActivitésVoyageDeLAme.jpg',
-                'txt_propose' => 'Atelier en collaboration avec :',
-                'auteur' => 'Béatrice Robin Brézina',
-                'description' => "Pour avoir plus de précision (prix, programme, calendrier, ...) sur l'atelier, cliquez sur 'En savoir plus'.",
-                'pdf' => 'BijouxDeLAme.pdf',
-                'slider' => [
-                    'voyage1.jpg',
-                    'voyage2.jpg',
-                    'voyage3.jpg',
-                    'voyage4.jpg',
-                    'voyage5.PNG',
-                ],
-                'sliderPath' => 'activités/ateliers&collaborations/voyageDeLAme/',
-            ],
         ],
         'retraites' => [
             [
@@ -289,7 +273,8 @@ return [
                         'titre' => "Le voyage de l'âme sur le 8",
                         'pdf' => 'retraiteNoto.pdf',
                         'nom_pdf' => 'Infos retraite Morvan',
-                        'path' => 'assets/pdf/retraites/voyageDeLAme/retraiteMorv.pdf',
+                        'path' => 'assets/pdf/retraites/voyageDeLAme/VoyageDeLAmeSurLe8.pdf',
+                        'path2' => 'assets/pdf/retraites/voyageDeLAme/retraiteMorv.pdf',
                     ],
                     [
                         'titre' => "Le voyage de l'âme & le Fil de Soi",
@@ -303,6 +288,18 @@ return [
                         'nom_pdf' => "Infos voyage de l'âme en ligne",
                         'path' => 'assets/pdf/retraites/voyageDeLAme/UnionSacrée.pdf',
                     ],
+                ],
+                'info-retraite' => [
+                    [
+                        'collaboratrice' => 'La retraite du Voyage de l\'Âme est animée en collaboration avec Béatrice Robin Brézina',
+                        'slider' => [
+                            'voyage1.jpg',
+                            'voyage2.jpg',
+                            'voyage3.jpg',
+                            'voyage4.jpg',
+                            'voyage5.PNG',
+                        ],
+                    ]
                 ]
             ],
             [

@@ -222,23 +222,6 @@ return [
             ],
             'sliderPath' => 'activités/ateliers&collaborations/bijoux/',
         ],
-        [
-            'titre' => "Viaggio dell'Anima",
-            'image' => 'profilActivitésVoyageDeLAme.jpg',
-            'txt_propose' => 'Laboratorio in collaborazione con :',
-            'auteur' => 'Béatrice Robin Brézina',
-            'description' => "Per maggiori dettagli (prezzo, programma, calendario, ecc.) sul laboratorio, clicca su 'Per saperne di più'.",
-            'pdf' => 'BijouxDeLAme.pdf',
-            'slider' => [
-                'voyage1.jpg',
-                'voyage2.jpg',
-                'voyage3.jpg',
-                'voyage4.jpg',
-                'voyage5.PNG',
-            ],
-            'sliderPath' => 'activités/ateliers&collaborations/voyageDeLAme/',
-],
-
     ],
     'retraites' => [
             [
@@ -255,7 +238,8 @@ return [
                         'titre' => "Il viaggio dell'anima sul 8",
                         'pdf' => 'retraiteNoto.pdf',
                         'nom_pdf' => 'Info ritiro Morvan',
-                        'path' => 'assets/pdf/retraites/voyageDeLAme/retraiteMorv.pdf',
+                       'path' => 'assets/pdf/retraites/voyageDeLAme/VoyageDeLAmeSurLe8.pdf',
+                        'path2' => 'assets/pdf/retraites/voyageDeLAme/retraiteMorv.pdf',
                     ],
                     [
                         'titre' => "Il viaggio dell'anima & il Filo di Sé",
@@ -269,6 +253,18 @@ return [
                         'nom_pdf' => "Info viaggio dell'anima online",
                         'path' => 'assets/pdf/retraites/voyageDeLAme/UnionSacrée.pdf',
                     ],
+                ],
+                'info-retraite' => [
+                    [
+                        'collaboratrice' => 'Il ritiro del Viaggio dell’Anima è condotto in collaborazione con Béatrice Robin Brézina',
+                        'slider' => [
+                            'voyage1.jpg',
+                            'voyage2.jpg',
+                            'voyage3.jpg',
+                            'voyage4.jpg',
+                            'voyage5.PNG',
+                        ],
+                    ]
                 ]
             ],
             [
