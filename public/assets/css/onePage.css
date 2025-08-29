@@ -412,6 +412,12 @@ section .sectionCreationTitle
     display: block;
 }
 
+.dessinsVib p
+{
+    margin-top: 18px !important;
+}
+
+
 section .picture
 {
     height: 600px;

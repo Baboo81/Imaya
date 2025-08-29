@@ -164,8 +164,11 @@
                         <div class="slider-container">
                             <div class="slider-track">
                                 @foreach ($section['images'] as $image)
-                                    <div class="slider-item">
-                                        <img src="{{ $image }}" class="img-fluid rounded-3" alt="Création">
+                                    <div class="slider-item dessinsVib">
+                                        <p class="mt-2 text-muted">
+                                            {{ $image['name'] }}
+                                        </p>
+                                        <img src="{{ $image['src'] }}" class="img-fluid rounded-3" alt="{{ $image['name'] }}">
                                     </div>
                                 @endforeach
                             </div>
