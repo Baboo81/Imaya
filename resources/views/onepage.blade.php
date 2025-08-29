@@ -50,6 +50,16 @@
                 </article>
             </div>
         </div>
+        <div class="row">
+            <article>
+                <p class="text-muted text-center text-lg-center my-5">
+                    {{ $data['qui-suis-je']['txtProfil2'] ?? '' }}
+                </p>
+                 <p class="text-muted text-center text-lg-center my-5">
+                    {{ $data['qui-suis-je']['txtProfil3'] ?? '' }}
+                </p>
+            </article>
+        </div>
         <div class="row my-5">
             <div class="col-12 my-5">
                 <h1 class="text-center text-muted mainTitles py-5">{{ $data['qui-suis-je']['secondTitle'] ?? '' }}</h1>
@@ -66,7 +76,7 @@
     <div class="container">
         <div class="row my-5 align-items-center">
             <div class="col-lg-12 my-5">
-                <article class="my-5">
+                <article class="my-5 quiSuisJe-Article">
                     @foreach (range(1, 4) as $i)
                     @php $txtKey = "txtBxlSi{$i}"; @endphp
                     @if (!empty($data['qui-suis-je'][$txtKey]))
