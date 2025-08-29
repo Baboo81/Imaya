@@ -189,8 +189,8 @@ return [
         [
             'titre' => 'Cerimonie delle piante',
             'image' => 'profilDuo.jpg',
-            'txt_propose' => 'Laboratorio proposta da :',
-            'auteur' => 'France-Alexandra & Jessica',
+            'txt_propose' => 'Laboratorio in collaborazione con :',
+            'auteur' => 'Jessica Dell\'Utri',
             'description' => "Per maggiori dettagli (prezzi, programma, calendario, ...) sull'atelier, clicca su 'Per saperne di più'.",
             'pdf' => 'CerimoniaDellePiante.pdf',
             'slider' => [
@@ -204,8 +204,8 @@ return [
         [
             'titre' => "Gioielli dell'anima",
             'image' => 'profilActivités.jpeg',
-            'txt_propose' => 'Laboratorio proposta da :',
-            'auteur' => 'France-Alexandra',
+            'txt_propose' => 'Laboratorio in collaborazione con :',
+            'auteur' => 'Angelina Caldara',
             'description' => "Per maggiori dettagli (prezzi, programma, calendario, ...) sull'atelier, clicca su 'Per saperne di più'.",
             'pdf' => 'GioielliDellAnima.pdf',
             'slider' => [
@@ -225,8 +225,8 @@ return [
         [
             'titre' => "Viaggio dell'Anima",
             'image' => 'profilActivitésVoyageDeLAme.jpg',
-            'txt_propose' => 'Laboratorio proposto da:',
-            'auteur' => 'Béatrice & France-Alexandra',
+            'txt_propose' => 'Laboratorio in collaborazione con :',
+            'auteur' => 'Béatrice Robin Brézina',
             'description' => "Per maggiori dettagli (prezzo, programma, calendario, ecc.) sul laboratorio, clicca su 'Per saperne di più'.",
             'pdf' => 'BijouxDeLAme.pdf',
             'slider' => [

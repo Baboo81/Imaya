@@ -189,8 +189,8 @@ return [
         [
             'titre' => 'Plant Ceremonies',
             'image' => 'profilDuo.jpg',
-            'txt_propose' => 'Workshop proposed by :',
-            'auteur' => 'France-Alexandra & Jessica',
+            'txt_propose' => 'Workshop in collaboration with :',
+            'auteur' => 'Jessica Dell\'Utri',
             'description' => "For more details (price, program, schedule, ...) about the workshop, click on 'Learn more'.",
             'pdf' => 'PlantCeremony.pdf',
             'slider' => [
@@ -204,8 +204,8 @@ return [
         [
             'titre' => "Soul Jewelry",
             'image' => 'profilActivités.jpeg',
-            'txt_propose' => 'Workshop proposed by :',
-            'auteur' => 'France-Alexandra',
+            'txt_propose' => 'Workshop in collaboration with :',
+            'auteur' => 'Angelina Caldara',
             'description' => "For more details (price, program, schedule, ...) about the workshop, click on 'Learn more'.",
             'pdf' => 'SoulJewelry.pdf',
             'slider' => [
@@ -225,8 +225,8 @@ return [
         [
             'titre' => "Soul Journey",
             'image' => 'profilActivitésVoyageDeLAme.jpg',
-            'txt_propose' => 'Workshop proposed by :',
-            'auteur' => 'Béatrice & France-Alexandra',
+            'txt_propose' => 'Workshop in collaboration with :',
+            'auteur' => 'Béatrice Robin Brézina',
             'description' => "For more details (price, program, schedule, etc.) about the workshop, click on 'Learn more'.",
             'pdf' => 'BijouxDeLAme.pdf',
             'slider' => [

@@ -224,8 +224,8 @@ return [
             [
                 'titre' => 'Cérémonies des plantes',
                 'image' => 'profilDuo.jpg',
-                'txt_propose' => 'Atelier proposé par :',
-                'auteur' => 'France-Alexandra & Jessica',
+                'txt_propose' => 'Atelier en collaboration avec :',
+                'auteur' => 'Jessica Dell\'Utri',
                 'description' => "Pour avoir plus de précision (prix, programme, calendrier, ...) sur l'atelier, cliquez sur 'En savoir plus'.",
                 'pdf' => 'CérémonieDesPlantes.pdf',
                 'slider' => [
@@ -239,8 +239,8 @@ return [
             [
                 'titre' => "Bijoux de l'âme",
                 'image' => 'profilActivités.jpeg',
-                'txt_propose' => 'Atelier proposé par :',
-                'auteur' => 'France-Alexandra',
+                'txt_propose' => 'Atelier en collaboration avec :',
+                'auteur' => 'Angelina Caldara',
                 'description' => "Pour avoir plus de précision (prix, programme, calendrier, ...) sur l'atelier, cliquez sur 'En savoir plus'.",
                 'pdf' => 'BijouxDeLAme.pdf',
                 'slider' => [
@@ -260,8 +260,8 @@ return [
             [
                 'titre' => "Voyage de l'Âme",
                 'image' => 'profilActivitésVoyageDeLAme.jpg',
-                'txt_propose' => 'Atelier proposé par :',
-                'auteur' => 'Béatrice & France-Alexandra',
+                'txt_propose' => 'Atelier en collaboration avec :',
+                'auteur' => 'Béatrice Robin Brézina',
                 'description' => "Pour avoir plus de précision (prix, programme, calendrier, ...) sur l'atelier, cliquez sur 'En savoir plus'.",
                 'pdf' => 'BijouxDeLAme.pdf',
                 'slider' => [

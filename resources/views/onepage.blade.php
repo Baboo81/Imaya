@@ -293,8 +293,12 @@
                                         {{-- Annotations sous l'image --}}
                                         @if (!empty($atelier['auteur']))
                                             <p class="mt-3 fst-italic small text-muted">
-                                                {{ $atelier['txt_propose'] ?? '' }} {{ $atelier['auteur'] }}
+                                                {{ $atelier['txt_propose'] ?? '' }}
                                             </p>
+                                            <p class="mt-3 fst-italic small text-muted">
+                                                {{ $atelier['auteur'] }}
+                                            </p>
+
                                         @endif
                                     </div>
 
