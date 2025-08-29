@@ -357,13 +357,16 @@ return [
     ],
     'footer' => [
         'adresse_title' => 'Adresse',
+        'title_it' => 'Italie',
+        'title_be' => 'Cabinet à Bruxelles',
         'adresse_it' => 'Contrada Cavasecca / 96017 Noto',
+        'adresse_be' => 'Á 1050 Ixelles',
         'coordonnees_title' => 'Coordonnées',
         'tel_it' => '+39 348 359 42 81',
         'mail_title' => 'Mail',
         'txt_mail' => 'Envoyez-moi un email en cliquant ci-dessous',
         'webmaster' => [
-            'name' => 'Kenko - 2025',
+            'name' => 'Kenko-web - 2025',
             'url' => 'https://kenko-web.be',
         ]
     ],

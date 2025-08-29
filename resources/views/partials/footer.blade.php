@@ -6,10 +6,19 @@
                     <h4 class="text-center mb-5">
                         {{ $data['footer']['adresse_title'] ?? '' }}
                     </h4>
+                    <h5 class="text-center mb-5 fw-bold">
+                        {{ $data['footer']['title_it'] ?? '' }}
+                    </h5>
                     <p>
                         {{ $data['footer']['adresse_it'] ?? '' }}
                     </p>
                     <div id="mapid" class="container-fluid" style="height: 150px;"></div>
+                     <h5 class="text-center my-5 fw-bold">
+                        {{ $data['footer']['title_be'] ?? '' }}
+                    </h5>
+                    <p>
+                        {{ $data['footer']['adresse_be'] ?? '' }}
+                    </p>
                 </section>
             </div>
 
