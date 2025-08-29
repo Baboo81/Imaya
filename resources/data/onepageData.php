@@ -257,22 +257,6 @@ return [
                 ],
                 'sliderPath' => 'activités/ateliers&collaborations/bijoux/',
             ],
-            [
-                'titre' => "Voyage de l'Âme",
-                'image' => 'profilActivitésVoyageDeLAme.jpg',
-                'txt_propose' => 'Atelier en collaboration avec :',
-                'auteur' => 'Béatrice Robin Brézina',
-                'description' => "Pour avoir plus de précision (prix, programme, calendrier, ...) sur l'atelier, cliquez sur 'En savoir plus'.",
-                'pdf' => 'BijouxDeLAme.pdf',
-                'slider' => [
-                    'voyage1.jpg',
-                    'voyage2.jpg',
-                    'voyage3.jpg',
-                    'voyage4.jpg',
-                    'voyage5.PNG',
-                ],
-                'sliderPath' => 'activités/ateliers&collaborations/voyageDeLAme/',
-            ],
         ],
         'retraites' => [
             [
@@ -303,6 +287,20 @@ return [
                         'nom_pdf' => "Infos voyage de l'âme en ligne",
                         'path' => 'assets/pdf/retraites/voyageDeLAme/UnionSacrée.pdf',
                     ],
+                ],
+                'info-retraite' => [
+                    [
+                        'img' => 'profilActivitésVoyageDeLAme.jpg',
+                        'txt_info' => 'Atelier en collaboration avec :',
+                        'collaboratrice' => 'Béatrice Robin Brézina',
+                        'slider' => [
+                            'voyage1.jpg',
+                            'voyage2.jpg',
+                            'voyage3.jpg',
+                            'voyage4.jpg',
+                            'voyage5.PNG',
+                        ],
+                    ]
                 ]
             ],
             [

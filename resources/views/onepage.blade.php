@@ -404,6 +404,53 @@
                                             </article>
                                         @endforeach
                                     </section>
+                                    <!-- Infos supp. avec Béatrice Robin Brézina -->
+                                    <section class="mt-5">
+                                        @if (!empty($retraite['info-retraite']))
+                                            @foreach ($retraite['info-retraite'] as $info)
+                                                <div class="row justify-content-center align-items-center my-5">
+                                                    <!-- Image profil -->
+                                                    <div class="col-12 col-md-4 text-center mb-4 mb-md-0">
+                                                        <img
+                                                            src="{{ asset('assets/img/activités/retraites/' . ltrim($info['img'], '/')) }}"
+                                                            alt="Profil retraite"
+                                                            class="img-fluid rounded-3 shadow"
+                                                        >
+                                                    </div>
+
+                                                    <!-- Texte + collaboratrice -->
+                                                    <div class="col-12 col-md-8">
+                                                        <p class="fw-bold fs-4">{{ $info['txt_info'] }}</p>
+                                                        <h5 class="mb-4">{{ $info['collaboratrice'] }}</h5>
+
+                                                        <!-- Slider -->
+                                                        @if (!empty($info['slider']))
+                                                            @php $sliderId = 'slider-' . uniqid(); @endphp
+                                                            <div id="{{ $sliderId }}" class="carousel slide" data-bs-ride="carousel">
+                                                                <div class="carousel-inner">
+                                                                    @foreach ($info['slider'] as $index => $slideImg)
+                                                                        <div class="carousel-item {{ $index === 0 ? 'active' : '' }}">
+                                                                            <img
+                                                                                src="{{ asset('assets/img/activités/retraites/voyageDeLAme/' . ltrim($slideImg, '/')) }}"
+                                                                                class="d-block w-100 rounded-3"
+                                                                                alt="Image voyage de l'âme"
+                                                                            >
+                                                                        </div>
+                                                                    @endforeach
+                                                                </div>
+                                                                <button class="carousel-control-prev" type="button" data-bs-target="#{{ $sliderId }}" data-bs-slide="prev">
+                                                                    <span class="carousel-control-prev-icon"></span>
+                                                                </button>
+                                                                <button class="carousel-control-next" type="button" data-bs-target="#{{ $sliderId }}" data-bs-slide="next">
+                                                                    <span class="carousel-control-next-icon"></span>
+                                                                </button>
+                                                            </div>
+                                                        @endif
+                                                    </div>
+                                                </div>
+                                            @endforeach
+                                        @endif
+                                    </section>
                                 </div>
                             </li>
                         @endforeach
