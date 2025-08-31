@@ -347,7 +347,7 @@
                                 <div class="row justify-content-center mt-4 text-center">
                                     <h4 class="my-5">{{ $retraite['groupe'] }}</h4>
 
-                                    <div class="retraiteImg w-100">
+                                    <div class="retraiteImg w-100 {{ $retraite['slug'] ?? ''  }}">
                                         {{-- Si plusieurs images => carousel, sinon image simple --}}
                                         @if (!empty($retraite['images']) && is_array($retraite['images']))
                                             @php $carouselId = 'carousel-' . $loop->index; @endphp
@@ -357,7 +357,7 @@
                                                         <div class="carousel-item {{ $index === 0 ? 'active' : '' }}">
                                                             <img
                                                                 src="{{ asset('assets/img/activités/retraites/' . ltrim($img, '/')) }}"
-                                                                class="d-block w-100 img-half"
+                                                                class="d-block w-100 img-half {{ $retraite['slug'] . '-img' }}"
                                                                 alt="Image retraite {{ $retraite['groupe'] }}"
                                                             >
                                                         </div>

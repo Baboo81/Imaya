@@ -239,7 +239,7 @@ section .bannerTitle
   height: 100%;
   width: 100%;
   object-fit: cover;
-  object-position: 50% 44%; /* affiche le haut de l'image */
+  object-position: 50% 44%;
   display: block;
 }
 
@@ -483,7 +483,17 @@ section .picture
     margin-bottom: 20% !important;
 }
 
-
+/* S'applique uniquement aux photos du slider Wild Hearts */
+.wild-hearts .carousel-item img,
+.wild-hearts-img {
+    max-width: 1000px;
+    max-height: 600px;
+    width: auto;
+    height: auto;
+    object-fit: contain; /* garde l'image nette */
+    margin: 0 auto;
+    border-radius: 15px;
+}
 
 /* END */
 

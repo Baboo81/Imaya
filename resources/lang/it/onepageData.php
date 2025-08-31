@@ -225,6 +225,7 @@ return [
     ],
     'retraites' => [
             [
+                'slug' => 'voyage-ame',
                 'groupe' => "Il viaggio dell'anima",
                 'image' => '/voyageDeLame/Visualizza foto recenti.jpg',
                 'evenements' => [
@@ -268,6 +269,7 @@ return [
                 ]
             ],
             [
+                'slug' => 'soleil-levant',
                 'groupe' => "Il sole nascente",
                 'image' => '/soleilLevant/retraiteSoleilLevant.jpeg',
                 'evenements' => [
@@ -280,6 +282,7 @@ return [
                 ]
             ],
             [
+                'slug' => 'wild-hearts',
                 'groupe' => "Collaborazione al Wild Hearts Yoga retreat Sicilia",
                 'images' => [
                     'wildHeartsYoga/wildHeartsYoga1.jpeg',
