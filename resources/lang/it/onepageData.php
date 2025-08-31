@@ -322,7 +322,10 @@ return [
     ],
     'footer' => [
         'adresse_title' => 'Indirizzo',
+        'title_it' => 'Italia',
+        'title_be' => 'Studio a Bruxelles',
         'adresse_it' => 'Contrada Cavasecca / 96017 Noto',
+        'adresse_be' => '1050 Ixelles',
         'coordonnees_title' => 'Contatti',
         'tel_it' => '+39 348 359 42 81',
         'mail_title' => 'Email',

@@ -323,7 +323,10 @@ return [
     ],
 'footer' => [
     'adresse_title' => 'Address',
+    'title_it' => 'Italy',
+    'title_be' => 'Office in Brussels',
     'adresse_it' => 'Contrada Cavasecca / 96017 Noto',
+    'adresse_be' => '1050 Ixelles',
     'coordonnees_title' => 'Contact',
     'tel_it' => '+39 348 359 42 81',
     'mail_title' => 'Email',
