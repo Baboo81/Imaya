@@ -282,7 +282,7 @@ return [
                 ]
             ],
             [
-                'slug' => 'wild-hearts',
+
                 'groupe' => "Collaborazione al Wild Hearts Yoga retreat Sicilia",
                 'images' => [
                     'wildHeartsYoga/wildHeartsYoga1.jpeg',
@@ -297,7 +297,10 @@ return [
                         'nom_pdf' => 'Info ritiro WH Sicilia',
                         'path' => 'assets/pdf/retraites/voyageDeLAme/UnionSacrée.pdf',
                     ]
-                ]
+                ],
+                'info-retraiteWildHearts' => 'Il ritiro Wild Hearts Yoga è condotto in collaborazione con Kris Dashorst',
+                'p1' => 'Per maggiori informazioni sul Wild Hearts Yoga, non esitate a cliccare sul link: ',
+                'link-site' => 'https://wildheartssicily.my.canva.site ',
             ]
         ]
     ],

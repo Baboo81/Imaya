@@ -298,7 +298,11 @@ return [
                     'nom_pdf' => 'WH Sicily retreat info',
                     'path' => 'assets/pdf/retraites/voyageDeLAme/UnionSacrée.pdf',
                 ]
-            ]
+            ],
+            'info-retraiteWildHearts' =>  'The Wild Hearts Yoga retreat is conducted in collaboration with Kris Dashorst',
+            'p1' => 'For more information about Wild Hearts Yoga, feel free to click on the link: ',
+            'link-site' => 'https://wildheartssicily.my.canva.site ',
+
         ]
     ]
 ],

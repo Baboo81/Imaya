@@ -332,8 +332,11 @@ return [
                         'nom_pdf' => 'Infos retraite WH Sicily',
                         'path' => 'assets/pdf/retraites/voyageDeLAme/UnionSacrée.pdf',
                     ]
-                ]
-            ]
+                ],
+                'info-retraiteWildHearts' =>  'La retraite Wild Hearts Yoga est animée en collaboration avec Kris Dashorst',
+                'p1' => 'Pour plus d\'informations sur la Wild Hearts Yoga, n\'hésitez pas à cliquer sur le lien : ',
+                'link-site' => 'https://wildheartssicily.my.canva.site ',
+             ]
         ]
     ],
     'casaImayah' => [

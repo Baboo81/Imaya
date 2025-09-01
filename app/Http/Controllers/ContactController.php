@@ -52,7 +52,7 @@ class ContactController extends Controller
         ];
 
         //Envoyer par email à ma cliente
-         Mail::to('magicbaboo@gmail.com')->send(new ContactMessageReceived($data));
+         Mail::to('imayah@ecomail.fr')->send(new ContactMessageReceived($data));
 
         //Enregistrement dans la DB
         Contact::create($validated);

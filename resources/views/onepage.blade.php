@@ -333,7 +333,7 @@
                     </ul>
                 </article>
 
-    {{-- Retraites --}}
+                {{-- Retraites --}}
                 <article class="card-body my-5 blocRetraites">
                     <div class="my-5">
                         <h3 class="card-title whiteFont mb-5">
@@ -341,30 +341,28 @@
                         </h3>
                     </div>
 
-                    <ul class="list-group list-group-flush rounded-2">
+                    <ul class="list-group list-group-flush rounded-2 border border-secondary">
                         @foreach ($data['activites']['retraites'] as $retraite)
-                            <li class="list-group-item text-center">
-                                <div class="row justify-content-center mt-4 text-center">
-                                    <h4 class="my-5">{{ $retraite['groupe'] }}</h4>
+                            <li class="list-group-item text-center w-100 py-4 {{ $loop->last ? '' : 'border-bottom' }}">
+                                <div class="row justify-content-center text-center">
+                                    {{-- Titre de la retraite --}}
+                                    <h4 class="my-4">{{ $retraite['groupe'] }}</h4>
 
-                                    <div class="retraiteImg w-100 {{ $retraite['slug'] ?? ''  }}">
-                                        {{-- Si plusieurs images => carousel, sinon image simple --}}
-                                        @if (!empty($retraite['images']) && is_array($retraite['images']))
+                                    {{-- Images / Carousel --}}
+                                    <div class="retraiteImg w-100 {{ $retraite['slug'] ?? '' }}">
+                                        @if(!empty($retraite['images']) && is_array($retraite['images']))
                                             @php $carouselId = 'carousel-' . $loop->index; @endphp
-                                            <div id="{{ $carouselId }}" class="carousel slide" data-bs-ride="carousel">
+                                            <div id="{{ $carouselId }}" class="carousel slide mb-4" data-bs-ride="carousel">
                                                 <div class="carousel-inner">
                                                     @foreach ($retraite['images'] as $index => $img)
                                                         <div class="carousel-item {{ $index === 0 ? 'active' : '' }}">
-                                                            <img
-                                                                src="{{ asset('assets/img/activités/retraites/' . ltrim($img, '/')) }}"
+                                                            <img src="{{ asset('assets/img/activités/retraites/' . ltrim($img, '/')) }}"
                                                                 class="d-block w-100 img-half {{ $retraite['slug'] . '-img' }}"
-                                                                alt="Image retraite {{ $retraite['groupe'] }}"
-                                                            >
+                                                                alt="Image retraite {{ $retraite['groupe'] }}">
                                                         </div>
                                                     @endforeach
                                                 </div>
-
-                                                @if (count($retraite['images']) > 1)
+                                                @if(count($retraite['images']) > 1)
                                                     <button class="carousel-control-prev" type="button" data-bs-target="#{{ $carouselId }}" data-bs-slide="prev">
                                                         <span class="carousel-control-prev-icon"></span>
                                                     </button>
@@ -373,46 +371,39 @@
                                                     </button>
                                                 @endif
                                             </div>
-
-                                        @elseif (!empty($retraite['image']) && is_string($retraite['image']))
-                                            <img
-                                                src="{{ asset('assets/img/activités/retraites/' . ltrim($retraite['image'], '/')) }}"
+                                        @elseif(!empty($retraite['image']))
+                                            <img src="{{ asset('assets/img/activités/retraites/' . ltrim($retraite['image'], '/')) }}"
                                                 alt="Image retraite {{ $retraite['groupe'] }}"
-                                                class="img-half"
-                                            >
+                                                class="img-half mb-4">
                                         @endif
                                     </div>
 
-                                    <section class="d-flex flex-wrap justify-content-center">
+                                    {{-- Boutons PDF --}}
+                                    <section class="d-flex flex-wrap justify-content-center mb-5">
                                         @foreach ($retraite['evenements'] as $event)
                                             @php
-                                                //Pour le &er pdf:
                                                 $pdfPath = $event['path'];
                                                 $pdfExists = file_exists(public_path($pdfPath));
                                                 $pdfUrl = asset($pdfPath);
-                                                //Pour le ée pdf:
-                                                 $pdfPath2 = $event['path2'] ?? null;
-                                                 $pdfExists2 = $pdfPath2 && file_exists(public_path($pdfPath2));
-                                                 $pdfUrl2 = $pdfPath2 ? asset($pdfPath2) : null;
+
+                                                $pdfPath2 = $event['path2'] ?? null;
+                                                $pdfExists2 = $pdfPath2 && file_exists(public_path($pdfPath2));
+                                                $pdfUrl2 = $pdfPath2 ? asset($pdfPath2) : null;
                                             @endphp
 
-                                            <article class="col-12 col-sm-6 col-lg-3 my-5">
-                                                <h5 class="mb-4">{{ $event['titre'] }}</h5>
-                                                <div class="blocBtn">
-                                                    @if ($pdfExists)
-                                                        <a href="{{ $pdfUrl }}"
-                                                        class="btn btn-order btn-lg me-5 DastinFont rounded-5"
-                                                        download="{{ $event['nom_pdf'] }}">
-                                                            {{ $data['btn_enSavoirPlus'] ?? '' }}
+                                            <article class="col-12 col-sm-6 col-lg-3 my-3">
+                                                <h5 class="mb-3">{{ $event['titre'] }}</h5>
+                                                <div class="blocBtn d-flex flex-wrap justify-content-center">
+                                                    @if($pdfExists)
+                                                        <a href="{{ $pdfUrl }}" class="btn btn-order btn-lg me-5 DastinFont rounded-5" download="{{ $event['nom_pdf'] }}">
+                                                            {{ $data['btn_enSavoirPlus'] ?? 'En savoir plus' }}
                                                         </a>
                                                     @else
-                                                        <button class="btn btn-secondary disabled">PDF indisponible</button>
+                                                        <button class="btn btn-secondary disabled me-3">PDF indisponible</button>
                                                     @endif
 
-                                                    @if ($pdfExists2)
-                                                        <a href="{{ $pdfUrl2 }}"
-                                                        class="btn btn-order btn-lg me-5 DastinFont rounded-5"
-                                                        download="{{ $event['nom_pdf'] }}">
+                                                    @if($pdfExists2)
+                                                        <a href="{{ $pdfUrl2 }}" class="btn btn-order btn-lg me-5 DastinFont rounded-5" download="{{ $event['nom_pdf'] }}">
                                                             {{ $data['btn_enSavoirPlus'] ?? 'En savoir plus' }}
                                                         </a>
                                                     @endif
@@ -420,29 +411,26 @@
                                             </article>
                                         @endforeach
                                     </section>
-                                   <!-- Infos supp. avec Béatrice Robin Brézina -->
+
+                                    {{-- Infos supplémentaires --}}
                                     <section class="mt-5">
-                                        @if (!empty($retraite['info-retraite']))
-                                            @foreach ($retraite['info-retraite'] as $info)
+                                        @if(!empty($retraite['info-retraite']) && is_array($retraite['info-retraite']))
+                                            @foreach($retraite['info-retraite'] as $info)
                                                 <div class="row justify-content-center align-items-center my-5">
-                                                    <!-- Texte + collaboratrice -->
                                                     <div class="col-12 col-md-8">
                                                         <h5 class="mb-4">{{ $info['collaboratrice'] }}</h5>
                                                     </div>
                                                 </div>
 
-                                                <!-- Slider pleine largeur -->
-                                                @if (!empty($info['slider']))
+                                                @if(!empty($info['slider']))
                                                     @php $sliderId = 'slider-' . uniqid(); @endphp
                                                     <div id="{{ $sliderId }}" class="carousel slide mb-5" data-bs-ride="carousel">
                                                         <div class="carousel-inner">
-                                                            @foreach ($info['slider'] as $index => $slideImg)
+                                                            @foreach($info['slider'] as $index => $slideImg)
                                                                 <div class="carousel-item {{ $index === 0 ? 'active' : '' }}">
-                                                                    <img
-                                                                        src="{{ asset('assets/img/activités/retraites/voyageDeLAme/slider/' . ltrim($slideImg, '/')) }}"
+                                                                    <img src="{{ asset('assets/img/activités/retraites/voyageDeLAme/slider/' . ltrim($slideImg, '/')) }}"
                                                                         class="d-block w-100 rounded-3"
-                                                                        alt="Photo de la retraite : Le Voyage de l'Âme"
-                                                                    >
+                                                                        alt="Photo de la retraite : {{ $retraite['groupe'] }}">
                                                                 </div>
                                                             @endforeach
                                                         </div>
@@ -455,8 +443,24 @@
                                                     </div>
                                                 @endif
                                             @endforeach
+                                        @elseif(!empty($retraite['info-retraiteWildHearts']))
+                                            {{-- Pour Wild Hearts --}}
+                                            <div class="row justify-content-center align-items-center my-5">
+                                                <div class="col-12 col-md-8 text-center">
+                                                    <p class="mb-4">{{ $retraite['info-retraiteWildHearts'] }}</p>
+                                                    @if(!empty($retraite['p1']) && !empty($retraite['link-site']))
+                                                        <p>
+                                                            {{ $retraite['p1'] }}
+                                                            <a href="{{ $retraite['link-site'] }}" target="_blank" class="link-primary">
+                                                                {{ $retraite['link-site'] }}
+                                                            </a>
+                                                        </p>
+                                                    @endif
+                                                </div>
+                                            </div>
                                         @endif
                                     </section>
+
                                 </div>
                             </li>
                         @endforeach
