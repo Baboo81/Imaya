@@ -7,6 +7,9 @@ use App\Models\Contact;
 use Illuminate\Http\Request;
 use App\Mail\ContactMessageReceived;
 use Illuminate\Support\Facades\Mail;
+use Illuminate\Support\Facades\RateLimiter;
+use Illuminate\Support\Facades\Log;
+
 
 class ContactController extends Controller
 {
@@ -61,13 +64,13 @@ class ContactController extends Controller
         $data = include resource_path("lang/{$lang}/onepageData.php");
 
         $successMessage = $data['contact']['success'] ?? '<i class="bi bi-check-circle-fill text-success"></i>';
-        
+
 
         //Redirection avec message de succès
         return redirect(url()->previous() . '#contact-form')
             ->with('success', $successMessage);
 
-       
+
 
     }
 }

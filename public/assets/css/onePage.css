@@ -468,6 +468,10 @@ section .picture
 .blocBtn
 {
     margin-right: -15% !important;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center !important;
 }
 
 .carousel.carousel-fade .carousel-item
@@ -487,12 +491,22 @@ section .picture
 .wild-hearts .carousel-item img,
 .wild-hearts-img {
     max-width: 1000px;
-    max-height: 600px;
+    max-height: 400px;
     width: auto;
     height: auto;
     object-fit: contain; /* garde l'image nette */
     margin: 0 auto;
     border-radius: 15px;
+}
+
+.soleil-levant img
+{
+  flex: 1;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: 50% 8%;
+  display: block;
 }
 
 /* END */

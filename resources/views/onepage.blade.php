@@ -411,7 +411,7 @@
 
                                                     @if ($pdfExists2)
                                                         <a href="{{ $pdfUrl2 }}"
-                                                        class="btn btn-order btn-lg DastinFont rounded-5"
+                                                        class="btn btn-order btn-lg me-5 DastinFont rounded-5"
                                                         download="{{ $event['nom_pdf'] }}">
                                                             {{ $data['btn_enSavoirPlus'] ?? 'En savoir plus' }}
                                                         </a>
