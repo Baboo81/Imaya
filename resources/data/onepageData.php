@@ -298,7 +298,7 @@ return [
                             'voyage2.jpg',
                             'voyage3.jpg',
                             'voyage4.jpg',
-                            'voyage5.PNG',
+                            'voyage5.jpg',
                         ],
                     ]
                 ]
