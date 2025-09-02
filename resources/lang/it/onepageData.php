@@ -154,7 +154,7 @@ return [
                         '/assets/img/créations/peintures/peinture7.jpeg',
                         '/assets/img/créations/peintures/peinture8.jpeg',
                         '/assets/img/créations/peintures/peinture9.jpeg',
-                        '/assets/img/créations/peintures/peinture10.jpeg',
+                        '/assets/img/créations/peintures/peinture10.jpg',
                         '/assets/img/créations/peintures/peinture11.jpeg',
                         '/assets/img/créations/peintures/peinture12.jpg',
                         '/assets/img/créations/peintures/peinture13.jpg',
