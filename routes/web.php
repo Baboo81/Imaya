@@ -3,10 +3,11 @@
 use App\Http\Controllers\ContactController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\OnePageController;
+use Illuminate\Support\Facades\App;
 
 Route::get('/', [OnePageController::class, 'index']);
 Route::post('/contact', [ContactController::class, 'store'])->name('contact.store');
-Route::get('/admin/logs', [AdminLogController::class, 'index'])->middleware('restrict.ip');
+
 
 
 //Route en fonction de la langue choisie :
@@ -18,7 +19,7 @@ Route::get('/{locale?}', function ($locale = 'fr') {
         abort(404);
     }
 
-    App::setlocale($locale);
+    App::setLocale($locale);
 
     $data = include resource_path("lang/{$locale}/onepageData.php");
 
@@ -26,7 +27,7 @@ Route::get('/{locale?}', function ($locale = 'fr') {
         'data' => $data,
         'creations' => $data['creations'] ?? []
     ]);
-    
+
 })->name('onepage');
 
 
