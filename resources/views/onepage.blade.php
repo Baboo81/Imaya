@@ -17,9 +17,9 @@
         <div class="row align-items-center justify-content-center">
             <div class="col-md-12 casaImayahTitle d-flex flex-column justify-content-center align-items-center">
                 <div class="bannerTitle text-center">
-                    <div>{{ $data['accueil']['mainTitle1'] ?? '' }}</div>
+                    <h1 class="bannerTitle">{{ $data['accueil']['mainTitle1'] ?? '' }}</h1>
                     <div class="name">
-                        <div>{{ $data['accueil']['mainTitle2'] ?? '' }}</div>
+                        <h1 class="">{{ $data['accueil']['mainTitle2'] ?? '' }}</h1>
                     </div>
                 </div>
             </div>
@@ -100,7 +100,7 @@
 
             @foreach ($allImages as $img)
                 <div class="slider-item">
-                    <img src="{{ asset(trim($img)) }}" alt="Cabinet" />
+                    <img src="{{ asset(trim($img)) }}" alt="Photos du cabinet à Bruxelles et en Sicile" />
                 </div>
             @endforeach
         </div>
@@ -241,7 +241,7 @@
                 <div class="card my-5 border-0 rounded-0 write">
                     <div class="row my-5 align-items-center">
                         <div class="col-md-6">
-                            <img src="{{ $section['image'] }}" class="img-fluid rounded-3" alt="Image texte">
+                            <img src="{{ $section['image'] }}" class="img-fluid rounded-3" alt="Image représentant des feuilles écrites à la main">
                         </div>
                         <div class="col-md-6">
                             <div class="card-body">
@@ -321,7 +321,7 @@
                                                 @foreach ($atelier['slider'] as $i => $img)
                                                     <div class="carousel-item @if ($i == 0) active @endif">
                                                         <img src="{{ asset('assets/img/' . $atelier['sliderPath'] . $img) }}"
-                                                            class="d-block w-100" alt="">
+                                                            class="d-block w-100" alt="Photos des ateliers">
                                                     </div>
                                                 @endforeach
                                             </div>
