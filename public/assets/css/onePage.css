@@ -56,13 +56,13 @@ h3
 
 h4
 {
-    font-size: 1.8rem !important;
+    font-size: clamp(1.2rem, 3vw, 1.8rem) !important;
 }
 
 p
 {
     font-family: 'Bodoni Moda', serif !important;
-    font-size: 1.5rem !important;
+    font-size: clamp(1rem, 2.5vw, 1.5rem) !important;
 }
 
 .whiteFont
@@ -253,8 +253,13 @@ section .bannerTitle
 
 .slider-item
 {
-  flex: 0 0 auto;
-  width: 25vw; /* 4 images visibles à la fois → ajuste selon ce que tu veux */
+  flex: 0 0 calc(100% / 2.5); /* ~2 cartes visibles */
+}
+
+@media (max-width: 768px) {
+  .slider-item {
+    flex: 0 0 80%; /* 1 carte centrée */
+  }
 }
 
 .slider-item img
