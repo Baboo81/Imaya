@@ -283,7 +283,7 @@ return [
             ],
             [
 
-                'slug' => "wild-hearts-yoga",
+                'slug' => "wild-hearts",
                 'groupe' => "Collaborazione al Wild Hearts Yoga retreat Sicilia",
                 'images' => [
                     'wildHeartsYoga/wildHeartsYoga1.jpeg',
