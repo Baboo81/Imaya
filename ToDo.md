@@ -1,8 +1,7 @@
-#Afficher la page : error 404, quand une resource n'est pas disponible,
-#Ajouter les liens vers les pdf,
-#Peaufiner la nav,
-#Ajouter au slider : Cabinet, plus de photos de la yourte,
-#Ajouter le nom des dessins vibratoire,
+#Peaufiner la nav, ajouter un sous-menu à : les collaborations (ateliers + retraites),
+#Ajouter un deuxième btn à la section : retraite : Soleil Levant (sur chaque btn mettre edition + année),
+#Mise en ligne, 
+
 
 
 

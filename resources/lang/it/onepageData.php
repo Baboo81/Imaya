@@ -163,7 +163,7 @@ return [
                         '/assets/img/créations/peintures/peinture16.jpeg',
                         '/assets/img/créations/peintures/peinture17.jpeg',
                         '/assets/img/créations/peintures/peinture18.jpeg',
-                        '/assets/img/créations/peintures/peinture19.jpeg',
+                        //'/assets/img/créations/peintures/peinture19.jpeg',
                         '/assets/img/créations/peintures/peinture20.jpg',
                         '/assets/img/créations/peintures/peinture21.jpg',
                         '/assets/img/créations/peintures/peinture22.jpg',
