@@ -10,11 +10,11 @@ return [
     'btn_enSavoirPlus' => 'En savoir plus',
     'btn_allerVers' => 'Allers vers le site Casa Imayah',
     'nav' => [
-        'services' => 'Ateliers & plus',
+        'services' => 'Invitations',
         'dropdown' => [
             'soins' => 'Les soins',
             'creations' => 'Les créations',
-            'activites' => 'Les ateliers',
+            'activites' => 'Les collaborations',
             'casa' => 'Casa Imayah',
         ],
         'qui-suis-je' => 'Qui suis-je ?',

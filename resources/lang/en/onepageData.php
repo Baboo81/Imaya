@@ -10,11 +10,11 @@ return [
     'btn_enSavoirPlus' => 'Learn more',
     'btn_allerVers' => 'Go to Casa Imayah',
     'nav' => [
-        'services' => 'Workshops & more',
+        'services' => 'Invitations',
         'dropdown' => [
             'soins' => 'Care',
             'creations' => 'Creations',
-            'activites' => 'Workshops',
+            'activites' => 'Collaborations',
             'casa' => 'Casa Imayah',
         ],
         'qui-suis-je' => 'About me',

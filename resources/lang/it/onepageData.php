@@ -10,11 +10,11 @@ return [
     'btn_enSavoirPlus' => 'Scopri di piú',
     'btn_allerVers' => 'Visita il sito Casa Imayah',
     'nav' => [
-        'services' => 'Laboratori e altro',
+        'services' => 'Inviti',
         'dropdown' => [
             'soins' => 'Cure',
             'creations' => 'Creazioni',
-            'activites' => 'Laboratori',
+            'activites' => 'Collaborazioni',
             'casa' => 'Casa Imayah',
         ],
         'qui-suis-je' => 'Chi sono ?',
