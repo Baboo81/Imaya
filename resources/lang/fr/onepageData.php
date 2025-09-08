@@ -330,7 +330,7 @@ return [
                         'titre' => "Wild Hearts Yoga retreat Sicily",
                         'pdf' => 'retraiteNoto.pdf',
                         'nom_pdf' => 'Infos retraite WH Sicily',
-                        'path' => 'assets/pdf/retraites/voyageDeLAme/UnionSacrée.pdf',
+                        'path' => 'assets/pdf/retraites/yogaRetreat/SicilianYogaRetreat2025.pdf',
                     ]
                 ],
                 'info-retraiteWildHearts' =>  'La retraite Wild Hearts Yoga est animée en collaboration avec Kris Dashorst',
