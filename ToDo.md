@@ -7,3 +7,5 @@
   - Sur chaque bouton, mettre *Édition + Année*  
 
 - [ ] Mise en ligne  
+
+- [ ] Logo
