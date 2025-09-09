@@ -333,7 +333,7 @@
                     </ul>
                 </article>
 
-                {{-- Retraites --}}
+               {{-- Retraites --}}
                 <article class="card-body my-5 blocRetraites">
                     <div class="my-5">
                         <h3 class="card-title whiteFont mb-5">
@@ -378,39 +378,61 @@
                                         @endif
                                     </div>
 
-                                    {{-- Boutons PDF --}}
-                                    <section class="d-flex flex-wrap justify-content-center mb-5">
-                                        @foreach ($retraite['evenements'] as $event)
-                                            @php
-                                                $pdfPath = $event['path'];
-                                                $pdfExists = file_exists(public_path($pdfPath));
-                                                $pdfUrl = asset($pdfPath);
+                                   {{-- Boutons PDF --}}
+<section class="d-flex flex-wrap justify-content-center mb-5">
+    @if($retraite['slug'] === 'soleil-levant')
+        {{-- Bouton édition 2025 --}}
+        <article class="col-12 col-sm-6 col-lg-3 my-3 text-center">
+            <h6 class="mb-2">Édition 2025</h6>
+            <a href="{{ asset('assets/pdf/retraites/leSoleilLevant/RetraiteSoleilLevant.pdf') }}"
+               class="btn btn-order btn-lg DastinFont rounded-5"
+               download="Soleil-Levant-2025.pdf">
+                {{ $data['btn_enSavoirPlus'] ?? 'En savoir plus' }}
+            </a>
+        </article>
 
-                                                $pdfPath2 = $event['path2'] ?? null;
-                                                $pdfExists2 = $pdfPath2 && file_exists(public_path($pdfPath2));
-                                                $pdfUrl2 = $pdfPath2 ? asset($pdfPath2) : null;
-                                            @endphp
+        {{-- Bouton édition 2026 --}}
+        <article class="col-12 col-sm-6 col-lg-3 my-3 text-center">
+            <h6 class="mb-2">Édition 2026</h6>
+            <a href="{{ asset('assets/pdf/retraites/leSoleilLevant/Soleil-Levant-2026.pdf') }}"
+               class="btn btn-order btn-lg DastinFont rounded-5"
+               download="Soleil-Levant-2026.pdf">
+                {{ $data['btn_enSavoirPlus'] ?? 'En savoir plus' }}
+            </a>
+        </article>
+    @else
+        @foreach ($retraite['evenements'] as $event)
+            @php
+                $pdfPath = $event['path'];
+                $pdfExists = file_exists(public_path($pdfPath));
+                $pdfUrl = asset($pdfPath);
 
-                                            <article class="col-12 col-sm-6 col-lg-3 my-3">
-                                                <h5 class="mb-3">{{ $event['titre'] }}</h5>
-                                                <div class="blocBtn d-flex flex-wrap justify-content-center">
-                                                    @if($pdfExists)
-                                                        <a href="{{ $pdfUrl }}" class="btn btn-order btn-lg me-5 DastinFont rounded-5" download="{{ $event['nom_pdf'] }}">
-                                                            {{ $data['btn_enSavoirPlus'] ?? 'En savoir plus' }}
-                                                        </a>
-                                                    @else
-                                                        <button class="btn btn-secondary disabled me-3">PDF indisponible</button>
-                                                    @endif
+                $pdfPath2 = $event['path2'] ?? null;
+                $pdfExists2 = $pdfPath2 && file_exists(public_path($pdfPath2));
+                $pdfUrl2 = $pdfPath2 ? asset($pdfPath2) : null;
+            @endphp
 
-                                                    @if($pdfExists2)
-                                                        <a href="{{ $pdfUrl2 }}" class="btn btn-order btn-lg me-5 DastinFont rounded-5" download="{{ $event['nom_pdf'] }}">
-                                                            {{ $data['btn_enSavoirPlus'] ?? 'En savoir plus' }}
-                                                        </a>
-                                                    @endif
-                                                </div>
-                                            </article>
-                                        @endforeach
-                                    </section>
+            <article class="col-12 col-sm-6 col-lg-3 my-3">
+                <h5 class="mb-3">{{ $event['titre'] }}</h5>
+                <div class="blocBtn d-flex flex-wrap justify-content-center">
+                    @if($pdfExists)
+                        <a href="{{ $pdfUrl }}" class="btn btn-order btn-lg me-5 DastinFont rounded-5" download="{{ $event['nom_pdf'] }}">
+                            {{ $data['btn_enSavoirPlus'] ?? 'En savoir plus' }}
+                        </a>
+                    @else
+                        <button class="btn btn-secondary disabled me-3">PDF indisponible</button>
+                    @endif
+
+                    @if($pdfExists2)
+                        <a href="{{ $pdfUrl2 }}" class="btn btn-order btn-lg me-5 DastinFont rounded-5" download="{{ $event['nom_pdf'] }}">
+                            {{ $data['btn_enSavoirPlus'] ?? 'En savoir plus' }}
+                        </a>
+                    @endif
+                </div>
+            </article>
+        @endforeach
+    @endif
+</section>
 
                                     {{-- Infos supplémentaires --}}
                                     <section class="mt-5">
@@ -460,7 +482,6 @@
                                             </div>
                                         @endif
                                     </section>
-
                                 </div>
                             </li>
                         @endforeach

@@ -1,7 +1,9 @@
-#Peaufiner la nav, ajouter un sous-menu à : les collaborations (ateliers + retraites),
-#Ajouter un deuxième btn à la section : retraite : Soleil Levant (sur chaque btn mettre edition + année),
-#Mise en ligne, 
+# ToDo
 
+- [ ] Peaufiner la navigation  
+  - Ajouter un sous-menu à **Collaborations** (Ateliers + Retraites)  
 
+- [ ] Ajouter un deuxième bouton à la section **Retraite : Soleil Levant**  
+  - Sur chaque bouton, mettre *Édition + Année*  
 
-
+- [ ] Mise en ligne  
