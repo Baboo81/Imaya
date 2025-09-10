@@ -20,7 +20,7 @@
                                     <i class="fas fa-home"></i>
                                 </a>
                             </li>
-                            <li class="nav-item dropdown mx-5">
+                            <li class="nav-item dropdown mx-5 p-1">
                                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                     {{ __('onepageData.nav.services') }}
                                 </a>

@@ -6,6 +6,4 @@
 - [ ] Ajouter un deuxième bouton à la section **Retraite : Soleil Levant**  
   - Sur chaque bouton, mettre *Édition + Année*  
 
-- [ ] Mise en ligne  
-
-- [ ] Logo
+- [ ] Mise en ligne

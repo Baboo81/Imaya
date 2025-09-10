@@ -18,6 +18,9 @@
             <div class="col-md-12 casaImayahTitle d-flex flex-column justify-content-center align-items-center">
                 <div class="bannerTitle text-center">
                     <h1 class="bannerTitle">{{ $data['accueil']['mainTitle1'] ?? '' }}</h1>
+                    <div>
+                        <img src="" alt="">
+                    </div>
                     <div class="name">
                         <h1 class="">{{ $data['accueil']['mainTitle2'] ?? '' }}</h1>
                     </div>
@@ -78,11 +81,11 @@
             <div class="col-lg-12 my-5">
                 <article class="my-5 quiSuisJe-Article">
                     @foreach (range(1, 4) as $i)
-                    @php $txtKey = "txtBxlSi{$i}"; @endphp
-                    @if (!empty($data['qui-suis-je'][$txtKey]))
-                    <p class="text-center text-muted">
-                        {{ $data['qui-suis-je'][$txtKey] }}
-                    </p>
+                        @php $txtKey = "txtBxlSi{$i}"; @endphp
+                        @if (!empty($data['qui-suis-je'][$txtKey]))
+                            <p class="text-center text-muted">
+                                {{ $data['qui-suis-je'][$txtKey] }}
+                            </p>
                     @endif
                     @endforeach
                 </article>
