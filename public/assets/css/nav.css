@@ -20,11 +20,12 @@ nav
 
 #logo2
 {
-    height: 2em;
-    width: 2em;
+    height: 3em;
+    width: 3em;
+    transform: rotate(35deg);
 }
 
-.logo-navbar 
+.logo-navbar
 {
   min-height: 30px;
   width: auto;
@@ -56,13 +57,13 @@ nav
 }
 
 /* Centrage vertical pour le logo et le bouton hamburger */
-.navbar .container-fluid 
+.navbar .container-fluid
 {
   align-items: center;
 }
 
 /* Empêche le hamburger de descendre */
-.navbar-toggler 
+.navbar-toggler
 {
   padding: 0.25rem 0.5rem;
 }
@@ -71,66 +72,66 @@ nav
 /* Media Queries */
 
 /* Masquer le hamburger en desktop */
-@media (min-width: 992px) 
+@media (min-width: 992px)
 {
-  .navbar-toggler 
+  .navbar-toggler
   {
     display: none !important;
     border: 3px solid red;
   }
 }
 
-@media (max-width: 991.98px) 
+@media (max-width: 991.98px)
 {
-  .navbar-nav 
+  .navbar-nav
   {
     background-color: #222; /* pour que le menu déroulé soit lisible */
     padding: 1rem;
   }
 
-  .navbar-nav .nav-item 
+  .navbar-nav .nav-item
   {
     padding-right: 0 !important;
     padding-bottom: 0.5rem;
   }
 
-  .nav-item.d-flex 
+  .nav-item.d-flex
   {
     flex-direction: column;
   }
 }
 
-@media (max-width: 991px) 
+@media (max-width: 991px)
 {
-  .navbar-nav .nav-link 
+  .navbar-nav .nav-link
   {
     font-size: 1rem;
     padding: 0.5rem;
   }
 }
 
-@media (max-width: 768px) 
+@media (max-width: 768px)
 {
-  .navbar-nav .nav-link 
+  .navbar-nav .nav-link
   {
     font-size: 0.95rem;
     padding: 0.4rem;
   }
 
-  .logo-navbar 
+  .logo-navbar
   {
     max-height: 45px;
   }
 }
 
-@media (max-width: 576px) 
+@media (max-width: 576px)
 {
-  .navbar-nav .nav-link 
+  .navbar-nav .nav-link
   {
     font-size: 0.9rem;
   }
 
-  .logo-navbar 
+  .logo-navbar
   {
     max-height: 40px;
   }
