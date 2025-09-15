@@ -453,7 +453,7 @@
                                                         <div class="carousel-inner">
                                                             @foreach($info['slider'] as $index => $slideImg)
                                                                 <div class="carousel-item {{ $index === 0 ? 'active' : '' }}">
-                                                                    <img src="{{ asset('assets/img/activités/retraites/voyageDeLAme/slider/' . ltrim($slideImg, '/')) }}"
+                                                                    <img src="{{ asset('assets/img/activites/retraites/voyageDeLAme/slider/' . ltrim($slideImg, '/')) }}"
                                                                         class="d-block w-100 rounded-3"
                                                                         alt="Photo de la retraite : {{ $retraite['groupe'] }}">
                                                                 </div>
