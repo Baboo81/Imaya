@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Log;
+
 
 class OnePageController extends Controller
 {
@@ -11,6 +13,18 @@ class OnePageController extends Controller
 
         //Inclure les data
         $data = include resource_path('data/onepageData.php');
+
+        // --- DEBUG / chargement data ---
+        $path = resource_path('data/onepageData.php');
+        if (file_exists($path)) {
+            $data = include $path;
+            Log::info('onepageData chargé, clés : ' . implode(', ', array_keys($data)));
+        } else {
+            Log::error('Fichier onepageData.php introuvable à : ' . $path);
+            $data = [];
+        }
+        // --- FIN DEBUG ---
+
 
         return view('onepage' , [
             'pageTitle' => "Imayah (France-Alexandra Vigouroux)",
