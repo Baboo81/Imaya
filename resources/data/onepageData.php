@@ -59,14 +59,16 @@ return [
                         ainsi le sud et la campagne aux énergies du nord et de la ville continentale.
                         Ces deux lieux de pratique s’enrichissent et s’inspirent et vous accueillent
                         pour des consultations et des soins individuels, des ateliers et des retraites.",
-        'imgSliderCabinet' => "assets/img/quiSuisje/cabinetBxl/cabinet1.jpg,
-                               assets/img/quiSuisje/cabinetBxl/cabinet2.jpg,
-                               assets/img/quiSuisje/cabinetBxl/cabinet3.jpg,
-                               assets/img/quiSuisje/cabinetBxl/cabinet4.jpg,
-                               assets/img/quiSuisje/cabinetBxl/cabinet5.jpg,
-                               assets/img/quiSuisje/cabinetBxl/cabinet6.jpg,
-                               assets/img/quiSuisje/cabinetBxl/cabinet7.jpeg,
-                               assets/img/quiSuisje/cabinetBxl/cabinet8.jpeg",
+        'imgSliderCabinet' => [
+                              "assets/img/quiSuisje/cabinetBxl/cabinet1.jpg",
+                              "assets/img/quiSuisje/cabinetBxl/cabinet2.jpg",
+                              "assets/img/quiSuisje/cabinetBxl/cabinet3.jpg",
+                              "assets/img/quiSuisje/cabinetBxl/cabinet4.jpg",
+                              "assets/img/quiSuisje/cabinetBxl/cabinet5.jpg",
+                              "assets/img/quiSuisje/cabinetBxl/cabinet6.jpg",
+                              "assets/img/quiSuisje/cabinetBxl/cabinet7.jpeg",
+                              "assets/img/quiSuisje/cabinetBxl/cabinet8.jpeg",
+            ],
         ],
     'soins' => [
             'mainTitle' => "Les Soins",
