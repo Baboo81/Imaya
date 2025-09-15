@@ -210,7 +210,7 @@
                                     <div class="carousel-inner sliderPaintings">
                                         @foreach ($section['images'] as $imgIndex => $image)
                                             <div class="carousel-item {{ $loop->first ? 'active' : '' }}">
-                                                <img src="{{ $image }}" class="d-block w-100 img-fluid rounded-3" alt="Création">
+                                                <img src="{{ $image }}" class="d-block w-100 img-fluid rounded-3" alt="Les créations">
                                             </div>
                                         @endforeach
                                     </div>
@@ -292,7 +292,7 @@
                                     <h4>{{ $atelier['titre'] }}</h4>
 
                                     <div class="col-12 col-md-4">
-                                        <img src="{{ asset('assets/img/activités/' . $atelier['image']) }}"
+                                        <img src="{{ asset('assets/img/activites/' . $atelier['image']) }}"
                                             class="img-fluid rounded-circle"
                                             style="width: 300px; height: 300px; object-fit: cover;">
 
@@ -359,7 +359,7 @@
                                                 <div class="carousel-inner">
                                                     @foreach ($retraite['images'] as $index => $img)
                                                         <div class="carousel-item {{ $index === 0 ? 'active' : '' }}">
-                                                            <img src="{{ asset('assets/img/activités/retraites/' . ltrim($img, '/')) }}"
+                                                            <img src="{{ asset('assets/img/activites/retraites/' . ltrim($img, '/')) }}"
                                                                 class="d-block w-100 img-half {{ $retraite['slug'] . '-img' }}"
                                                                 alt="Image retraite {{ $retraite['groupe'] }}">
                                                         </div>
@@ -375,7 +375,7 @@
                                                 @endif
                                             </div>
                                         @elseif(!empty($retraite['image']))
-                                            <img src="{{ asset('assets/img/activités/retraites/' . ltrim($retraite['image'], '/')) }}"
+                                            <img src="{{ asset('assets/img/activites/retraites/' . ltrim($retraite['image'], '/')) }}"
                                                 alt="Image retraite {{ $retraite['groupe'] }}"
                                                 class="img-half mb-4">
                                         @endif
@@ -397,7 +397,7 @@
                                             {{-- Bouton édition 2026 --}}
                                             <article class="col-12 col-sm-6 col-lg-3 my-3 text-center">
                                                 <h6 class="mb-2">Édition 2026</h6>
-                                                <a href="{{ asset('assets/pdf/retraites/leSoleilLevant/Soleil-Levant-2026.pdf') }}"
+                                                <a href="{{ asset('assets/pdf/retraites/leSoleilLevant/RetraiteSoleilLevant.pdf') }}"
                                                 class="btn btn-order btn-lg DastinFont rounded-5"
                                                 download="Soleil-Levant-2026.pdf">
                                                     {{ $data['btn_enSavoirPlus'] ?? 'En savoir plus' }}
