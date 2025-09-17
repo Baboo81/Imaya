@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 
 // resources onepage.blade.php
 
@@ -27,9 +27,9 @@ return [
     ],
     'accueil' => [
         'mainTitle1' => "Imayah",
-        'mainTitle2' => "France‑Alexandra Vigouroux",
+        'mainTitle2' => "France-Alexandra Vigouroux",
     ],
-    'qui-suis-je' => [
+    'qui_suis_je' => [
         'mainTitle'   => "Chi sono ?",
         'imgProfil'   => "/assets/img/quiSuisJe/profil.jpg",
         'txtProfil'   => "Esploratrice del vivente e del suo movimento, accompagno l’essere nel suo percorso di vita. Il mio cammino si è delineato come un’iniziazione personale. Fin da giovane sono stata affascinata dal movimento del corpo, per poi comprendere più avanti che si trattava probabilmente di una passione per le tracce visibili o invisibili della storia dell’essere nel corpo e nella mente. I miei studi, intrecciati alle esperienze vissute, si sono dispiegati in molteplici ambiti: danza e la sua scrittura, pittura, astrologia umanista, buddhismo tibetano, psicologia e psicoanalisi junghiana, kinesiologia, energetica…",
@@ -81,7 +81,7 @@ return [
                     ['title' => "Luogo",                'text' => "A Bruxelles e in Sicilia"],
                     ['title' => "Durata 1ª seduta",     'text' => "2h"],
                     ['title' => "Prezzo",               'text' => "130 €"],
-                    ['title' => "A partire dalla 2ª seduta", 'text' => "1h30"],
+                    ['title' => "A partire dalla 2e seduta", 'text' => "1h30"],
                     ['title' => "Prezzo",               'text' => "110 €"],
                 ],
             ],
@@ -128,14 +128,14 @@ return [
                 'images' => [
                     [ 'src' => "/assets/img/creations/dessinsVib/Alchimia11.jpeg", 'name' => "Alchimia" ],
                     [ 'src' => "/assets/img/creations/dessinsVib/Alma1.jpeg", 'name' => "Alma" ],
-                    [ 'src' => "/assets/img/creations/dessinsVib/Amnesia e Memoria3.jpeg", 'name' => "Amnesia e Memoria" ],
+                    [ 'src' => "/assets/img/creations/dessinsVib/AmnesiaeMemoria3.jpeg", 'name' => "Amnesia e Memoria" ],
                     [ 'src' => "/assets/img/creations/dessinsVib/Feminae5.jpeg", 'name' => "Feminae" ],
                     [ 'src' => "/assets/img/creations/dessinsVib/Imayah6.jpeg", 'name' => "Imayah" ],
                     [ 'src' => "/assets/img/creations/dessinsVib/Immensità7.jpeg", 'name' => "Immensità" ],
-                    [ 'src' => "/assets/img/creations/dessinsVib/Isis Lumière Amen4.jpeg", 'name' => "Isis Lumière Amen" ],
+                    [ 'src' => "/assets/img/creations/dessinsVib/IsisLumièreAmen4.jpeg", 'name' => "Isis Lumière Amen" ],
                     [ 'src' => "/assets/img/creations/dessinsVib/Luminescence8.jpeg", 'name' => "Luminescence" ],
                     [ 'src' => "/assets/img/creations/dessinsVib/Nirmayah9.jpeg", 'name' => "Nirmayah" ],
-                    [ 'src' => "/assets/img/creations/dessinsVib/Or Numéa Isis Hoden12.jpeg", 'name' => "Or Numéa Isis Hoden" ],
+                    [ 'src' => "/assets/img/creations/dessinsVib/OrNuméaIsisHoden12.jpeg", 'name' => "Or Numéa Isis Hoden" ],
                     [ 'src' => "/assets/img/creations/dessinsVib/Yarinah2.jpeg", 'name' => "Yarinah" ],
                     [ 'src' => "/assets/img/creations/dessinsVib/Yurta10.jpeg", 'name' => "Yurta" ],
                 ],
@@ -227,7 +227,7 @@ return [
             [
                 'slug' => "voyage-ame",
                 'groupe' => "Il viaggio dell'anima",
-                'image' => "/voyageDeLame/Visualizza foto recenti.jpg",
+                'image' => "/voyageDeLame/Visualizzafotorecenti.jpg",
                 'evenements' => [
                     [
                         'titre' => "Il viaggio dell'anima sul 8 + online",
@@ -252,10 +252,10 @@ return [
                         'titre' => "Il Viaggio dell'Anima & l'Unione Sacra",
                         'pdf' => "Unione Sacra.pdf",
                         'nom_pdf' => "Info viaggio dell'anima online",
-                        'path' => "assets/pdf/retraites/voyageDeLAme/UnionSacrée.pdf",
+                        'path' => "assets/pdf/retraites/voyageDeLAme/UnionSacree.pdf",
                     ],
                 ],
-                'info-retraite' => [
+                'info_retraite' => [
                     [
                         'collaboratrice' => "Il ritiro del Viaggio dell’Anima è condotto in collaborazione con Béatrice Robin Brézina",
                         'slider' => [
@@ -301,14 +301,13 @@ return [
                 ],
                 'info-retraiteWildHearts' => "Il ritiro Wild Hearts Yoga è condotto in collaborazione con Kris Dashorst",
                 'p1' => "Per maggiori informazioni sul Wild Hearts Yoga, non esitate a cliccare sul link: ",
-                'link-site' => "https://wildheartssicily.my.canva.site",
+                'link_site' => "https://wildheartssicily.my.canva.site",
             ]
         ]
     ],
     'casaImayah' => [
         'title' => "Scopri Casa Imayah in Sicilia",
-        'p1' => "Vi invitiamo a entrare nella nostra avventura, uno spazio pensato per offrirvi riposo, ritiri rigeneranti, una profonda riconnessione, momenti di condivisione e un tocco di ispirazione… tutto nella semplicità sincera e rilassante.
-               Volete rigenerarvi in un’oasi di pace? Siete nel posto giusto.",
+        'p1' => "Vi invitiamo a entrare nella nostra avventura, uno spazio pensato per offrirvi riposo, ritiri rigeneranti, una profonda riconnessione, momenti di condivisione e un tocco di ispirazione… tutto nella semplicità sincera e rilassante. Volete rigenerarvi in un’oasi di pace? Siete nel posto giusto.",
         'p2' => "Per visitare il sito web: Casa Imayah, non esitate a cliccare sul pulsante qui sotto !",
         'imgCasaImayah' => "/assets/img/casaImayah/CasaImayah.jpg",
         'imgPiscine' => "/assets/img/casaImayah/piscine.jpg",

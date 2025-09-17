@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 
 //resources onepage.blade.php
 
@@ -17,7 +17,7 @@ return [
             'activites' => "Les collaborations",
             'casa' => "Casa Imayah",
         ],
-        'qui-suis-je' => "Qui suis-je ?",
+        'qui_suis_je' => "Qui suis-je ?",
         'contact' => "Contact",
         'langues' => [
             'fr' => "FR",
@@ -29,37 +29,17 @@ return [
         'mainTitle1' => "Imayah",
         'mainTitle2' => "France-Alexandra Vigouroux",
         ],
-    'qui-suis-je' => [
+    'qui_suis_je' => [
         'mainTitle' => "Qui suis-je ?",
         'imgProfil' => "/assets/img/quiSuisJe/profil.jpg",
-        'txtProfil' => "Exploratrice du vivant et de son mouvement, j’accompagne
-                        l’être sur son chemin de vie. Mon parcours s’est dessiné comme chacune et chacun, telle
-                        une initiation. Très tôt passionnée par le mouvement du corps, je ne saisis que
-                        bien plus tard qu’il s’agissait certainement d’une passion pour les traces
-                        visibles ou non de l’histoire de l’être dans le corps et dans l’esprit.
-                        Mes études intriquées dans mes propres expériences de vie se sont déployées
-                        dans de multiples domaines comme la danse et son écriture, la peinture,
-                        l’astrologie humaniste, le bouddhisme tibétain, la psychologie et la
-                        psychanalyse jungienne, la kinésiologie, l’énergétique…",
-        'txtProfil2' => "Aussi, au cours de ces explorations, mes ressources furent
-                         guidées et inspirées par l’expérience précoce de la transe. En effet, elle s’est présentée à
-                         moi très jeune mais il me fallut bien des années pour la reconnaître, la
-                         comprendre, me stabiliser en elle, l’accepter et suffisamment harmoniser ma
-                         personnalité afin de l’accueillir avec le plus de justesse et d’alignement
-                         possible pour mon plus grand bien et celui de tous.",
-        'txtProfil3' =>  "Elle est depuis une dizaine d’années celle qui réunît tous
-                          ces langages appris, expérimentés et intégrés en un seul, celui de la guérison et de l’évolution de
-                          l’âme et de l’esprit par le verbe, son chant et son toucher...",
+        'txtProfil' => "Exploratrice du vivant et de son mouvement, j’accompagne l’être sur son chemin de vie. Mon parcours s’est dessiné comme chacune et chacun, telle une initiation. Très tôt passionnée par le mouvement du corps, je ne saisis que bien plus tard qu’il s’agissait certainement d’une passion pour les traces visibles ou non de l’histoire de l’être dans le corps et dans l’esprit. Mes études intriquées dans mes propres expériences de vie se sont déployées dans de multiples domaines comme la danse et son écriture, la peinture, l’astrologie humaniste, le bouddhisme tibétain, la psychologie et la psychanalyse jungienne, la kinésiologie, l’énergétique…",
+        'txtProfil2' => "Aussi, au cours de ces explorations, mes ressources furent guidées et inspirées par l’expérience précoce de la transe. En effet, elle s’est présentée à moi très jeune mais il me fallut bien des années pour la reconnaître, la comprendre, me stabiliser en elle, l’accepter et suffisamment harmoniser ma personnalité afin de l’accueillir avec le plus de justesse et d’alignement possible pour mon plus grand bien et celui de tous.",
+        'txtProfil3' =>  "Elle est depuis une dizaine d’années celle qui réunît tous ces langages appris, expérimentés et intégrés en un seul, celui de la guérison et de l’évolution de l’âme et de l’esprit par le verbe, son chant et son toucher...",
         'secondTitle' => "Entre Bruxelles et Noto",
         'imgBxl' => "/assets/img/quiSuisJe/Bxl.jpg",
         'imgSicile' => "/assets/img/quiSuisJe/Sicile.jpg",
-        'txtBxlSi4' => "...Enfin, après avoir proposé mon travail à Bruxelles pendant
-                        plus de vingt ans, offrir et proposer un espace complémentaire à la ville s’est invité.
-                        C’est alors qu’est née la Casa Imayah sur l’île volcanique de la Sicile qui relie
-                        ainsi le sud et la campagne aux énergies du nord et de la ville continentale.
-                        Ces deux lieux de pratique s’enrichissent et s’inspirent et vous accueillent
-                        pour des consultations et des soins individuels, des ateliers et des retraites.",
-        'imgSliderCabinet' =>[
+        'txtBxlSi4' => "...Enfin, après avoir proposé mon travail à Bruxelles pendant plus de vingt ans, offrir et proposer un espace complémentaire à la ville s’est invité. C’est alors qu’est née la Casa Imayah sur l’île volcanique de la Sicile qui relie ainsi le sud et la campagne aux énergies du nord et de la ville continentale. Ces deux lieux de pratique s’enrichissent et s’inspirent et vous accueillent pour des consultations et des soins individuels, des ateliers et des retraites.",
+        'imgSliderCabinet' => [
                               "assets/img/quiSuisje/cabinetBxl/cabinet1.jpg",
                               "assets/img/quiSuisje/cabinetBxl/cabinet2.jpg",
                               "assets/img/quiSuisje/cabinetBxl/cabinet3.jpg",
@@ -143,27 +123,19 @@ return [
                 [
                     'type' => "carousel",
                     'title' => "Dessins vibratoires",
-                    'description' => "Le dessin réalisé en état de transe se propose ici telle
-                                      une mise en ondes et en résonance des matériaux intérieurs afin d’offrir à l’inconscient une voie de
-                                      transmission et d’expression de son contenu mais aussi d’harmonisation. Tel
-                                      un rêve chargé de symboles et de sens, un mantra, une prière, l’image du
-                                      dessin, son nom, ses couleurs et ses formes sont à la fois réceptrices et
-                                      émettrices. Réceptrices telle une mise en miroir des images intérieures
-                                      lorsqu’elles trouvent ainsi une voie pour se révéler à la conscience. Émettrices
-                                      lorsque la « médecine » particulière du dessin est captée par les ondes
-                                      cérébrales et en harmonise ainsi le niveau vibratoire..",
+                    'description' => "Le dessin réalisé en état de transe se propose ici telle une mise en ondes et en résonance des matériaux intérieurs afin d’offrir à l’inconscient une voie de transmission et d’expression de son contenu mais aussi d’harmonisation. Tel un rêve chargé de symboles et de sens, un mantra, une prière, l’image du dessin, son nom, ses couleurs et ses formes sont à la fois réceptrices et émettrices. Réceptrices telle une mise en miroir des images intérieures lorsqu’elles trouvent ainsi une voie pour se révéler à la conscience. Émettrices lorsque la « médecine » particulière du dessin est captée par les ondes cérébrales et en harmonise ainsi le niveau vibratoire..",
                     'cta' => "Les dessins vibratoires sont disponibles sur commande",
                     'images' => [
                             [ 'src' => "/assets/img/creations/dessinsVib/Alchimia11.jpeg", 'name' => "Alchimia" ],
                             [ 'src' => "/assets/img/creations/dessinsVib/Alma1.jpeg", 'name' => "Alma" ],
-                            [ 'src' => "/assets/img/creations/dessinsVib/Amnesia e Memoria3.jpeg", 'name' => "Amnesia e Memoria" ],
+                            [ 'src' => "/assets/img/creations/dessinsVib/AmnesiaeMemoria3.jpeg", 'name' => "Amnesia e Memoria" ],
                             [ 'src' => "/assets/img/creations/dessinsVib/Feminae5.jpeg", 'name' => "Feminae" ],
                             [ 'src' => "/assets/img/creations/dessinsVib/Imayah6.jpeg", 'name' => "Imayah"],
                             [ 'src' => "/assets/img/creations/dessinsVib/Immensità7.jpeg", 'name' => "Immensità" ],
-                            [ 'src' => "/assets/img/creations/dessinsVib/Isis Lumière Amen4.jpeg", 'name' => "Isis Lumière Amen" ],
+                            [ 'src' => "/assets/img/creations/dessinsVib/IsisLumièreAmen4.jpeg", 'name' => "Isis Lumière Amen" ],
                             [ 'src' => "/assets/img/creations/dessinsVib/Luminescence8.jpeg", 'name' => "Luminescence" ],
                             [ 'src' => "/assets/img/creations/dessinsVib/Nirmayah9.jpeg", 'name' => "Nirmayah" ],
-                            [ 'src' => "/assets/img/creations/dessinsVib/Or Numéa Isis Hoden12.jpeg", 'name' => "Or Numéa Isis Hoden" ],
+                            [ 'src' => "/assets/img/creations/dessinsVib/OrNuméaIsisHoden12.jpeg", 'name' => "Or Numéa Isis Hoden" ],
                             [ 'src' => "/assets/img/creations/dessinsVib/Yarinah2.jpeg", 'name' => "Yarinah" ],
                             [ 'src' => "/assets/img/creations/dessinsVib/Yurta10.jpeg", 'name' => "Yurta" ],
                     ],
@@ -171,15 +143,8 @@ return [
                 [
                     'type' => "carousel",
                     'title' => "Illustrations & peintures",
-                    'description' => "Les illustrations s’invitent au gré des rencontres et des
-                                      coups-de-coeur.
-                                      Réalisées à l’aide de techniques mixtes et créées en état de transe, elles se
-                                      proposent telles les porte-paroles d’un projet, d’un ouvrage, d’une idée, d’un
-                                      élan avec lesquels elles dialoguent jusqu’à en épouser l’essence.",
-                    'description2' => "Les peintures, également réalisées à l’aide de techniques mixtes et en état de
-                                       transe se proposent telle une oeuvre qui accompagne un moment de vie, un
-                                       contenu vibratoire au service de l’être, une quête de beauté au service de
-                                       l’harmonie.",
+                    'description' => "Les illustrations s’invitent au gré des rencontres et des coups-de-coeur. Réalisées à l’aide de techniques mixtes et créées en état de transe, elles se proposent telles les porte-paroles d’un projet, d’un ouvrage, d’une idée, d’un élan avec lesquels elles dialoguent jusqu’à en épouser l’essence.",
+                    'description2' => "Les peintures, également réalisées à l’aide de techniques mixtes et en état de transe se proposent telle une oeuvre qui accompagne un moment de vie, un contenu vibratoire au service de l’être, une quête de beauté au service de l’harmonie.",
                     'cta' => "Les illustrations et les peintures sont disponibles sur commande",
                     'images' => [
                         "/assets/img/creations/peintures/peinture1.jpg",
@@ -262,7 +227,7 @@ return [
             [
                 'slug' => "voyage-ame",
                 'groupe' => "Le voyage de l'âme",
-                'image' => "/voyageDeLame/Visualizza foto recenti.jpg",
+                'image' => "/voyageDeLame/Visualizzafotorecenti.jpg",
                 'evenements' => [
                     [
                         'titre' => "Le voyage de l'âme sur le 8 + en ligne",
@@ -287,10 +252,10 @@ return [
                         'titre' => "Le Voyage de l'Ame & l'Union Sacrée",
                         'pdf' => "Union Sacrée.pdf",
                         'nom_pdf' => "Infos voyage de l'âme en ligne",
-                        'path' => "assets/pdf/retraites/voyageDeLAme/UnionSacrée.pdf",
+                        'path' => "assets/pdf/retraites/voyageDeLAme/UnionSacree.pdf",
                     ],
                 ],
-                'info-retraite' => [
+                'info_retraite' => [
                     [
                         'collaboratrice' => "La retraite du Voyage de l'Âme est animée en collaboration avec Béatrice Robin Brézina",
                         'slider' => [
@@ -333,17 +298,16 @@ return [
                         'path' => "assets/pdf/retraites/yogaRetreat/SicilianYogaRetreat2025.pdf",
                     ]
                 ],
-                'info-retraiteWildHearts' =>  "La retraite Wild Hearts Yoga est animée en collaboration avec Kris Dashorst",
-                'p1' => "Pour plus d\'informations sur la Wild Hearts Yoga, n\'hésitez pas à cliquer sur le lien : ",
-                'link-site' => "https://wildheartssicily.my.canva.site",
+                'info_retraiteWildHearts' =>  "La retraite Wild Hearts Yoga est animée en collaboration avec Kris Dashorst",
+                'p1' => "Pour plus d'informations sur la Wild Hearts Yoga, n'hésitez pas à cliquer sur le lien : ",
+                'link_site' => "https://wildheartssicily.my.canva.site",
              ]
         ]
     ],
     'casaImayah' => [
         'title' => "Découvrez Casa Imayah en Sicile",
-        'p1' => " 'Nous vous invitons à entrer dans notre aventure, un espace pensé pour vous offrir du repos, des retraites ressourçantes, une reconnexion profonde, des instants de partage et une touche d’inspiration… le tout dans une simplicité sincère et apaisante.
-                            Envie de vous ressourcer dans un havre de paix ? Vous êtes au bon endroit.' ",
-        'p2' => "Pour visiter le site web : Casa Imayah, n\'hésitez pas cliquer sur le bouton ci-dessous !",
+        'p1' => "Nous vous invitons à entrer dans notre aventure, un espace pensé pour vous offrir du repos, des retraites ressourçantes, une reconnexion profonde, des instants de partage et une touche d’inspiration… le tout dans une simplicité sincère et apaisante. Envie de vous ressourcer dans un havre de paix ? Vous êtes au bon endroit.",
+        'p2' => "Pour visiter le site web : Casa Imayah, n'hésitez pas cliquer sur le bouton ci-dessous !",
         'imgCasaImayah' => "/assets/img/casaImayah/CasaImayah.jpg",
         'imgPiscine' => "/assets/img/casaImayah/piscine.jpg",
     ],

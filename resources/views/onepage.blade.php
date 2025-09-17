@@ -38,17 +38,17 @@
 <section class="sectionQuiSuisJe py-5">
     <div class="container">
         <div class="col-12 my-5">
-            <h1 class="text-center text-muted mainTitles py-5">{{ $data['qui-suis-je']['mainTitle'] ?? '' }}</h1>
+            <h1 class="text-center text-muted mainTitles py-5">{{ $data['qui_suis_je']['mainTitle'] ?? '' }}</h1>
         </div>
         <div class="row">
             <div class="col-lg-6 mb-4 mb-lg-0 d-flex align-items-center justify-content-center">
-                <img src="{{ $data['qui-suis-je']['imgProfil'] ?? '' }}" alt="Photo de France-Alexandra"
+                <img src="{{ $data['qui_suis_je']['imgProfil'] ?? '' }}" alt="Photo de France-Alexandra"
                 class="img-fluid rounded-2 w-100 F-A" style="max-width: 450px;">
             </div>
             <div class="col-lg-6 pe-5">
                 <article class="p-lg-5">
                     <p class="text-muted text-center text-lg-center mt-4">
-                        {{ $data['qui-suis-je']['txtProfil'] ?? '' }}
+                        {{ $data['qui_suis_je']['txtProfil'] ?? '' }}
                     </p>
                 </article>
             </div>
@@ -56,23 +56,23 @@
         <div class="row">
             <article>
                 <p class="text-muted text-center text-lg-center my-5">
-                    {{ $data['qui-suis-je']['txtProfil2'] ?? '' }}
+                    {{ $data['qui_suis_je']['txtProfil2'] ?? '' }}
                 </p>
                  <p class="text-muted text-center text-lg-center my-5">
-                    {{ $data['qui-suis-je']['txtProfil3'] ?? '' }}
+                    {{ $data['qui_suis_je']['txtProfil3'] ?? '' }}
                 </p>
             </article>
         </div>
         <div class="row my-5">
             <div class="col-12 my-5">
-                <h1 class="text-center text-muted mainTitles py-5">{{ $data['qui-suis-je']['secondTitle'] ?? '' }}</h1>
+                <h1 class="text-center text-muted mainTitles py-5">{{ $data['qui_suis_je']['secondTitle'] ?? '' }}</h1>
             </div>
         </div>
     </div><!-- container END -->
     <div class="d-flex Bxl-Sicile">
         @foreach (['imgBxl' => 'Photo de Bruxelles', 'imgSicile' => 'Photo de la Sicile'] as $key => $alt)
         <div class="w-50">
-            <img src="{{ $data['qui-suis-je'][$key] ?? '' }}" class="img-half" alt="{{ $alt }}">
+            <img src="{{ $data['qui_suis_je'][$key] ?? '' }}" class="img-half" alt="{{ $alt }}">
         </div>
         @endforeach
     </div>
@@ -82,9 +82,9 @@
                 <article class="my-5 quiSuisJe-Article">
                     @foreach (range(1, 4) as $i)
                         @php $txtKey = "txtBxlSi{$i}"; @endphp
-                        @if (!empty($data['qui-suis-je'][$txtKey]))
+                        @if (!empty($data['qui_suis_je'][$txtKey]))
                             <p class="text-center text-muted">
-                                {{ $data['qui-suis-je'][$txtKey] }}
+                                {{ $data['qui_suis_je'][$txtKey] }}
                             </p>
                     @endif
                     @endforeach
@@ -96,7 +96,7 @@
     <div class="w-100 overflow-hidden" style="background-color: #B36700;">
         <div class="slider-track d-flex">
             @php
-                $cabinetImages = explode(',', $data['qui-suis-je']['imgSliderCabinet']);
+                $cabinetImages = $data['qui_suis_je']['imgSliderCabinet'];
                 // On duplique les images pour donner l'impression d'une boucle infinie
                 $allImages = array_merge($cabinetImages, $cabinetImages);
             @endphp
@@ -439,8 +439,8 @@
 
                                     {{-- Infos supplémentaires --}}
                                     <section class="mt-5">
-                                        @if(!empty($retraite['info-retraite']) && is_array($retraite['info-retraite']))
-                                            @foreach($retraite['info-retraite'] as $info)
+                                        @if(!empty($retraite['info_retraite']) && is_array($retraite['info_retraite']))
+                                            @foreach($retraite['info_retraite'] as $info)
                                                 <div class="row justify-content-center align-items-center my-5">
                                                     <div class="col-12 col-md-8">
                                                         <h5 class="mb-4">{{ $info['collaboratrice'] }}</h5>
@@ -468,16 +468,16 @@
                                                     </div>
                                                 @endif
                                             @endforeach
-                                        @elseif(!empty($retraite['info-retraiteWildHearts']))
+                                        @elseif(!empty($retraite['info_retraiteWildHearts']))
                                             {{-- Pour Wild Hearts --}}
                                             <div class="row justify-content-center align-items-center my-5">
                                                 <div class="col-12 col-md-8 text-center">
-                                                    <p class="mb-4">{{ $retraite['info-retraiteWildHearts'] }}</p>
+                                                    <p class="mb-4">{{ $retraite['info_retraiteWildHearts'] }}</p>
                                                     @if(!empty($retraite['p1']) && !empty($retraite['link-site']))
                                                         <p>
                                                             {{ $retraite['p1'] }}
                                                             <a href="{{ $retraite['link-site'] }}" target="_blank" class="link-primary">
-                                                                {{ $retraite['link-site'] }}
+                                                                {{ $retraite['link_site'] }}
                                                             </a>
                                                         </p>
                                                     @endif

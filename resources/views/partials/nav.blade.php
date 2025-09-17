@@ -52,7 +52,7 @@
                             </li>
                             <li class="nav-item mx-5">
                                 <a class="nav-link" aria-current="page" href="#QuiSuisJe">
-                                    {{ __('onepageData.nav.qui-suis-je') }}
+                                    {{ __('onepageData.nav.qui_suis_je') }}
                                 </a>
                             </li>
                             <li class="nav-item mx-5">

@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 
 // resources/lang/en/onepageData.php
 
@@ -29,10 +29,10 @@ return [
         'mainTitle1' => "Imayah",
         'mainTitle2' => "France-Alexandra Vigouroux",
     ],
-    'qui-suis-je' => [
+    'qui_suis_je' => [
         'mainTitle' => "Who am I?",
         'imgProfil' => "/assets/img/quiSuisJe/profil.jpg",
-        'txtProfil' => "Explorer of life and its movement, I support the being on their life    path. My journey took shape like an initiation, just like everyone else’s. Passionate from an early age about the body’s movement, I realized much later that it was likely a passion for the visible or invisible traces of the being’s story in the body and the mind. My studies, deeply intertwined with my own life experiences, expanded into various fields such as dance and its notation, painting, humanistic astrology, Tibetan Buddhism, psychology and Jungian psychoanalysis, kinesiology, energy work...",
+        'txtProfil' => "Explorer of life and its movement, I support the being on their life path. My journey took shape like an initiation, just like everyone else’s. Passionate from an early age about the body’s movement, I realized much later that it was likely a passion for the visible or invisible traces of the being’s story in the body and the mind. My studies, deeply intertwined with my own life experiences, expanded into various fields such as dance and its notation, painting, humanistic astrology, Tibetan Buddhism, psychology and Jungian psychoanalysis, kinesiology, energy work...",
         'txtProfil2' => "During these explorations, my resources were also guided and inspired by the early experience of trance. It came to me very young, but it took many years to recognize it, understand it, find stability in it, accept it, and harmonize my personality enough to welcome it with as much accuracy and alignment as possible — for my highest good and that of all.",
         'txtProfil3' => "For about ten years now, it has been the one that brings together all these languages I learned, experienced, and integrated into one: the healing and evolution of the soul and spirit through words, song, and touch...",
         'secondTitle' => "Between Brussels and Noto",
@@ -128,14 +128,14 @@ return [
             'images' => [
                     [ 'src' => "/assets/img/creations/dessinsVib/Alchimia11.jpeg", 'name' => "Alchimia" ],
                     [ 'src' => "/assets/img/creations/dessinsVib/Alma1.jpeg", 'name' => "Alma" ],
-                    [ 'src' => "/assets/img/creations/dessinsVib/Amnesia e Memoria3.jpeg", 'name' => "Amnesia e Memoria" ],
+                    [ 'src' => "/assets/img/creations/dessinsVib/AmnesiaeMemoria3.jpeg", 'name' => "Amnesia e Memoria" ],
                     [ 'src' => "/assets/img/creations/dessinsVib/Feminae5.jpeg", 'name' => "Feminae" ],
                     [ 'src' => "/assets/img/creations/dessinsVib/Imayah6.jpeg", 'name' => "Imayah" ],
                     [ 'src' => "/assets/img/creations/dessinsVib/Immensità7.jpeg", 'name' => "Immensità" ],
-                    [ 'src' => "/assets/img/creations/dessinsVib/Isis Lumière Amen4.jpeg", 'name' => "Isis Lumière Amen" ],
+                    [ 'src' => "/assets/img/creations/dessinsVib/IsisLumièreAmen4.jpeg", 'name' => "Isis Lumière Amen" ],
                     [ 'src' => "/assets/img/creations/dessinsVib/Luminescence8.jpeg", 'name' => "Luminescence" ],
                     [ 'src' => "/assets/img/creations/dessinsVib/Nirmayah9.jpeg", 'name' => "Nirmayah" ],
-                    [ 'src' => "/assets/img/creations/dessinsVib/Or Numéa Isis Hoden12.jpeg", 'name' => "Yurta" ],
+                    [ 'src' => "/assets/img/creations/dessinsVib/OrNuméaIsisHoden12.jpeg", 'name' => "Yurta" ],
             ],
         ],
         [
@@ -225,7 +225,7 @@ return [
         [
             'slug' => "voyage-ame",
             'groupe' => "The Soul Journey",
-            'image' => "/voyageDeLame/Visualizza foto recenti.jpg",
+            'image' => "/voyageDeLame/Visualizzafotorecenti.jpg",
             'evenements' => [
                 [
                     'titre' => "The Soul Journey on the 8 + online",
@@ -244,16 +244,16 @@ return [
                     'titre' => "The Soul Journey & The Thread of Self",
                     'pdf' => "retreatSicily.pdf",
                     'nom_pdf' => "Retreat info Sicily",
-                      'path' => "assets/pdf/retraites/voyageDeLAme/retraiteSicile.pdf",
+                    'path' => "assets/pdf/retraites/voyageDeLAme/retraiteSicile.pdf",
                 ],
                 [
                     'titre' => "The Soul Journey & the Sacred Union",
                     'pdf' => "SacredUnion.pdf",
                     'nom_pdf' => "Online soul journey info",
-                    'path' => "assets/pdf/retraites/voyageDeLAme/UnionSacrée.pdf",
+                    'path' => "assets/pdf/retraites/voyageDeLAme/UnionSacree.pdf",
                 ],
             ],
-            'info-retraite' => [
+            'info_retraite' => [
                 [
                     'collaboratrice' => "The Soul Journey retreat is led in collaboration with Béatrice Robin Brézina",
                     'slider' => [
@@ -305,8 +305,7 @@ return [
 ],
 'casaImayah' => [
     'title' => "Discover Casa Imayah in Sicily",
-    'p1' =>   " 'We invite you to enter our adventure, a space designed to offer you rest, rejuvenating retreats, deep reconnection, moments of sharing, and a touch of inspiration… all in sincere and soothing simplicity.
-              Want to recharge in a haven of peace? You are in the right place.' ",
+    'p1' =>   "We invite you to enter our adventure, a space designed to offer you rest, rejuvenating retreats, deep reconnection, moments of sharing, and a touch of inspiration… all in sincere and soothing simplicity. Want to recharge in a haven of peace? You are in the right place.",
     'p2' => "To visit the website: Casa Imayah, feel free to click on the button below !",
     'imgCasaImayah' => "/assets/img/casaImayah/CasaImayah.jpg",
     'imgPiscine' => "/assets/img/casaImayah/piscine.jpg",
