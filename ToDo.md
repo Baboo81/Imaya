@@ -1,9 +1,7 @@
 # ToDo
 
-- [ ] Peaufiner la navigation  
-  - Changer la couleur de fond du menu déroulant
+- [ ] Mettre les img sur un CDN
 
 - [ ] Ajouter un deuxième bouton à la section **Retraite : Soleil Levant**  
   - Sur chaque bouton, mettre *Édition + Année*  
-
-- [ ] Mise en ligne
+  - Ajouter txt : info à venir
