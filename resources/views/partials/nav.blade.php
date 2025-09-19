@@ -6,7 +6,7 @@
             <!--Nav-->
             <nav class="perso-navbar navbar navbar-expand-lg position-fixed navbar-dark w-100">
                 <div class="container-fluid">
-                    <img class="logo-navbar mt-3" src="/assets/img/svg/ImayahLogo.svg" id="logo2"
+                    <img class="logo-navbar mt-3" src="/assets/img/svg/logoImayah2.svg" id="logo2"
                         alt="Logo Imayah représentant une lune avec un ensemble de plume de paon">
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
