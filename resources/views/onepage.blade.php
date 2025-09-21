@@ -86,7 +86,7 @@
                             <p class="text-center text-muted">
                                 {{ $data['qui_suis_je'][$txtKey] }}
                             </p>
-                    @endif
+                        @endif
                     @endforeach
                 </article>
             </div>
