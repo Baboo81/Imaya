@@ -247,7 +247,7 @@ section .bannerTitle
 /* Slider : cabinet */
 .slider-cabinet
 {
-    height: 505px;
+    height: 325px;
     overflow: hidden;
     display: flex;
     justify-content: center;
@@ -256,20 +256,23 @@ section .bannerTitle
 
 .slider-track
 {
-  animation: scroll 40s linear infinite;
-  width: max-content;
   display: flex;
   align-items: center;
   gap: 20px;
+  animation: scroll 40s linear infinite;
+  width: fit-content;     /* s'adapte à toutes les images */
+  will-change: transform; /* optimise l'animation */
 }
 
 .slider-item
 {
-  flex: 0 0 calc(100% / 2.5); /* ~2 cartes visibles */
+  flex: 0 0 auto;       /* prend uniquement la place de son contenu */
+  width: 400px;         /* largeur fixe de chaque image */
   height: 500px;
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 }
 
 @media (max-width: 768px)
@@ -282,11 +285,10 @@ section .bannerTitle
 
 .slider-item img
 {
-  /*width: 100%;*/
-  /*height: 450px !important;*/
   max-width: 100%;
   max-height: 100%;
-  object-fit: contain !important;
+  object-fit: cover;
+  display: block;
 }
 
 /* Rotation spécifique pour certaines images */
@@ -294,7 +296,7 @@ section .bannerTitle
 {
     transform: rotate(90deg);
     width: auto;
-    height: 600px !important;
+    height: 400px !important;
     object-fit: cover;
 }
 
@@ -305,7 +307,7 @@ section .bannerTitle
     width: auto;
     object-fit: cover;
     transform: rotate(90deg);
-    height: 600px !important;
+    height: 400px !important;
 }
 
 /* Ajustement du container slider-item */
@@ -471,20 +473,20 @@ section .sectionCreationTitle
     margin-bottom: 2rem;
 }
 
-.slider-track {
+.slider-track-creations {
     display: flex;
     gap: 1rem;
     padding: 1rem 0;
 }
 
-.slider-item {
+.slider-item-creations {
     flex: 0 0 auto;
     width: 600px;
     height: 700px;
     overflow: hidden;
 }
 
-.slider-item img {
+.slider-item-creations img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -505,6 +507,19 @@ section .picture
 .write ul > li
 {
     font-size: 1.5rem;
+}
+
+/* Mobile adaptatif */
+@media (max-width: 768px) {
+    .slider-item-creations {
+        width: 90%;
+        height: auto;
+    }
+
+    .slider-item-creations img {
+        height: auto;
+        max-height: 500px;
+    }
 }
 /*END*/
 

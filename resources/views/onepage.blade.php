@@ -173,9 +173,9 @@
                     {{-- ✅ Slider horizontal personnalisé pour le premier bloc --}}
                     <div class="card my-5 border-0 rounded-0">
                         <div class="slider-container">
-                            <div class="slider-track">
+                            <div class="slider-track-creations">
                                 @foreach ($section['images'] as $image)
-                                    <div class="slider-item dessinsVib">
+                                    <div class="slider-item-creations dessinsVib">
                                         <p class="mt-2 text-muted">
                                             {{ $image['name'] }}
                                         </p>
