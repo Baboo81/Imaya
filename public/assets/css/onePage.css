@@ -653,6 +653,15 @@ textarea::placeholder
   }
 }
 
+/* Cacher les slider pour la section : activités */
+@media (max-width : 768px)
+{
+    .card-bloc .blocAteliers
+    {
+        display: none !important;
+    }
+}
+
 /* Petits écrans (smartphones) */
 @media (max-width: 768px) {
   .bannerTitle {

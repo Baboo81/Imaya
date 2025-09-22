@@ -327,7 +327,7 @@
 
                                     <div class="col-12 col-md-5 p-5">
                                         <div id="carousel-{{ \Illuminate\Support\Str::slug($atelier['titre']) }}"
-                                            class="carousel carousel-fade mx-auto my-3" data-bs-ride="carousel">
+                                            class="carousel blocAteliers carousel-fade mx-auto my-3" data-bs-ride="carousel">
                                             <div class="carousel-inner rounded-2">
                                                 @foreach ($atelier['slider'] as $i => $img)
                                                     <div class="carousel-item @if ($i == 0) active @endif">
