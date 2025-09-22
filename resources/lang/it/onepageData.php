@@ -44,7 +44,7 @@ return [
                               "assets/img/quiSuisje/cabinetBxl/cabinet2.jpg",
                               "assets/img/quiSuisje/cabinetBxl/cabinet3.jpg",
                               "assets/img/quiSuisje/cabinetBxl/cabinet4.jpg",
-                              "assets/img/quiSuisje/cabinetBxl/cabinet5.jpg",
+                              "assets/img/quiSuisje/cabinetBxl/cabinet5.jpeg",
                               "assets/img/quiSuisje/cabinetBxl/cabinet6.jpg",
                               "assets/img/quiSuisje/cabinetBxl/cabinet7.jpeg",
                               "assets/img/quiSuisje/cabinetBxl/cabinet8.jpeg",

@@ -93,17 +93,25 @@
         </div>
     </div>
     <!-- Slider : cabinet -->
-    <div class="w-100 overflow-hidden" style="background-color: #B36700;">
+    <div class="w-100 overflow-hidden slider-cabinet" style="background-color: #B36700;">
         <div class="slider-track d-flex">
             @php
                 $cabinetImages = $data['qui_suis_je']['imgSliderCabinet'];
                 // On duplique les images pour donner l'impression d'une boucle infinie
                 $allImages = array_merge($cabinetImages, $cabinetImages);
+                $rotateImages = ['cabinet2.jpg', 'cabinet3.jpg', 'cabinet4.jpg'];
             @endphp
 
             @foreach ($allImages as $img)
-                <div class="slider-item">
-                    <img src="{{ asset(trim($img)) }}" alt="Photos du cabinet à Bruxelles et en Sicile" />
+                @php
+                    $imgName = basename(trim($img));
+                    $rotate = in_array($imgName, $rotateImages);
+                    $special = ($imgName === 'cabinet5.jpeg'); // classe spécifique pour cabinet5
+                @endphp
+                <div class="slider-item {{ $special ? 'special-img-container' : '' }}">
+                    <img src="{{ asset(trim($img)) }}"
+                        alt="Photos du cabinet à Bruxelles et en Sicile"
+                        class="{{ $rotate ? 'rotate-90' : '' }} {{ $special ? 'special-img' : '' }}">
                 </div>
             @endforeach
         </div>

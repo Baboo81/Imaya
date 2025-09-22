@@ -245,28 +245,75 @@ section .bannerTitle
 }
 
 /* Slider : cabinet */
+.slider-cabinet
+{
+    height: 505px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .slider-track
 {
   animation: scroll 40s linear infinite;
   width: max-content;
+  display: flex;
+  align-items: center;
+  gap: 20px;
 }
 
 .slider-item
 {
   flex: 0 0 calc(100% / 2.5); /* ~2 cartes visibles */
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-@media (max-width: 768px) {
-  .slider-item {
+@media (max-width: 768px)
+{
+  .slider-item
+  {
     flex: 0 0 80%; /* 1 carte centrée */
   }
 }
 
 .slider-item img
 {
-  width: 100%;
-  height: auto;
-  display: block;
+  /*width: 100%;*/
+  /*height: 450px !important;*/
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain !important;
+}
+
+/* Rotation spécifique pour certaines images */
+.rotate-90
+{
+    transform: rotate(90deg);
+    width: auto;
+    height: 600px !important;
+    object-fit: cover;
+}
+
+/* Ajustement spécial pour cabinet5.jpeg */
+.special-img
+{
+    height: 180px;
+    width: auto;
+    object-fit: cover;
+    transform: rotate(90deg);
+    height: 600px !important;
+}
+
+/* Ajustement du container slider-item */
+.slider-item.special-img-container
+{
+    flex: 0 0 auto !important;
+    display: flex !important;
+    justify-content: center !important;
 }
 
 @keyframes scroll
@@ -287,6 +334,32 @@ section .bannerTitle
   margin: 0;
   padding: 0;
 }
+
+/* Affichage : mobile */
+@media (max-width : 768px)
+{
+    .slider-cabinet
+    {
+        display: none;
+    }
+}
+
+/* TABLETTE : 2 images visibles */
+@media (max-width: 992px)
+{
+  .slider-item {
+    flex: 0 0 50%;
+  }
+}
+
+/* MOBILE : 1 image qui prend presque toute la largeur */
+@media (max-width: 576px)
+{
+  .slider-item {
+    flex: 0 0 90%;
+  }
+}
+
 /* Slider : cabinet END*/
 /*Section Qui sui-je ? END*/
 
