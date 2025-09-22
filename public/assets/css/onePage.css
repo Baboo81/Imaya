@@ -640,6 +640,19 @@ textarea::placeholder
 /*  END Section :  sectionContact*/
 
 /* Media Queries */
+/* Inactivation du parallaxe */
+@media (max-width: 768px)
+{
+  .soins,
+  .card-bloc,
+  .card-contact
+  {
+    background: #444 !important; /* gris élégant */
+    background-attachment: scroll !important;
+    background-image: none !important; /* enlève l'image */
+  }
+}
+
 /* Petits écrans (smartphones) */
 @media (max-width: 768px) {
   .bannerTitle {
