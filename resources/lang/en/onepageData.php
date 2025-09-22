@@ -190,7 +190,7 @@ return [
             'txt_propose' => "Workshop in collaboration with :",
             'auteur' => "Jessica Dell'Utri",
             'description' => "For more details (price, program, schedule, ...) about the workshop, click on 'Learn more'.",
-            'pdf' => "PlantCeremony.pdf",
+            'pdf' => "CeremonieDesPlantes.pdf",
             'slider' => [
                 "ceremonie1.jpeg",
                 "ceremonie2.jpg",

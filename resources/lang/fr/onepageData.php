@@ -192,7 +192,7 @@ return [
                 'txt_propose' => "Atelier en collaboration avec :",
                 'auteur' => "Jessica Dell'Utri",
                 'description' => "Pour avoir plus de précision (prix, programme, calendrier, ...) sur l'atelier, cliquez sur 'En savoir plus'.",
-                'pdf' => "CérémonieDesPlantes.pdf",
+                'pdf' => "CeremonieDesPlantes.pdf",
                 'slider' => [
                     "ceremonie1.jpeg",
                     "ceremonie2.jpg",
