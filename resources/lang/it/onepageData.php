@@ -272,6 +272,7 @@ return [
                 'slug' => "soleil-levant",
                 'groupe' => "Il sole nascente",
                 'image' => "/soleilLevant/retraiteSoleilLevant.jpeg",
+                'info_àvenir' => "Informazioni in arrivo",
                 'evenements' => [
                     [
                         'titre' => "Sole nascente",

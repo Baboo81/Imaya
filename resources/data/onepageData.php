@@ -272,6 +272,7 @@ return [
                 'slug' => "soleil-levant",
                 'groupe' => "Le soleil levant",
                 'image' => "/soleilLevant/retraiteSoleilLevant.jpeg",
+                'info_àvenir' => "Infos à venir",
                 'evenements' => [
                     [
                         'titre' => "Soleil levant",

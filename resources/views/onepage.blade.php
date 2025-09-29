@@ -410,6 +410,11 @@
                                                 download="Soleil-Levant-2026.pdf">
                                                     {{ $data['btn_enSavoirPlus'] ?? 'En savoir plus' }}
                                                 </a>
+                                                <article class="col-12 my-3 text-center">
+                                                    <p>
+                                                        {{ $retraite['info_àvenir'] ?? ''}}
+                                                    </p>
+                                                </article>
                                             </article>
                                         @else
                                             @foreach ($retraite['evenements'] as $event)

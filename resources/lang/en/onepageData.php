@@ -270,6 +270,7 @@ return [
             'slug' => "soleil-levant",
             'groupe' => "The Rising Sun",
             'image' => "/soleilLevant/retraiteSoleilLevant.jpeg",
+            'info_àvenir' => "Information coming soon",
             'evenements' => [
                 [
                     'titre' => "Rising Sun",

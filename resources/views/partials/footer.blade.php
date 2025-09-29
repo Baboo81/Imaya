@@ -1,5 +1,5 @@
 <footer class="py-5">
-        <div class="row text-center p-5">
+        <div class="row text-center p-5 footer-picto">
 
             <div class="col-12 col-sm-6 col-md-4 mb-4">
                 <section class="nav flex-column">

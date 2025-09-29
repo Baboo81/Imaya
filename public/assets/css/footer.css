@@ -27,6 +27,16 @@ footer
   background-color: var(--jaune);
 }
 
+footer .footer-picto
+{
+    background: url(../img/svg/footer-picto.svg) no-repeat 0% / 140% auto;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-size: 140% auto;
+    background-position: 0%;
+    padding: 2rem;
+}
+
 footer i
 {
     transition: transform .3s ease;
