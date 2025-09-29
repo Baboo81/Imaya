@@ -412,7 +412,7 @@
                                                 </a>
                                                 <article class="col-12 my-3 text-center">
                                                     <p>
-                                                        {{ $retraite['info_àvenir'] ?? ''}}
+                                                        {{ $retraite['info_àvenir'] ?? '' }}
                                                     </p>
                                                 </article>
                                             </article>
