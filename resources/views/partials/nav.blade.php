@@ -6,8 +6,7 @@
             <!--Nav-->
             <nav class="perso-navbar navbar navbar-expand-lg position-fixed navbar-dark w-100">
                 <div class="container-fluid">
-                    <img class="logo-navbar mt-3" src="/assets/img/svg/logoImayah2.svg" id="logo2"
-                        alt="Logo Imayah représentant une lune avec un ensemble de plume de paon">
+                    <a class="navbar-brand mx-5 fs-2" href="#">Imayah</a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
