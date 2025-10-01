@@ -179,7 +179,7 @@ p
 /*Parallaxe*/
 .banner
 {
-    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, 0)), url(../img/banner/banner.jpeg) center center fixed no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, 0)), url("https://ik.imagekit.io/ru3tacudo/imayah/img/banner/banner.jpeg") center center fixed no-repeat;
     background-size: cover;
     height: 100vh;
     min-height: 500px;
@@ -195,19 +195,19 @@ section .bannerTitle
 
 .soins
 {
-    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, 0)), url(../img/banner/fond1.jpg) center center fixed no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, 0)), url("https://ik.imagekit.io/ru3tacudo/imayah/img/banner/fond1.jpg") center center fixed no-repeat;
     min-height: 2800px;
 }
 
 .card-bloc
 {
-    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(../img/banner/fond2.jpg) center center fixed no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url("https://ik.imagekit.io/ru3tacudo/imayah/img/banner/fond2.jpg") center center fixed no-repeat;
     min-height: 1800px;
 }
 
 .card-contact
 {
-    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(../img/banner/fond3.jpeg) center center fixed no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url("https://ik.imagekit.io/ru3tacudo/imayah/img/banner/fond3.jpeg") center center fixed no-repeat;
     background-size: cover;
     min-height: 1800px;
 }
