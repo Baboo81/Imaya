@@ -42,7 +42,7 @@
         </div>
         <div class="row">
             <div class="col-lg-6 mb-4 mb-lg-0 d-flex align-items-center justify-content-center">
-                <img src="{{ $data['qui_suis_je']['imgProfil'] ?? '' }}" alt="Photo de France-Alexandra"
+                <img src="{{ ik_url($data['qui_suis_je']['imgProfil'] ?? '' ) }}" alt="Photo de France-Alexandra"
                 class="img-fluid rounded-2 w-100 F-A" style="max-width: 450px;">
             </div>
             <div class="col-lg-6 pe-5">
@@ -72,7 +72,7 @@
     <div class="d-flex Bxl-Sicile">
         @foreach (['imgBxl' => 'Photo de Bruxelles', 'imgSicile' => 'Photo de la Sicile'] as $key => $alt)
         <div class="w-50">
-            <img src="{{ $data['qui_suis_je'][$key] ?? '' }}" class="img-half" alt="{{ $alt }}">
+            <img src="{{ ik_url($data['qui_suis_je'][$key] ?? '') }}" class="img-half" alt="{{ $alt }}">
         </div>
         @endforeach
     </div>
@@ -92,7 +92,7 @@
             </div>
         </div>
     </div>
-    <!-- Slider : cabinet -->
+   <!-- Slider : cabinet -->
     <div class="w-100 overflow-hidden slider-cabinet" style="background-color: #B36700;">
         <div class="slider-track d-flex">
             @php
@@ -109,7 +109,7 @@
                     $special = ($imgName === 'cabinet5.jpeg'); // classe spécifique pour cabinet5
                 @endphp
                 <div class="slider-item {{ $special ? 'special-img-container' : '' }}">
-                    <img src="{{ asset(trim($img)) }}"
+                    <img src="{{ ik_url(trim($img)) }}"
                         alt="Photos du cabinet à Bruxelles et en Sicile"
                         class="{{ $rotate ? 'rotate-90' : '' }} {{ $special ? 'special-img' : '' }}">
                 </div>
@@ -130,7 +130,7 @@
             @foreach($data['soins']['cards'] as $index => $card)
             <div class="col-12 col-md-8 mb-5 card-wrapper {{ $index % 2 === 0 ? 'card-left' : 'card-right' }}">
                 <div class="card h-100">
-                    <img src="{{ $card['img'] }}" class="card-img-top"
+                    <img src="{{ ik_url($card['img']) }}" class="card-img-top"
                     alt="{{ $card['title'] }}"
                     @if($index === 2) style="height: 250px; object-fit: cover; object-position: 50% 20%;" @endif>
                     <div class="card-body d-flex flex-column text-center text-muted">
@@ -179,7 +179,7 @@
                                         <p class="mt-2 text-muted">
                                             {{ $image['name'] }}
                                         </p>
-                                        <img src="{{ $image['src'] }}" class="img-fluid rounded-3" alt="{{ $image['name'] }}">
+                                        <img src="{{ ik_url($image['src']) }}" class="img-fluid rounded-3" alt="{{ $image['name'] }}">
                                     </div>
                                 @endforeach
                             </div>
@@ -218,7 +218,7 @@
                                     <div class="carousel-inner sliderPaintings">
                                         @foreach ($section['images'] as $imgIndex => $image)
                                             <div class="carousel-item {{ $loop->first ? 'active' : '' }}">
-                                                <img src="{{ $image }}" class="d-block w-100 img-fluid rounded-3" alt="Les créations">
+                                                <img src="{{ ik_url($image) }}" class="d-block w-100 img-fluid rounded-3" alt="Les créations">
                                             </div>
                                         @endforeach
                                     </div>
@@ -252,7 +252,7 @@
                 <div class="card my-5 border-0 rounded-0 write">
                     <div class="row my-5 align-items-center">
                         <div class="col-md-6">
-                            <img src="{{ $section['image'] }}" class="img-fluid rounded-3" alt="Image représentant des feuilles écrites à la main">
+                            <img src="{{ ik_url($section['image']) }}" class="img-fluid rounded-3" alt="Image représentant des feuilles écrites à la main">
                         </div>
                         <div class="col-md-6">
                             <div class="card-body">
@@ -300,7 +300,7 @@
                                     <h4>{{ $atelier['titre'] }}</h4>
 
                                     <div class="col-12 col-md-4">
-                                        <img src="{{ asset('assets/img/activites/' . $atelier['image']) }}"
+                                        <img src="{{ ik_url('img/activites/' . $atelier['image']) }}"
                                             class="img-fluid rounded-circle"
                                             style="width: 300px; height: 300px; object-fit: cover;">
 
@@ -331,7 +331,7 @@
                                             <div class="carousel-inner rounded-2">
                                                 @foreach ($atelier['slider'] as $i => $img)
                                                     <div class="carousel-item @if ($i == 0) active @endif">
-                                                        <img src="{{ asset('assets/img/' . $atelier['sliderPath'] . $img) }}"
+                                                        <img src="{{ ik_url('img/' . $atelier['sliderPath'] . $img) }}"
                                                             class="d-block w-100" alt="Photos des ateliers">
                                                     </div>
                                                 @endforeach
@@ -367,7 +367,7 @@
                                                 <div class="carousel-inner">
                                                     @foreach ($retraite['images'] as $index => $img)
                                                         <div class="carousel-item {{ $index === 0 ? 'active' : '' }}">
-                                                            <img src="{{ asset('assets/img/activites/retraites/' . ltrim($img, '/')) }}"
+                                                            <img src="{{ ik_url('img/activites/retraites/' . ltrim($img, '/')) }}"
                                                                 class="d-block w-100 img-half {{ $retraite['slug'] . '-img' }}"
                                                                 alt="Image retraite {{ $retraite['groupe'] }}">
                                                         </div>
@@ -383,7 +383,7 @@
                                                 @endif
                                             </div>
                                         @elseif(!empty($retraite['image']))
-                                            <img src="{{ asset('assets/img/activites/retraites/' . ltrim($retraite['image'], '/')) }}"
+                                            <img src="{{ ik_url('img/activites/retraites/' . ltrim($retraite['image'], '/')) }}"
                                                 alt="Image retraite {{ $retraite['groupe'] }}"
                                                 class="img-half mb-4">
                                         @endif
@@ -466,7 +466,7 @@
                                                         <div class="carousel-inner">
                                                             @foreach($info['slider'] as $index => $slideImg)
                                                                 <div class="carousel-item {{ $index === 0 ? 'active' : '' }}">
-                                                                    <img src="{{ asset('assets/img/activites/retraites/voyageDeLAme/slider/' . ltrim($slideImg, '/')) }}"
+                                                                    <img src="{{ ik_url('img/activites/retraites/voyageDeLame/slider/' . ltrim($slideImg, '/')) }}"
                                                                         class="d-block w-100 rounded-3"
                                                                         alt="Photo de la retraite : {{ $retraite['groupe'] }}">
                                                                 </div>
@@ -519,7 +519,7 @@
         <div class="d-flex casaImayah">
              @foreach (['imgCasaImayah' => 'Photo aérienne de Casa Imayah', 'imgPiscine' => 'Photo de la piscine'] as $key => $alt)
                 <div class="w-50">
-                    <img src="{{ $data['casaImayah'][$key] ?? '' }}" class="img-half" alt="{{ $alt }}">
+                    <img src="{{ ik_url($data['casaImayah'][$key] ?? '') }}" class="img-half" alt="{{ $alt }}">
                 </div>
             @endforeach
         </div>
