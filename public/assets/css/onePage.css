@@ -38,13 +38,18 @@ body
     min-height: 2000px;
 }
 
+h1
+{
+    font-weight: bolder;
+}
+
 h2, h3
 {
     font-family: 'Dastin', sans-serif;
     text-align: center;
 }
 
-h4, h5, h6
+h1, h4, h5, h6
 {
     font-family: 'Dastin', sans-serif;
 }
@@ -157,22 +162,97 @@ p
 /* Section : banner */
 .casaImayahTitle
 {
-  height: 65em;
-  width: 65em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 60vh;       /* hauteur relative à la viewport */
+  width: 100%;
+  text-align: center;
+  padding: 2rem;
+  box-sizing: border-box;
 }
 
-.name
+.bannerTitle h1
 {
-  font-size: 2rem;
-  letter-spacing: .36rem;
-}
-
-.mainTitles
-{
-  font-size: 3em;
+  font-size: clamp(2rem, 5vw, 4rem); /* taille fluide selon largeur écran */
   font-weight: 600;
   font-family: 'Dastin', sans-serif;
   color: var(--blanc);
+  margin: 0.5rem 0;
+  line-height: 1.2;
+  white-space: normal;
+  word-break: break-word;
+}
+
+.name h1
+{
+  font-size: clamp(1.5rem, 4vw, 2.5rem);
+  letter-spacing: 0.2rem;
+  margin-top: 1rem;
+  color: var(--blanc);
+}
+
+/* Image dans banner */
+.bannerTitle img
+{
+  max-width: 200px;
+  width: 100%;
+  height: auto;
+  margin: 1rem 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px)
+{
+  .casaImayahTitle
+  {
+    min-height: 50vh;
+    padding: 1.5rem;
+  }
+
+  .bannerTitle h1
+  {
+    font-size: clamp(1.5rem, 6vw, 3rem);
+  }
+
+  .name h1
+  {
+    font-size: clamp(1.2rem, 5vw, 2rem);
+    letter-spacing: 0.15rem;
+  }
+
+  .bannerTitle img
+  {
+    max-width: 150px;
+    margin: 0.8rem 0;
+  }
+}
+
+@media (max-width: 480px)
+{
+  .casaImayahTitle
+  {
+    min-height: 45vh;
+    padding: 1rem;
+  }
+
+  .bannerTitle h1
+  {
+    font-size: clamp(1.2rem, 7vw, 2.5rem);
+  }
+
+  .name h1
+  {
+    font-size: clamp(1rem, 6vw, 1.8rem);
+    letter-spacing: 0.1rem;
+  }
+
+  .bannerTitle img
+  {
+    max-width: 120px;
+    margin: 0.5rem 0;
+  }
 }
 /* END  Section : banner */
 
@@ -218,7 +298,20 @@ section .bannerTitle
 .F-A
 {
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    width: 100%;
+    max-width: 450px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    object-fit: cover;
+}
 
+.sectionQuiSuisJe p
+{
+    font-size: clamp(1rem, 2.5vw, 1.2rem);
+    line-height: 1.6;
+    text-align: center;
+    margin: 1rem 0;
 }
 
 .sectionQuiSuisJe
@@ -229,20 +322,81 @@ section .bannerTitle
 
 .Bxl-Sicile
 {
-  width: 100vw;
-  height: 700px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
   overflow: hidden;
+}
+
+.Bxl-Sicile > div
+{
+  flex: 1 1 50%;
+  max-width: 50%;
+  position: relative;
 }
 
 .img-half
 {
-  flex: 1;
-  height: 100%;
+  height: auto;
   width: 100%;
+  max-height: 500px;
   object-fit: cover;
   object-position: 50% 44%;
   display: block;
 }
+
+ /* Responsive */
+ @media (max-width: 992px)
+ {
+  .col-lg-6.pe-5
+  {
+    padding-right: 1rem !important;
+  }
+}
+
+@media (max-width: 768px)
+{
+  .sectionQuiSuisJe
+  {
+    padding: 2rem 1rem;
+  }
+
+  .sectionQuiSuisJe h1.mainTitles
+  {
+    font-size: clamp(1.5rem, 6vw, 2.5rem);
+  }
+
+  .F-A
+  {
+    max-width: 100%;
+  }
+
+  .col-lg-6
+  {
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+
+  .sectionQuiSuisJe article
+  {
+    padding: 0 1rem;
+  }
+}
+
+@media (max-width: 480px)
+{
+  .sectionQuiSuisJe h1.mainTitles
+  {
+    font-size: clamp(1.2rem, 7vw, 2rem);
+  }
+
+  .sectionQuiSuisJe p
+  {
+    font-size: 1rem;
+  }
+}
+
+/* Responsive END*/
 
 /* Slider : cabinet */
 .slider-cabinet
