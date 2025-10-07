@@ -806,6 +806,14 @@ section .picture
   transition: opacity 2s ease-in-out;
 }
 
+@media (max-width : 768px)
+{
+    .blocAteliers
+    {
+        display: none;
+    }
+}
+
 /*END*/
 
 /* SectionRetraites */
@@ -878,6 +886,15 @@ section .picture
 @media (max-width: 480px)
 {
     .retraiteImg .carousel-item img { max-height: 250px; }
+}
+
+/* Cacher uniquement le slider du Voyage de l'âme sur mobile */
+@media (max-width: 768px)
+{
+  .retraiteImg.voyage-ame > .carousel
+  {
+    display: none !important;
+  }
 }
 
 /* END */
