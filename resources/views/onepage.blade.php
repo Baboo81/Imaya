@@ -390,7 +390,7 @@
                                     </div>
 
                                    {{-- Boutons PDF --}}
-                                    <section class="d-flex flex-wrap justify-content-center mb-5">
+                                    <section class="d-flex flex-wrap justify-content-center my-5">
                                         @if($retraite['slug'] === 'soleil-levant')
                                             {{-- Bouton édition 2025 --}}
                                             <article class="col-12 col-sm-6 col-lg-3 my-3 text-center">
@@ -429,7 +429,7 @@
                                                 @endphp
 
                                                 <article class="col-12 col-sm-6 col-lg-3 my-3">
-                                                    <h5 class="mb-3">{{ $event['titre'] }}</h5>
+                                                    <h5 class="my-5">{{ $event['titre'] }}</h5>
                                                     <div class="blocBtn d-flex flex-wrap justify-content-center">
                                                         @if($pdfExists)
                                                             <a href="{{ $pdfUrl }}" class="btn btn-order btn-lg me-5 DastinFont rounded-5" download="{{ $event['nom_pdf'] }}">
@@ -486,10 +486,10 @@
                                             <div class="row justify-content-center align-items-center my-5">
                                                 <div class="col-12 col-md-8 text-center">
                                                     <p class="mb-4">{{ $retraite['info_retraiteWildHearts'] }}</p>
-                                                    @if(!empty($retraite['p1']) && !empty($retraite['link-site']))
+                                                    @if(!empty($retraite['p1']) && !empty($retraite['link_site']))
                                                         <p>
                                                             {{ $retraite['p1'] }}
-                                                            <a href="{{ $retraite['link-site'] }}" target="_blank" class="link-primary">
+                                                            <a href="{{ $retraite['link_site'] }}" target="_blank" class="link-primary">
                                                                 {{ $retraite['link_site'] }}
                                                             </a>
                                                         </p>
@@ -536,7 +536,7 @@
                     </article>
                     <div class="mt-5 d-flex align-items-center justify-content-center">
                         <a href="https://www.casaimayah.it"
-                           class="btn btn-order btn-lg me-5 rounded-5 DastinFont"
+                           class="btn btn-order btn-lg mx-auto rounded-5 DastinFont"
                            download="Infos atelier">
                            {{ $data['btn_allerVers'] ?? '' }}
                         </a>
@@ -555,7 +555,7 @@
         <div id="cards" class="container">
             <div class="row">
                 <div class="col-12">
-                    <h1 class="text-center mainTitles py-5 my-5">
+                    <h1 class="text-center mainTitles whiteFont py-5 my-5">
                         {{ $data['contact_title'] ?? '' }}
                     </h1>
 

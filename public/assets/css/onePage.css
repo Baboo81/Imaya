@@ -814,32 +814,101 @@ section .picture
     margin-bottom: 20% !important;
 }
 
-/* S'applique uniquement aux photos du slider Wild Hearts */
-.wild-hearts .carousel-item img,
-.wild-hearts-img {
-    max-width: 1000px;
-    max-height: 400px;
-    width: auto;
-    height: auto;
-    object-fit: contain; /* garde l'image nette */
-    margin: 0 auto;
+/* Carousel Wild Hearts */
+.carousel-item img
+ {
+    width: 100%;
+    aspect-ratio: 4 / 3; /* ratio fixe */
+    object-fit: cover;    /* garde les proportions et crop si nécessaire */
     border-radius: 15px;
+    display: block;
+    margin: 0 auto;
 }
 
-.soleil-levant img
+/* Carousel Soleil-Levant et autres */
+.soleil-levant img,
+.retraiteImg .carousel-item img
 {
-  flex: 1;
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-  object-position: 50% 8%;
-  display: block;
+    width: 100%;
+    aspect-ratio: 4 / 3;  /* ratio fixe */
+    object-fit: cover;     /* crop si nécessaire pour remplir le container */
+    border-radius: 15px;
+    display: block;
+}
+
+/* Slider WildHeartYoga centré et largeur limitée */
+.wild-hearts
+{
+    max-width: 800px;    /* largeur max souhaitée */
+    margin: 0 auto;       /* centré horizontalement */
+}
+
+.wild-hearts .carousel-inner
+{
+    width: 100%;
+}
+
+.wild-hearts .carousel-item img,
+.wild-hearts-img
+{
+    width: 100%;         /* prend toute la largeur de son container */
+    aspect-ratio: 4 / 3; /* ratio fixe */
+    object-fit: cover;    /* garde proportions et crop si nécessaire */
+    border-radius: 15px;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Hauteur maximum sur desktop / tablette / mobile */
+@media (min-width: 992px)
+{
+    .retraiteImg .carousel-item img { max-height: 500px; }
+}
+
+@media (max-width: 991px)
+{
+    .retraiteImg .carousel-item img { max-height: 400px; }
+}
+
+@media (max-width: 768px)
+{
+    .retraiteImg .carousel-item img { max-height: 300px; }
+}
+
+@media (max-width: 480px)
+{
+    .retraiteImg .carousel-item img { max-height: 250px; }
 }
 
 /* END */
 
 /* Section : Casa Imayah*/
+.casaImayah img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
 
+.sectionContact .btn-order
+{
+  display: inline-block;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.sectionContact .d-flex
+{
+  justify-content: center !important;
+  align-items: center !important;
+}
+
+/* Responsive */
+/* Version mobile */
+@media (max-width: 768px)
+{
+
+}
 /* Section : Casa Imayah END*/
 
 /* Section :  sectionContact*/
@@ -886,34 +955,44 @@ textarea::placeholder
   }
 }
 
-/* Cacher les slider pour la section : activités */
-@media (max-width : 768px)
+@media (max-width: 768px)
 {
-    .card-bloc .blocAteliers
-    {
-        display: none !important;
-    }
-}
+  .form
+  {
+    background-color: var(--rose) !important;
+  }
 
-/* Petits écrans (smartphones) */
-@media (max-width: 768px) {
-  .bannerTitle {
+  .card-contact form
+  {
+    padding: 2rem 1.5rem;
+  }
+
+  .card-contact h1
+  {
     font-size: 2rem;
-    letter-spacing: 0.2rem;
   }
-  p {
-    font-size: 1rem !important;
-  }
-  .casaImayahTitle {
-    width: 90%;
-    height: auto;
-  }
-}
 
-/* Tablettes */
-@media (max-width: 1024px) {
-  .slider-item {
-    width: 45%;
+  .card-contact .form-label
+  {
+    font-size: 1rem;
+  }
+
+  .card-contact input,
+  .card-contact textarea
+  {
+    font-size: 0.95rem;
+  }
+
+  .card-contact textarea
+  {
+    min-height: 150px;
+  }
+
+  .card-contact .btn-order
+  {
+    width: 100%;
+    font-size: 1.1rem;
+    padding: 0.9rem;
   }
 }
 
