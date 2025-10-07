@@ -619,33 +619,82 @@ section .sectionCreationTitle
   object-fit: contain;
 }
 
-.slider-container {
-    overflow-x: auto;
-    overflow-y: hidden;
-    white-space: nowrap;
-    -webkit-overflow-scrolling: touch;
-    margin-bottom: 2rem;
+/* Slider container */
+.slider-container
+{
+  width: 100%;
+  overflow: hidden;
 }
 
-.slider-track-creations {
-    display: flex;
-    gap: 1rem;
-    padding: 1rem 0;
+.slider-item-creations
+{
+  flex: 0 0 auto;
+  width: calc(100% / 3 - 1rem); /* desktop */
+  height: 400px;
+  position: relative;
+  border-radius: 1rem;
+  overflow: hidden;
 }
 
-.slider-item-creations {
-    flex: 0 0 auto;
-    width: 600px;
-    height: 700px;
-    overflow: hidden;
+.slider-track-creations
+{
+  display: flex;
+  gap: 1rem;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding-bottom: 1rem;
+  -webkit-overflow-scrolling: touch; /* fluidité sur mobile iOS */
 }
 
-.slider-item-creations img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
+/* Images */
+.slider-item-creations img
+{
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
+
+/* Texte sous l’image */
+.slider-item-creations p
+{
+  position: relative; /* plus en absolute */
+  bottom: auto;
+  width: 100%;
+  text-align: center;
+  color: var(--text-muted);
+  font-size: 1rem;
+  margin-top: 0.5rem;
+}
+
+/* Responsive : slider */
+/* TABLETTE */
+@media (max-width: 992px)
+{
+  .slider-item-creations {
+    width: 50%;
+    height: 300px;
+  }
+}
+
+/* TABLETTE */
+@media (max-width: 992px)
+{
+  .slider-item-creations { width: 50%; aspect-ratio: 4 / 3; }
+}
+
+/* MOBILE */
+@media (max-width: 768px)
+{
+  .slider-item-creations { width: 90%; margin: 0 auto; aspect-ratio: 4 / 3; }
+}
+
+@media (max-width: 480px)
+{
+  .slider-item-creations { width: 100%; aspect-ratio: 4 / 3; }
+}
+/* Responsive : slider END*/
 
 .dessinsVib p
 {
@@ -663,19 +712,49 @@ section .picture
     font-size: 1.5rem;
 }
 
-/* Mobile adaptatif */
-@media (max-width: 768px) {
-    .slider-item-creations {
-        width: 90%;
-        height: auto;
-    }
+/*Slider : peintures*/
+.carousel-inner.sliderPaintings
+{
+    width: 100%;
+    max-height: 700px; /* hauteur max desktop */
+    overflow: hidden;
+}
 
-    .slider-item-creations img {
-        height: auto;
-        max-height: 500px;
+.carousel-inner.sliderPaintings .carousel-item img
+{
+    width: 100%;
+    height: 100%;       /* remplit le container */
+    object-fit: cover;  /* garde le ratio et crop si nécessaire */
+}
+
+/*Responsive */
+/* TABLETTE */
+@media (max-width: 992px)
+{
+    .carousel-inner.sliderPaintings
+    {
+        max-height: 400px;
     }
 }
-/*END*/
+
+/* MOBILE */
+@media (max-width: 768px)
+{
+    .carousel-inner.sliderPaintings
+    {
+        max-height: 300px;
+    }
+}
+
+/* PETIT MOBILE */
+@media (max-width: 480px)
+{
+    .carousel-inner.sliderPaintings
+    {
+        max-height: 250px;
+    }
+}
+/*Responsive END*/
 
 /*Section activités*/
 #bijouxSlider
