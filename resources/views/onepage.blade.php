@@ -46,7 +46,7 @@
                 class="img-fluid rounded-2 w-100 F-A" style="max-width: 450px;">
             </div>
             <div class="col-lg-6 pe-5">
-                <article class="col-lg-5">
+                <article class="">
                     <p class="text-muted text-center text-lg-center mt-4">
                         {{ $data['qui_suis_je']['txtProfil'] ?? '' }}
                     </p>
