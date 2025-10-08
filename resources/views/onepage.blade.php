@@ -299,7 +299,7 @@
                     <ul class="list-group list-group-flush rounded-2">
                         @foreach ($data['activites']['ateliers'] as $atelier)
                             <li class="list-group-item DastinFont text-center fs-4">
-                                <div class="row my-4 gy-4 align-items-center">
+                                <div class="row my-4 gy-4 align-items-center flex-column flex-sl-row atelier-row">
                                     <h4>{{ $atelier['titre'] }}</h4>
 
                                     <div class="col-12 col-md-4">
@@ -328,7 +328,7 @@
                                         </a>
                                     </div>
 
-                                    <div class="col-12 col-md-5 p-5">
+                                    <div class="col-12 col-md-5 p-3 p-xl-5">
                                         <div id="carousel-{{ \Illuminate\Support\Str::slug($atelier['titre']) }}"
                                             class="carousel blocAteliers carousel-fade mx-auto my-3" data-bs-ride="carousel">
                                             <div class="carousel-inner rounded-2">
