@@ -416,6 +416,7 @@ section .bannerTitle
   animation: scroll 40s linear infinite;
   width: fit-content;     /* s'adapte à toutes les images */
   will-change: transform; /* optimise l'animation */
+  animation: scroll 60s linear infinite;
 }
 
 .slider-item
@@ -449,6 +450,14 @@ section .bannerTitle
 .rotate-90
 {
     transform: rotate(90deg);
+    width: auto;
+    height: 400px !important;
+    object-fit: cover;
+}
+
+.rotate-cabinet4
+{
+    transform: rotate(-90deg);
     width: auto;
     height: 400px !important;
     object-fit: cover;

@@ -99,7 +99,7 @@
                 $cabinetImages = $data['qui_suis_je']['imgSliderCabinet'];
                 // On duplique les images pour donner l'impression d'une boucle infinie
                 $allImages = array_merge($cabinetImages, $cabinetImages);
-                $rotateImages = ['cabinet2.jpg', 'cabinet3.jpg', 'cabinet4.jpg'];
+                $rotateImages = ['cabinet2.jpg', 'cabinet3.jpg'];
             @endphp
 
             @foreach ($allImages as $img)
@@ -107,11 +107,14 @@
                     $imgName = basename(trim($img));
                     $rotate = in_array($imgName, $rotateImages);
                     $special = ($imgName === 'cabinet5.jpeg'); // classe spécifique pour cabinet5
+                    $specialRotate = ($imgName === 'cabinet4.jpg'); // Rotation particulère pour : cabinet4.jpg
                 @endphp
                 <div class="slider-item {{ $special ? 'special-img-container' : '' }}">
                     <img src="{{ ik_url(trim($img)) }}"
                         alt="Photos du cabinet à Bruxelles et en Sicile"
-                        class="{{ $rotate ? 'rotate-90' : '' }} {{ $special ? 'special-img' : '' }}">
+                        class="{{ $rotate ? 'rotate-90' : '' }}
+                               {{ $specialRotate ? 'rotate-cabinet4' : ''}}
+                               {{ $special ? 'special-img' : '' }}">
                 </div>
             @endforeach
         </div>
