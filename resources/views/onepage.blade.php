@@ -175,7 +175,7 @@
                 @if ($loop->first)
                     {{-- ✅ Slider horizontal personnalisé pour le premier bloc --}}
                     <div class="card my-5 border-0 rounded-0">
-                        <div class="slider-container">
+                        <div class="slider-container-ds">
                             <div class="slider-track-creations">
                                 @foreach ($section['images'] as $image)
                                     <div class="slider-item-creations dessinsVib">
