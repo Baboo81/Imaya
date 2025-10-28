@@ -179,7 +179,7 @@
                             <div class="slider-track-creations">
                                 @foreach ($section['images'] as $image)
                                     <div class="slider-item-creations dessinsVib">
-                                        <img src="{{ ik_url($image['src']) }}" class="img-fluid rounded-3" alt="{{ $image['name'] }}">
+                                        <img src="{{ $image['src'] }}" class="img-fluid rounded-3" alt="{{ $image['name'] }}">
                                         <p class="mt-2 text-muted">
                                             {{ $image['name'] }}
                                         </p>
@@ -188,7 +188,6 @@
                             </div>
                         </div>
                         <div class="card-body">
-
                             <p class="card-text p-3">{{ $section['description'] }}</p>
                             @if (!empty($section['description2']))
                                 <p class="card-text p-3">{{ $section['description2'] }}</p>
