@@ -612,23 +612,6 @@ section .sectionCreationTitle
     font-family: 'Dastin', sans-serif;
 }
 
-/*
-.carousel-inner img
-{
-    height: 600px;
-}*/
-
-.sliderPaintings img
-{
-    height: 800px !important;
-}
-
-.carousel-item img
-{
-  width: 100%;
-  object-fit: contain;
-}
-
 /* Slider container */
 .slider-container-ds
 {
@@ -725,46 +708,39 @@ section .picture
 }
 
 /*Slider : peintures*/
-.carousel-inner.sliderPaintings
+.sliderPaintings
 {
-    width: 100%;
-    max-height: 700px; /* hauteur max desktop */
-    overflow: hidden;
+    height: 900px;
 }
 
-.carousel-inner.sliderPaintings .carousel-item img
+.sliderPaintings .carousel-item
 {
-    width: 100%;
-    height: 100%;       /* remplit le container */
-    object-fit: cover;  /* garde le ratio et crop si nécessaire */
+    height: 100%;
 }
 
-/*Responsive */
-/* TABLETTE */
+.sliderPaintings .carousel-item img
+{
+    max-height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+    display: block; /* obligatoire pour Bootstrap */
+}
+
+/* Responsive */
 @media (max-width: 992px)
 {
-    .carousel-inner.sliderPaintings
-    {
-        max-height: 400px;
-    }
+    .sliderPaintings { height: 450px; }
 }
 
-/* MOBILE */
 @media (max-width: 768px)
 {
-    .carousel-inner.sliderPaintings
-    {
-        max-height: 300px;
-    }
+    .sliderPaintings { height: 320px; }
 }
 
-/* PETIT MOBILE */
 @media (max-width: 480px)
 {
-    .carousel-inner.sliderPaintings
-    {
-        max-height: 250px;
-    }
+    .sliderPaintings { height: 250px; }
 }
 /*Responsive END*/
 
@@ -778,42 +754,84 @@ section .picture
   height: auto;
 }
 
-/* Images du carousel : responsive, garder le cadrage */
+/* Images du carousel : responsive et cadrées */
 .carousel-inner img,
-#bijouxSlider img {
+#bijouxSlider img
+{
   width: 100%;
-  height: auto;
-  max-height: 500px; /* cap optionnel */
+  height: 100%;
+  max-height: 400px; /* hauteur unifiée pour tous les sliders */
   object-fit: cover;
   border-radius: .5rem;
   display: block;
 }
 
+/* Uniformisation des carousels d’ateliers */
+.blocAteliers .carousel
+{
+  width: 100%;
+  max-width: 600px;
+  height: 350px; /* hauteur fixe pour l’uniformité */
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.blocAteliers .carousel-inner
+{
+  width: 100%;
+  height: 100%;
+}
+
+.blocAteliers .carousel-item
+{
+  height: 100%;
+}
+
+.blocAteliers .carousel-item img
+{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+  transition: transform 0.8s ease;
+}
+
+/* Effet de zoom doux au survol */
+@media (hover: hover)
+{
+  .blocAteliers .carousel-item img:hover
+  {
+    transform: scale(1.05);
+  }
+}
+
 /* Image ronde : garder la circularité et être responsive */
 .atelier-row .rounded-circle,
 .atelier-image .rounded-circle,
-.atelier-img {
+.atelier-img
+{
   width: 300px;
   max-width: 80%;
-  aspect-ratio: 1 / 1; /* assure le ratio carré pour la rondeur */
+  aspect-ratio: 1 / 1;
   height: auto;
   object-fit: cover;
   border-radius: 50%;
   margin-bottom: 1rem;
 }
 
-/* Réduction du padding sur la colonne du slider sur petits écrans (déjà mis via classes) */
-.atelier-row .col-md-5 {
+/* Réduction du padding sur la colonne du slider sur petits écrans */
+.atelier-row .col-md-5
+{
   padding: 0.75rem;
 }
 
 .blocBtn
 {
-    margin-right: -15% !important;
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    align-items: center !important;
+  margin-right: -15% !important;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center !important;
 }
 
 .carousel.carousel-fade .carousel-item
@@ -821,76 +839,89 @@ section .picture
   transition: opacity 2s ease-in-out;
 }
 
-  /* L’image garde sa forme ronde */
-  .blocAteliers img.rounded-circle {
-    width: 220px !important;
-    height: 220px !important;
-    object-fit: cover;
-    margin-bottom: 1.5rem;
-  }
+/* L’image garde sa forme ronde */
+.blocAteliers img.rounded-circle
+{
+  width: 220px !important;
+  height: 220px !important;
+  object-fit: cover;
+  margin-bottom: 1.5rem;
+}
 
-  /* Le slider passe en dessous de tout */
-  .blocAteliers .carousel {
-    order: 3; /* S'assure qu’il vient après texte et image */
-    width: 90%;
-    max-width: 400px;
-  }
+/* Le texte reste bien centré */
+.blocAteliers .col-md-3 {
 
-  /* Le texte reste bien centré */
-  .blocAteliers .col-md-3 {
-    text-align: center;
-    order: 2;
-  }
+  text-align: center;
+  order: 2;
+}
 
-  /* Réduction du padding pour aérer */
-  .blocAteliers .col-md-5,
-  .blocAteliers .col-md-4 {
-    padding: 1rem !important;
-  }
+/* Réduction du padding pour aérer */
+.blocAteliers .col-md-5,
+.blocAteliers .col-md-4
+{
+  padding: 1rem !important;
+}
 
-
+/* Responsive */
 @media (max-width: 1200px)
 {
-  /* On force l'empilement (si tu veux garder solution CSS au lieu d'utilitaires Bootstrap) */
-  .atelier-row {
-    flex-direction: column !important; /* switch to column under 1200px */
+  .atelier-row
+  {
+    flex-direction: column !important;
     align-items: center;
   }
 
   .atelier-row .col-md-4,
   .atelier-row .col-md-3,
-  .atelier-row .col-md-5 {
+  .atelier-row .col-md-5
+  {
     width: 100%;
     max-width: 900px;
   }
 
-  .atelier-row .col-md-4 { order: 1; } /* image */
-  .atelier-row .col-md-3 { order: 2; } /* texte */
-  .atelier-row .col-md-5 { order: 3; } /* slider */
+  .atelier-row .col-md-4 { order: 1; }
+  .atelier-row .col-md-3 { order: 2; }
+  .atelier-row .col-md-5 { order: 3; }
 
-  /* Taille image ronde plus petite sur tablettes / mobiles */
-  .atelier-row .rounded-circle {
+  .atelier-row .rounded-circle
+  {
     width: 220px;
     max-width: 60%;
   }
 
-  /* Carousel largeur adaptée */
-  .atelier-row .carousel {
+  .atelier-row .carousel
+  {
     width: 100%;
     max-width: 700px;
     margin: 0.5rem auto;
+    height: 300px; /* un peu plus bas sur tablette */
   }
 }
 
-@media (max-width : 768px)
+@media (max-width: 992px)
 {
-    .blocAteliers
-    {
-        display: none !important;
-    }
+  .blocAteliers .carousel
+  {
+    height: 280px;
+  }
 }
 
-/*END*/
+@media (max-width: 768px)
+{
+  .blocAteliers .carousel
+  {
+    height: 240px;
+  }
+}
+
+@media (max-width: 480px)
+{
+  .blocAteliers .carousel
+  {
+    height: 200px;
+  }
+}
+/* Section : Collaborations END*/
 
 /* SectionRetraites */
 .blocRetraites

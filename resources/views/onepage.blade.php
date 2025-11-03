@@ -200,6 +200,7 @@
                 @else
                 <div class="container">
                     {{-- Carousel Bootstrap pour les autres --}}
+
                     <div class="card my-5 border-0 rounded-0">
                         <div class="row gy-2 align-items-center">
                             <div class="col-md-12 my-5">
@@ -220,7 +221,7 @@
                                     <div class="carousel-inner sliderPaintings">
                                         @foreach ($section['images'] as $imgIndex => $image)
                                             <div class="carousel-item {{ $loop->first ? 'active' : '' }}">
-                                                <img src="{{ ik_url($image) }}" class="d-block w-100 img-fluid rounded-3" alt="Les créations">
+                                                <img src="{{ ik_url($image) }}" class="rounded-3" alt="Les créations">
                                             </div>
                                         @endforeach
                                     </div>
