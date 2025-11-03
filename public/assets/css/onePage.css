@@ -612,10 +612,11 @@ section .sectionCreationTitle
     font-family: 'Dastin', sans-serif;
 }
 
+/*
 .carousel-inner img
 {
     height: 600px;
-}
+}*/
 
 .sliderPaintings img
 {
@@ -806,12 +807,6 @@ section .picture
   padding: 0.75rem;
 }
 
-.retraiteImg
-{
-    width: 100% !important;
-    height: 450px;
-}
-
 .blocBtn
 {
     margin-right: -15% !important;
@@ -904,15 +899,61 @@ section .picture
 }
 
 /* Carousel Wild Hearts */
-.carousel-item img
- {
-    width: 100%;
-    aspect-ratio: 4 / 3; /* ratio fixe */
-    object-fit: cover;    /* garde les proportions et crop si nécessaire */
-    border-radius: 15px;
+.retraiteImg.wild-hearts .carousel-inner img,
+.wild-hearts .carousel-item img,
+.wild-hearts-img {
+    width: 30% !important;
+    height: auto;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 12px;
     display: block;
     margin: 0 auto;
 }
+
+/* Empêche les transitions de modifier la hauteur */
+.retraiteImg.wild-hearts .carousel-inner
+{
+    display: flex;
+    align-items: center;
+}
+
+.retraiteImg.wild-hearts .carousel-item
+{
+    transition: opacity 1s ease-in-out;
+}
+
+/* Tablettes (écrans < 992px) */
+@media (max-width: 992px)
+{
+    .retraiteImg.wild-hearts .carousel-inner img
+    {
+        width: 50% !important;
+        max-height: 350px;
+    }
+}
+
+/* Mobiles (écrans < 768px) */
+@media (max-width: 768px)
+{
+    .retraiteImg.wild-hearts .carousel-inner img
+    {
+        width: 70% !important;
+        max-height: 300px;
+    }
+}
+
+/* Petits smartphones (écrans < 480px) */
+@media (max-width: 480px)
+{
+    .retraiteImg.wild-hearts .carousel-inner img
+    {
+        width: 90% !important;
+        max-height: 250px;
+    }
+}
+
+/* Carousel Wild Hearts END */
 
 /* Carousel Soleil-Levant et autres */
 .soleil-levant img,
@@ -923,29 +964,6 @@ section .picture
     object-fit: cover;     /* crop si nécessaire pour remplir le container */
     border-radius: 15px;
     display: block;
-}
-
-/* Slider WildHeartYoga centré et largeur limitée */
-.wild-hearts
-{
-    max-width: 800px;    /* largeur max souhaitée */
-    margin: 0 auto;       /* centré horizontalement */
-}
-
-.wild-hearts .carousel-inner
-{
-    width: 100%;
-}
-
-.wild-hearts .carousel-item img,
-.wild-hearts-img
-{
-    width: 100%;         /* prend toute la largeur de son container */
-    aspect-ratio: 4 / 3; /* ratio fixe */
-    object-fit: cover;    /* garde proportions et crop si nécessaire */
-    border-radius: 15px;
-    display: block;
-    margin: 0 auto;
 }
 
 /* Hauteur maximum sur desktop / tablette / mobile */

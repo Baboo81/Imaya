@@ -359,10 +359,10 @@
                             <li class="list-group-item text-center w-100 py-4 {{ $loop->last ? '' : 'border-bottom' }}">
                                 <div class="row justify-content-center text-center">
                                     {{-- Titre de la retraite --}}
-                                    <h4 class="my-4">{{ $retraite['groupe'] }}</h4>
+                                    <h4 class="my-5">{{ $retraite['groupe'] }}</h4>
 
                                     {{-- Images / Carousel --}}
-                                    <div class="retraiteImg w-100 {{ $retraite['slug'] ?? '' }}">
+                                    <div class="retraiteImg {{ $retraite['slug'] ?? '' }}">
                                         @if(!empty($retraite['images']) && is_array($retraite['images']))
                                             @php $carouselId = 'carousel-' . $loop->index; @endphp
                                             <div id="{{ $carouselId }}" class="carousel slide mb-4" data-bs-ride="carousel">
