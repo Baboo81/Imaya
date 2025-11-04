@@ -18,9 +18,6 @@
             <div class="col-md-12 casaImayahTitle d-flex flex-column justify-content-center align-items-center">
                 <div class="bannerTitle text-center">
                     <h1 class="bannerTitle">{{ $data['accueil']['mainTitle1'] ?? '' }}</h1>
-                    <div>
-                        <img src="" alt="">
-                    </div>
                     <div class="name">
                         <h1 class="">{{ $data['accueil']['mainTitle2'] ?? '' }}</h1>
                     </div>

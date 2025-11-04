@@ -501,7 +501,7 @@ section .bannerTitle
 }
 
 /* Affichage : mobile */
-@media (max-width : 768px)
+@media (max-width : 768px) and (orientation: landscape)
 {
     .slider-cabinet
     {
@@ -517,15 +517,8 @@ section .bannerTitle
   }
 }
 
-/* MOBILE : 1 image qui prend presque toute la largeur */
-@media (max-width: 576px)
-{
-  .slider-item {
-    flex: 0 0 90%;
-  }
-}
-
 /* Slider : cabinet END*/
+
 /*Section Qui sui-je ? END*/
 
 /* Section : soins */
@@ -1019,7 +1012,7 @@ section .picture
 }
 
 /* Cacher uniquement le slider du Voyage de l'âme sur mobile */
-@media (max-width: 768px)
+@media (max-width: 768px) and (orientation: landscape)
 {
   .retraiteImg.voyage-ame > .carousel
   {
