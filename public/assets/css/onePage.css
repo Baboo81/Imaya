@@ -501,20 +501,21 @@ section .bannerTitle
 }
 
 /* Affichage : mobile */
-@media (max-width : 768px) and (orientation: landscape)
+@media (max-width : 768px)
 {
     .slider-cabinet
     {
-        display: none;
+        display: none !important;
     }
 }
 
 /* TABLETTE : 2 images visibles */
-@media (max-width: 992px)
+@media (max-width: 992px) and (orientation: landscape)
 {
-  .slider-item {
-    flex: 0 0 50%;
-  }
+   .slider-cabinet
+   {
+        display: none !important;
+   }
 }
 
 /* Slider : cabinet END*/
@@ -703,7 +704,10 @@ section .picture
 /*Slider : peintures*/
 .sliderPaintings
 {
-    height: 900px;
+    position: relative;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+    border-radius: 12px;
 }
 
 .sliderPaintings .carousel-item
@@ -715,9 +719,8 @@ section .picture
 {
     max-height: 100%;
     width: 100%;
-    object-fit: cover;
+    object-fit: contain;
     border-radius: 12px;
-    display: block; /* obligatoire pour Bootstrap */
 }
 
 /* Responsive */
@@ -899,19 +902,11 @@ section .picture
   }
 }
 
-@media (max-width: 768px)
+@media (max-width: 768px), (max-height : 768px) and (orientation: landscape)
 {
-  .blocAteliers .carousel
+  .blocAteliers
   {
-    height: 240px;
-  }
-}
-
-@media (max-width: 480px)
-{
-  .blocAteliers .carousel
-  {
-    height: 200px;
+        display: none !important;
   }
 }
 /* Section : Collaborations END*/
