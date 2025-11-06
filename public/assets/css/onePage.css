@@ -1131,3 +1131,38 @@ textarea::placeholder
   }
 }
 
+@media (max-width: 768px)
+{
+  .input-group-text
+  {
+    padding: 0.5rem 0.7rem;
+    font-size: 1rem;
+  }
+
+  .form-control
+  {
+    padding: 0.7rem 0.9rem;
+  }
+
+  .card-contact input,
+  .card-contact textarea
+  {
+    font-size: 1rem;
+    line-height: 1.4;
+  }
+
+  .card-contact input::placeholder,
+  .card-contact textarea::placeholder
+  {
+    font-size: 0.9rem;
+    white-space: normal; /* permet le retour à la ligne du placeholder */
+  }
+
+  /* Évite que les champs débordent horizontalement */
+  .card-contact .input-group
+  {
+    flex-wrap: nowrap;
+    width: 100%;
+  }
+}
+

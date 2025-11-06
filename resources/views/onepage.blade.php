@@ -562,7 +562,7 @@
                     <form class="rounded-5 border p-5" action="{{ route('contact.store') }}" method="POST" id="contact-form" novalidate>
                         @csrf
 
-                        <div class="col-md-12 col-12 my-5 p-5">
+                        <div class="col-md-12 p-md-5 my-5 p-3">
 
                             {{-- Champ : honeypot --}}
                             <input type="text" name="website" style="display: none">
