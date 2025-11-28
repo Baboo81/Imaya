@@ -287,7 +287,7 @@
                 </h1>
 
                 {{-- Ateliers --}}
-                <article class="card-body">
+                <article class="card-body opacity">
                     <div class="my-5">
                         <h3 class="card-title whiteFont mb-5">
                             {{ $data['activite_subTitle'] ?? '' }}
@@ -345,7 +345,7 @@
                 </article>
 
                {{-- Retraites --}}
-                <article class="card-body my-5 blocRetraites">
+                <article class="card-body my-5 blocRetraites opacity">
                     <div class="my-5">
                         <h3 class="card-title whiteFont mb-5">
                             {{ $data['activite_subTitle2'] ?? '' }}

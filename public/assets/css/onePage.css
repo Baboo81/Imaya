@@ -70,6 +70,11 @@ p
     font-size: clamp(1rem, 2.5vw, 1.5rem) !important;
 }
 
+.opacity
+{
+    opacity: 80%;
+}
+
 .whiteFont
 {
     color: var(--beige) !important;
