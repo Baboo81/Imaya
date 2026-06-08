@@ -1,7 +1,5 @@
 # ToDo
 
-- [ ] Mettre les img sur un CDN
+- [ ] Implémenter une nouvelle section pour les tarots dans création,
+- [ ] Faire les photos des cartes
 
-- [ ] Ajouter un deuxième bouton à la section **Retraite : Soleil Levant**  
-  - Sur chaque bouton, mettre *Édition + Année*  
-  - Ajouter txt : info à venir
