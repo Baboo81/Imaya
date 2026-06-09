@@ -272,6 +272,7 @@
                     </div>
                 @elseif ($section['type'] === 'imageTextOracles')
                     {{-- Bloc : oracles ;  image + texte --}}
+                    <h3 class="subTitle_oracles">L'Union Sacrée, un chemin vers Soi</h3>
                     <div class="card my-5 border-0 rounded-0 write">
                         <div class="row my-5 align-items-center">
                             <div class="col-md-6">
@@ -285,6 +286,12 @@
                                     <p class="card-text">
                                         <a href="#" class="text-muted btn">{{ $section['cta'] }}</a>
                                     </p>
+                                    <div class="my-3">
+                                        <a href="mailto:{{ $data['footer']['email'] ?? 'imayah@ecomail.fr' }}"
+                                            class="btn btn-order btn-lg mx-auto rounded-5 DastinFont">
+                                            Commander
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
                             <div class="col-md-6">

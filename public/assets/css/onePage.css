@@ -589,6 +589,11 @@ section .bannerTitle
 /*  END Section : soins */
 
 /*Section création*/
+.subTitle_oracles
+{
+    color: var(--orange);
+}
+
 .sectionCreation
 {
   background-color: var(--jaune);

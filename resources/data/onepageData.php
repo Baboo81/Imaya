@@ -184,14 +184,14 @@ return [
             ],
             [
                 'type' => "imageTextOracles",
-                'title' => "Oracle",
+                'title' => "Cartes oracle",
                 'image' => "img/creations/oracles/oracle.webp",
                 'items' => [
                     " Le 'Voyage de l'âme' est un support vibratoire pour accompagner la conscience dans sa compréhension des différentes épreuves de la vie. L'Union Sacrée en étant à la fois la clé de voûte et la dernière étape. Elle est en effet l'aboutissement du chemin lorsque les forces à l'oeuvres dans la conscience entrent en dialogue plutôt qu'en conflit. Ce dialogue est une mise en relation de tous les matériaux intérieurs, des plus sombres aux plus lumineux. De cette union, un nouveau fruit composé d'ombre et de lumière et en parfait équilibre, en harmonie sacrée nait !",
                     " Cette oracle s'appuie sur le mythe grec de 'Chiron et de Chariklo' ainsi que sur la symbolique de leur position en tant que corps célèstes dans les douze signes astrologiques. Il s'adresse à toutes personnes désireuses de plonger dans les mystères de son incarnation ou aux thérapeutes qui y trouveront un outil précieux.",
                     " Ce jeu de vingt-quatre cartes est composé des douze illustrations correspondant chacune aux douze positions de Chiron dans chacun des douze signes astrologiques ainsi que douze illustrations correspondant chacune aux douze positions de Chariklo dans chacun de ces mêmes douze signes astrologiques. Bon voyage !",
                 ],
-                'cta' => "Pour commander l'oracle, cliquer sur le bouton ci-dessous : commander, vous pourrez envoyer un mail afin de le commander",
+                'cta' => "Pour commander l'oracle, cliquer sur le bouton ci-dessous : vous pourrez envoyer un mail afin de manifester votre souhait de commander l'oracle",
             ],
         ],
     ],
