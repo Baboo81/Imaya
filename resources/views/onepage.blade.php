@@ -163,7 +163,7 @@
                 {{ $creations['mainTitle'] ?? '' }}
             </h1>
             @foreach ($creations['sections'] as $index => $section)
-                <h4 class="card-title my-5">{{ $section['title'] }}</h4>
+                <h4 class="card-title text-center my-5">{{ $section['title'] }}</h4>
                 @if ($section['type'] === 'carousel')
                     @if ($loop->first)
                         {{-- ✅ Slider horizontal personnalisé pour le premier bloc --}}
@@ -271,18 +271,14 @@
                         </div>
                     </div>
                 @elseif ($section['type'] === 'imageTextOracles')
-                    {{-- Bloc : écriture ;  image + texte --}}
+                    {{-- Bloc : oracles ;  image + texte --}}
                     <div class="card my-5 border-0 rounded-0 write">
                         <div class="row my-5 align-items-center">
                             <div class="col-md-6">
-                                <img src="{{ ik_url($section['image']) }}" class="img-fluid rounded-3"
-                                    alt="Image représentant des feuilles écrites à la main">
-                            </div>
-                            <div class="col-md-6">
                                 <div class="card-body">
-                                    <ul class="list-group list-group-flush p-2 my-4">
+                                    <ul class="p-2 my-4">
                                         @foreach ($section['items'] as $item)
-                                            <li class="list-group-item text-start BodoniFont text-muted">{{ $item }}
+                                            <li class="text-start BodoniFont text-muted my-3">{{ $item }}
                                             </li>
                                         @endforeach
                                     </ul>
@@ -290,6 +286,10 @@
                                         <a href="#" class="text-muted btn">{{ $section['cta'] }}</a>
                                     </p>
                                 </div>
+                            </div>
+                            <div class="col-md-6">
+                                <img src="{{ ik_url($section['image']) }}" class="img-fluid rounded-3"
+                                    alt="Image représentant un jeu de tarot">
                             </div>
                         </div>
                     </div>
