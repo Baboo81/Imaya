@@ -173,9 +173,19 @@ return [
                 ],
             ],
             [
-                'type' => "imageText",
+                'type' => "imageTextEcriture",
                 'title' => "Écriture",
                 'image' => "img/creations/ecritures/ecritures.jpg",
+                'items' => [
+                    " 'Passage' (trimestriel) en collaboration avec Jessica Dell'Utri",
+                    " 'Les voies de l'inconnu' œuvre en état de transe",
+                ],
+                'cta' => "Les publications sont disponibles sur commande",
+            ],
+            [
+                'type' => "imageTextOracles",
+                'title' => "Oracles",
+                'image' => "img/creations/oracles/oracles.webp",
                 'items' => [
                     " 'Passage' (trimestriel) en collaboration avec Jessica Dell'Utri",
                     " 'Les voies de l'inconnu' œuvre en état de transe",
