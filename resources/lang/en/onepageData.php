@@ -173,7 +173,7 @@ return [
                 ],
             ],
             [
-                'type' => "imageText",
+                'type' => "imageTextEcriture",
                 'title' => "Writing",
                 'image' => "img/creations/ecritures/ecritures.jpg",
                 'items' => [
@@ -181,6 +181,19 @@ return [
                     " 'The Paths of the Unknown' work created in a trance state",
                 ],
                 'cta' => "Publications are available on request",
+            ],
+            [
+                'type' => "imageTextOracles",
+                'title' => "Oracle Cards",
+                'image' => "img/creations/oracles/oracle.webp",
+                'items' => [
+                    "'The Soul's Journey' is a vibrational tool designed to support consciousness in understanding the various challenges of life. Sacred Union is both its keystone and its final stage. It represents the culmination of the journey when the forces at work within consciousness enter into dialogue rather than conflict. This dialogue creates a connection between all inner aspects, from the darkest to the most luminous. From this union, a new fruit is born, composed of both shadow and light, perfectly balanced and living in sacred harmony.",
+
+                    "This oracle deck is inspired by the Greek myth of Chiron and Chariklo, as well as the symbolism of their positions as celestial bodies within the twelve astrological signs. It is intended for anyone wishing to explore the mysteries of their incarnation, as well as for therapists and practitioners seeking a valuable tool for guidance and insight.",
+
+                    "This deck of twenty-four cards includes twelve illustrations representing Chiron's position in each of the twelve astrological signs, along with twelve illustrations representing Chariklo's position in those same twelve signs. Enjoy the journey!",
+                ],
+                'cta' => "To order the oracle deck, click the button below. You will be able to send an email expressing your wish to purchase the oracle.",
             ],
         ],
     ],
