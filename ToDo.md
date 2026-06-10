@@ -1,5 +1,6 @@
 # ToDo
 
-- [ ] Implémenter une nouvelle section pour les tarots dans création,
+- [V] Implémenter une nouvelle section pour les tarots dans création,
 - [ ] Faire les photos des cartes
-
+- [ ] Mettre un message concernant la langue pour les cartes. 
+ 

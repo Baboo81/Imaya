@@ -173,7 +173,7 @@ return [
                 ],
             ],
             [
-                'type'  => "imageText",
+                'type'  => "imageTextEcriture",
                 'title' => "Scrittura",
                 'image' => "img/creations/ecritures/ecritures.jpg",
                 'items' => [
@@ -181,6 +181,19 @@ return [
                     " 'Les voies de l'inconnu' opera in stato di trance",
                 ],
                 'cta'   => "Le pubblicazioni sono disponibili su richiesta",
+            ],
+            [
+                'type' => "imageTextOracles",
+                'title' => "Carte Oracolo",
+                'image' => "img/creations/oracles/oracle.webp",
+                'items' => [
+                    "'Il Viaggio dell'Anima' è uno strumento vibrazionale pensato per accompagnare la coscienza nella comprensione delle diverse prove della vita. L'Unione Sacra ne rappresenta al tempo stesso la chiave di volta e l'ultima tappa. Essa costituisce infatti il compimento del cammino, quando le forze all'opera nella coscienza entrano in dialogo anziché in conflitto. Questo dialogo mette in relazione tutti gli aspetti interiori, dai più oscuri ai più luminosi. Da questa unione nasce un nuovo frutto, composto di ombra e luce, perfettamente equilibrato e in armonia sacra.",
+
+                    "Questo oracolo si ispira al mito greco di Chirone e Chariklo, nonché al simbolismo della loro posizione come corpi celesti nei dodici segni zodiacali. È rivolto a chiunque desideri immergersi nei misteri della propria incarnazione, così come ai terapeuti e ai professionisti che vi troveranno uno strumento prezioso.",
+
+                    "Questo mazzo di ventiquattro carte è composto da dodici illustrazioni che rappresentano le dodici posizioni di Chirone nei dodici segni zodiacali e da altre dodici illustrazioni che rappresentano le dodici posizioni di Chariklo negli stessi segni. Buon viaggio!",
+                ],
+                'cta' => "Per ordinare l'oracolo, clicca sul pulsante qui sotto. Potrai inviare un'e-mail per esprimere il tuo desiderio di acquistare l'oracolo.",
             ],
         ],
     ],
