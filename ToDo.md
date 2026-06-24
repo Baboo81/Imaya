@@ -4,4 +4,5 @@
 - [ ] Faire les photos des cartes
 - [ ] Mettre un message concernant la langue pour les cartes. 
 - [ ] Vérifier l'image de la home page
-- [ ] Afficher les collaborateurs 
+- [ ] Afficher les collaborateurs
+- [ ] Sécurisation 
