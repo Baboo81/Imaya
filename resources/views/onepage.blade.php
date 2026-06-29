@@ -296,7 +296,7 @@
                             </div>
                             <div class="col-md-6">
                                 <img src="{{ ik_url($section['image']) }}" class="img-fluid rounded-3"
-                                    alt="Image représentant un jeu de tarot">
+                                    alt="Image représentant l'oracle : L'Union sacrée, un chemin vers Soi">
                             </div>
                         </div>
                     </div>
