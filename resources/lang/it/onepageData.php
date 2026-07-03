@@ -185,7 +185,7 @@ return [
             [
                 'type' => "imageTextOracles",
                 'title' => "Carte Oracolo",
-                'image' => "img/creations/oracles/oracle.webp",
+                'image_oracle' => "img/creations/oracles/oracle.webp",
                 'items' => [
                     "'Il Viaggio dell'Anima' è uno strumento vibrazionale pensato per accompagnare la coscienza nella comprensione delle diverse prove della vita. L'Unione Sacra ne rappresenta al tempo stesso la chiave di volta e l'ultima tappa. Essa costituisce infatti il compimento del cammino, quando le forze all'opera nella coscienza entrano in dialogo anziché in conflitto. Questo dialogo mette in relazione tutti gli aspetti interiori, dai più oscuri ai più luminosi. Da questa unione nasce un nuovo frutto, composto di ombra e luce, perfettamente equilibrato e in armonia sacra.",
 
