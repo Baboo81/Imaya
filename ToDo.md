@@ -6,4 +6,4 @@
 - [ ] Vérifier l'image de la home page
 - [ ] Afficher les collaborateurs
 - [ ] Sécurisation
-- [ ] Renommer la photo : oracle.webp
+- [V] Renommer la photo : oracle.webp
