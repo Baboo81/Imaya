@@ -185,7 +185,7 @@ return [
             [
                 'type' => "imageTextOracles",
                 'title' => "Oracle Cards",
-                'image_oracle' => "img/creations/oracles/oracle.webp",
+                'image_oracle' => "img/creations/oracles/oracleBis.webp",
                 'items' => [
                     "'The Soul's Journey' is a vibrational tool designed to support consciousness in understanding the various challenges of life. Sacred Union is both its keystone and its final stage. It represents the culmination of the journey when the forces at work within consciousness enter into dialogue rather than conflict. This dialogue creates a connection between all inner aspects, from the darkest to the most luminous. From this union, a new fruit is born, composed of both shadow and light, perfectly balanced and living in sacred harmony.",
 
