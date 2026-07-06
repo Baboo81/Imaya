@@ -275,7 +275,7 @@
                     <h3 class="subTitle_oracles">L'Union Sacrée, un chemin vers Soi</h3>
                     <div class="card my-5 border-0 rounded-0 write">
                         <div class="row my-5 align-items-center">
-                            <div class="col-md-6">
+                            <div class="col-md-6 order-2 order-md-1">
                                 <div class="card-body">
                                     <ul class="p-2 my-4">
                                         @foreach ($section['items'] as $item)
@@ -294,7 +294,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-6">
+                            <div class="col-md-6 order-1 order-md-2">
                                 <img src="{{ ik_url($section['image_oracle']) }}" class="img-fluid rounded-3"
                                     alt="Image représentant l'oracle : L'Union sacrée, un chemin vers Soi">
                             </div>
